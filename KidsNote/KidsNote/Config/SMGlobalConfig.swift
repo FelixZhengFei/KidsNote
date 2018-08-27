@@ -65,7 +65,7 @@ let smDevice_System_Name:String = UIDevice.current.systemName
 
 //MARK: ************************Log************************
 
-public func SMPrint<N>(_ message:N,fileName:String = #file,methodName:String = #function,lineNumber:Int = #line) {
+public func FFPrint<N>(_ message:N,fileName:String = #file,methodName:String = #function,lineNumber:Int = #line) {
     #if DEBUG
         print("\(message)");
     #else

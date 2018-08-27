@@ -1,5 +1,5 @@
 //
-//  RecentViewController.swift
+//  KDAppHomeVC.swift
 //  FWSideMenu
 //
 //  Created by xfg on 2018/4/8.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class RecentViewController: KNBaseVC {
+class KDAppHomeVC: KNBaseVC {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -20,7 +20,7 @@ class RecentViewController: KNBaseVC {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor.white
-        self.title = "消息"
+        self.title = "首页"
         let buttonItem: UIBarButtonItem = UIBarButtonItem(image: UIImage(named: "header"), style: .plain, target: self, action: #selector(leftBtnAction))
         buttonItem.imageInsets = UIEdgeInsetsMake(0, -6, 0, 0)
         self.navigationItem.leftBarButtonItem = buttonItem

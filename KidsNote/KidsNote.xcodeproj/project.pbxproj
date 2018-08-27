@@ -16,9 +16,9 @@
 		7692BDF32133960D007213AE /* FWTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDF02133960C007213AE /* FWTabBarController.swift */; };
 		7692BDF42133960D007213AE /* FWNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDF12133960C007213AE /* FWNavigationController.swift */; };
 		7692BDF52133960D007213AE /* FWTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDF22133960D007213AE /* FWTabBar.swift */; };
-		7692BDF721339660007213AE /* RecentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDF621339660007213AE /* RecentViewController.swift */; };
-		7692BDF92133966C007213AE /* BuddyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDF82133966C007213AE /* BuddyViewController.swift */; };
-		7692BDFB21339680007213AE /* SeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDFA21339680007213AE /* SeeViewController.swift */; };
+		7692BDF721339660007213AE /* KDAppHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDF621339660007213AE /* KDAppHomeVC.swift */; };
+		7692BDF92133966C007213AE /* KDContactHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDF82133966C007213AE /* KDContactHomeVC.swift */; };
+		7692BDFB21339680007213AE /* KDSyllabusHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDFA21339680007213AE /* KDSyllabusHomeVC.swift */; };
 		7692BDFD213396D0007213AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7692BDFC213396D0007213AE /* Assets.xcassets */; };
 		7692BDFF213397BE007213AE /* QworldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDFE213397BE007213AE /* QworldViewController.swift */; };
 		7692BE0821339883007213AE /* SideMenuBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7692BE0121339882007213AE /* SideMenuBottomView.xib */; };
@@ -30,6 +30,8 @@
 		7692BE0E21339883007213AE /* SideMenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BE0721339883007213AE /* SideMenuHeaderView.swift */; };
 		7692BE10213398A1007213AE /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BE0F213398A0007213AE /* SubViewController.swift */; };
 		7692BE1221339947007213AE /* KNBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BE1121339947007213AE /* KNBaseVC.swift */; };
+		7692BE1A21339E73007213AE /* RecentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7692BE1821339E73007213AE /* RecentTableViewCell.xib */; };
+		7692BE1B21339E73007213AE /* RecentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BE1921339E73007213AE /* RecentTableViewCell.swift */; };
 		A684C5E42402FC1985840EA7 /* Pods_KidsNote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8331680565913DFA7118B8E0 /* Pods_KidsNote.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,9 +47,9 @@
 		7692BDF02133960C007213AE /* FWTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWTabBarController.swift; sourceTree = "<group>"; };
 		7692BDF12133960C007213AE /* FWNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWNavigationController.swift; sourceTree = "<group>"; };
 		7692BDF22133960D007213AE /* FWTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWTabBar.swift; sourceTree = "<group>"; };
-		7692BDF621339660007213AE /* RecentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentViewController.swift; sourceTree = "<group>"; };
-		7692BDF82133966C007213AE /* BuddyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuddyViewController.swift; sourceTree = "<group>"; };
-		7692BDFA21339680007213AE /* SeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeeViewController.swift; sourceTree = "<group>"; };
+		7692BDF621339660007213AE /* KDAppHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDAppHomeVC.swift; sourceTree = "<group>"; };
+		7692BDF82133966C007213AE /* KDContactHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDContactHomeVC.swift; sourceTree = "<group>"; };
+		7692BDFA21339680007213AE /* KDSyllabusHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDSyllabusHomeVC.swift; sourceTree = "<group>"; };
 		7692BDFC213396D0007213AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7692BDFE213397BE007213AE /* QworldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QworldViewController.swift; sourceTree = "<group>"; };
 		7692BE0121339882007213AE /* SideMenuBottomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuBottomView.xib; sourceTree = "<group>"; };
@@ -59,6 +61,8 @@
 		7692BE0721339883007213AE /* SideMenuHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuHeaderView.swift; sourceTree = "<group>"; };
 		7692BE0F213398A0007213AE /* SubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
 		7692BE1121339947007213AE /* KNBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KNBaseVC.swift; sourceTree = "<group>"; };
+		7692BE1821339E73007213AE /* RecentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecentTableViewCell.xib; sourceTree = "<group>"; };
+		7692BE1921339E73007213AE /* RecentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentTableViewCell.swift; sourceTree = "<group>"; };
 		8331680565913DFA7118B8E0 /* Pods_KidsNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KidsNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD718234B3A4A8A70F2D5D6E /* Pods-KidsNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KidsNote.release.xcconfig"; path = "Pods/Target Support Files/Pods-KidsNote/Pods-KidsNote.release.xcconfig"; sourceTree = "<group>"; };
 		FCBDC78A6D9C024D7FCCCA7E /* Pods-KidsNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KidsNote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KidsNote/Pods-KidsNote.debug.xcconfig"; sourceTree = "<group>"; };
@@ -131,10 +135,10 @@
 			children = (
 				7692BDDA213395A3007213AE /* BaseView */,
 				7692BE0021339869007213AE /* SideMenuViewController */,
-				7692BDF621339660007213AE /* RecentViewController.swift */,
-				7692BDF82133966C007213AE /* BuddyViewController.swift */,
-				7692BDFE213397BE007213AE /* QworldViewController.swift */,
-				7692BDFA21339680007213AE /* SeeViewController.swift */,
+				7692BE1621339D1C007213AE /* 首页 */,
+				7692BE1521339D19007213AE /* 联系人 */,
+				7692BE1421339D16007213AE /* 课程表 */,
+				7692BE1321339D13007213AE /* 动态 */,
 				7692BE0F213398A0007213AE /* SubViewController.swift */,
 			);
 			path = VC;
@@ -197,6 +201,48 @@
 				7692BE0621339883007213AE /* SideMenuViewController.swift */,
 			);
 			path = SideMenuViewController;
+			sourceTree = "<group>";
+		};
+		7692BE1321339D13007213AE /* 动态 */ = {
+			isa = PBXGroup;
+			children = (
+				7692BDFE213397BE007213AE /* QworldViewController.swift */,
+			);
+			path = "动态";
+			sourceTree = "<group>";
+		};
+		7692BE1421339D16007213AE /* 课程表 */ = {
+			isa = PBXGroup;
+			children = (
+				7692BE1721339E6B007213AE /* Cell */,
+				7692BDFA21339680007213AE /* KDSyllabusHomeVC.swift */,
+			);
+			path = "课程表";
+			sourceTree = "<group>";
+		};
+		7692BE1521339D19007213AE /* 联系人 */ = {
+			isa = PBXGroup;
+			children = (
+				7692BDF82133966C007213AE /* KDContactHomeVC.swift */,
+			);
+			path = "联系人";
+			sourceTree = "<group>";
+		};
+		7692BE1621339D1C007213AE /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				7692BDF621339660007213AE /* KDAppHomeVC.swift */,
+			);
+			path = "首页";
+			sourceTree = "<group>";
+		};
+		7692BE1721339E6B007213AE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7692BE1921339E73007213AE /* RecentTableViewCell.swift */,
+				7692BE1821339E73007213AE /* RecentTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		8C64A6AC4736F775B0ABF073 /* Frameworks */ = {
@@ -272,6 +318,7 @@
 				7692BDFD213396D0007213AE /* Assets.xcassets in Resources */,
 				7692BE0C21339883007213AE /* SideMenuTableViewCell.xib in Resources */,
 				7692BE0B21339883007213AE /* SideMenuHeaderView.xib in Resources */,
+				7692BE1A21339E73007213AE /* RecentTableViewCell.xib in Resources */,
 				7692BDCC2133941C007213AE /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,7 +399,7 @@
 				7692BDFF213397BE007213AE /* QworldViewController.swift in Sources */,
 				7692BDEF213395E9007213AE /* UIViewController+FWSideMenuExtension.swift in Sources */,
 				7692BDED213395E9007213AE /* FWSideMenuContainerViewController.swift in Sources */,
-				7692BDF721339660007213AE /* RecentViewController.swift in Sources */,
+				7692BDF721339660007213AE /* KDAppHomeVC.swift in Sources */,
 				7692BE1221339947007213AE /* KNBaseVC.swift in Sources */,
 				7692BE0D21339883007213AE /* SideMenuViewController.swift in Sources */,
 				7692BDEE213395E9007213AE /* FWSideMenuShadow.swift in Sources */,
@@ -360,11 +407,12 @@
 				7692BDC221339419007213AE /* AppDelegate.swift in Sources */,
 				7692BE10213398A1007213AE /* SubViewController.swift in Sources */,
 				7692BDD921339582007213AE /* SMGlobalConfig.swift in Sources */,
-				7692BDFB21339680007213AE /* SeeViewController.swift in Sources */,
+				7692BDFB21339680007213AE /* KDSyllabusHomeVC.swift in Sources */,
 				7692BE0E21339883007213AE /* SideMenuHeaderView.swift in Sources */,
 				7692BE0A21339883007213AE /* SideMenuTableViewCell.swift in Sources */,
-				7692BDF92133966C007213AE /* BuddyViewController.swift in Sources */,
+				7692BDF92133966C007213AE /* KDContactHomeVC.swift in Sources */,
 				7692BDF32133960D007213AE /* FWTabBarController.swift in Sources */,
+				7692BE1B21339E73007213AE /* RecentTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
