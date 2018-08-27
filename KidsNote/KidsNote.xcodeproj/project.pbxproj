@@ -12,6 +12,7 @@
 		7692BDC721339419007213AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7692BDC521339419007213AE /* Main.storyboard */; };
 		7692BDC92133941C007213AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7692BDC82133941C007213AE /* Assets.xcassets */; };
 		7692BDCC2133941C007213AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7692BDCA2133941C007213AE /* LaunchScreen.storyboard */; };
+		A684C5E42402FC1985840EA7 /* Pods_KidsNote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8331680565913DFA7118B8E0 /* Pods_KidsNote.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		7692BDC82133941C007213AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7692BDCB2133941C007213AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7692BDCD2133941C007213AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8331680565913DFA7118B8E0 /* Pods_KidsNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KidsNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD718234B3A4A8A70F2D5D6E /* Pods-KidsNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KidsNote.release.xcconfig"; path = "Pods/Target Support Files/Pods-KidsNote/Pods-KidsNote.release.xcconfig"; sourceTree = "<group>"; };
+		FCBDC78A6D9C024D7FCCCA7E /* Pods-KidsNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KidsNote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KidsNote/Pods-KidsNote.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A684C5E42402FC1985840EA7 /* Pods_KidsNote.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6ED4A3D389E01B9D48A94880 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCBDC78A6D9C024D7FCCCA7E /* Pods-KidsNote.debug.xcconfig */,
+				BD718234B3A4A8A70F2D5D6E /* Pods-KidsNote.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7692BDB521339419007213AE = {
 			isa = PBXGroup;
 			children = (
 				7692BDC021339419007213AE /* KidsNote */,
 				7692BDBF21339419007213AE /* Products */,
+				6ED4A3D389E01B9D48A94880 /* Pods */,
+				8C64A6AC4736F775B0ABF073 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = KidsNote;
 			sourceTree = "<group>";
 		};
+		8C64A6AC4736F775B0ABF073 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8331680565913DFA7118B8E0 /* Pods_KidsNote.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7692BDD02133941C007213AE /* Build configuration list for PBXNativeTarget "KidsNote" */;
 			buildPhases = (
+				5F204A64DCE65A6808A65B81 /* [CP] Check Pods Manifest.lock */,
 				7692BDBA21339419007213AE /* Sources */,
 				7692BDBB21339419007213AE /* Frameworks */,
 				7692BDBC21339419007213AE /* Resources */,
+				5261761E3DDDF217509FE28D /* [CP] Embed Pods Frameworks */,
+				71A40420CC8E14832EA85250 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5261761E3DDDF217509FE28D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KidsNote/Pods-KidsNote-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BYToolModule/BYToolModule.framework",
+				"${BUILT_PRODUCTS_DIR}/FFToolModule/FFToolModule.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/SDAutoLayout/SDAutoLayout.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BYToolModule.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FFToolModule.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDAutoLayout.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KidsNote/Pods-KidsNote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F204A64DCE65A6808A65B81 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KidsNote-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71A40420CC8E14832EA85250 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KidsNote/Pods-KidsNote-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7692BDBA21339419007213AE /* Sources */ = {
@@ -278,15 +369,13 @@
 		};
 		7692BDD12133941C007213AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCBDC78A6D9C024D7FCCCA7E /* Pods-KidsNote.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9854286B7Z;
 				INFOPLIST_FILE = KidsNote/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = EE.KidsNote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +385,13 @@
 		};
 		7692BDD22133941C007213AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD718234B3A4A8A70F2D5D6E /* Pods-KidsNote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9854286B7Z;
 				INFOPLIST_FILE = KidsNote/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = EE.KidsNote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
