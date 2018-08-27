@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>norImage</key>
+		<string>tab_index</string>
+		<key>VC</key>
+		<string>SinaMall.SMAppHomeVC</string>
+		<key>selectImage</key>
+		<string>tab_index_selected</string>
+		<key>title</key>
+		<string>首页</string>
+	</dict>
+	<dict>
+		<key>VC</key>
+		<string>SinaMall.SMSingerPhoneListVC</string>
+		<key>selectImage</key>
+		<string>tab_fen_selected</string>
+		<key>norImage</key>
+		<string>tab_fen</string>
+		<key>title</key>
+		<string>分类</string>
+	</dict>
+	<dict>
+		<key>VC</key>
+		<string>SinaMall.SMDiscoverHomeVC</string>
+		<key>selectImage</key>
+		<string>tab_ddcx_selected</string>
+		<key>norImage</key>
+		<string>tab_ddcx</string>
+		<key>title</key>
+		<string>发现</string>
+	</dict>
+	<dict>
+		<key>norImage</key>
+		<string>tab_center</string>
+		<key>VC</key>
+		<string>SinaMall.SMMyHomeVC</string>
+		<key>selectImage</key>
+		<string>tab_center_selected</string>
+		<key>title</key>
+		<string>我的</string>
+	</dict>
+</array>
+</plist>

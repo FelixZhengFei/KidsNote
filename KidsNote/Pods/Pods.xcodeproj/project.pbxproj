@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -247,14 +247,14 @@
 		270E9DF85B1A78BB7372EFB3B3D02741 /* UIViewController+CZAddition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+CZAddition.m"; path = "FFToolModule/FFToolModule/FF_OC_Category/UIViewController+CZAddition.m"; sourceTree = "<group>"; };
 		29115F967B49327E3895DE962331665D /* NSArray+Log.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Log.m"; path = "FFToolModule/FFToolModule/FF_OC_Category/NSArray+Log.m"; sourceTree = "<group>"; };
 		2978D017E72CA9BABB3E71AEE8F6CAB0 /* MJRefreshAutoNormalFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoNormalFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoNormalFooter.h; sourceTree = "<group>"; };
-		2B825D9308F6799FD8EE73E5A3DB4E61 /* FFToolModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FFToolModule.framework; path = FFToolModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B825D9308F6799FD8EE73E5A3DB4E61 /* FFToolModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FFToolModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C76251CC241FD1E9BF7CC175E1D397B /* Pods-KidsNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KidsNote.debug.xcconfig"; sourceTree = "<group>"; };
 		2DEED91D12789C7D205521606A4AD9D5 /* MJRefreshNormalHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshNormalHeader.h; path = MJRefresh/Custom/Header/MJRefreshNormalHeader.h; sourceTree = "<group>"; };
 		2F87BA53C8F11A3B0DBBFC1A0D241C25 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		2FAD5FAD502E1ACD678E0908422D6B39 /* SDAutoLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDAutoLayout.xcconfig; sourceTree = "<group>"; };
 		302388E385BA6131E20BB3E557824BFF /* MJRefresh-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MJRefresh-umbrella.h"; sourceTree = "<group>"; };
 		31479EC8E8034270D4315D67A5665738 /* Pods-KidsNote-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KidsNote-acknowledgements.plist"; sourceTree = "<group>"; };
-		325D791CE54EF96CF8AD997AF5BE49AC /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		325D791CE54EF96CF8AD997AF5BE49AC /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3275A029E5AB1FD95FCB9FAED4C34B71 /* UIColor+extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+extension.swift"; path = "BYToolModule/BYToolModule/extension/UIColor+extension.swift"; sourceTree = "<group>"; };
 		33675A8C64F51BAF5C7D6F3F27E813C6 /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
 		351840B97BFC9649C2BEE946D879148C /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
@@ -277,7 +277,7 @@
 		4C844036D006E38568DB26B58F935CE5 /* UITextView+FFPlaceHolder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextView+FFPlaceHolder.h"; path = "FFToolModule/FFToolModule/FF_TextView_PlaceHolder/UITextView+FFPlaceHolder.h"; sourceTree = "<group>"; };
 		4E00374E67E2EEF53316EC26172F9EE7 /* MJRefreshGifHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshGifHeader.m; path = MJRefresh/Custom/Header/MJRefreshGifHeader.m; sourceTree = "<group>"; };
 		4F3516EBE3EFBC51DD75B17A0A3E7053 /* Pods-KidsNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KidsNote.release.xcconfig"; sourceTree = "<group>"; };
-		505AE4AAC5E3B7827B7FD862171F50EF /* Pods_KidsNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KidsNote.framework; path = "Pods-KidsNote.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		505AE4AAC5E3B7827B7FD862171F50EF /* Pods_KidsNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KidsNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		513886B8FADA53DCAB0BE78F26253F23 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52448968C4BF09FF32C9DE0D238E9B31 /* NSString+Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Extension.m"; path = "FFToolModule/FFToolModule/FF_OC_Category/NSString+Extension.m"; sourceTree = "<group>"; };
 		52464793E6378B281CCAA47FA5F17E67 /* UIViewController+CZAddition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+CZAddition.h"; path = "FFToolModule/FFToolModule/FF_OC_Category/UIViewController+CZAddition.h"; sourceTree = "<group>"; };
@@ -302,9 +302,9 @@
 		6ABC2B0D7DA878CA73759BD00D198CB3 /* Empty+UICollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Empty+UICollectionView.swift"; path = "BYToolModule/BYToolModule/extension/Empty+UICollectionView.swift"; sourceTree = "<group>"; };
 		6ADB4F3E062ECB9BA87039640EE38C6A /* NSMutableAttributedString+exts.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSMutableAttributedString+exts.swift"; path = "BYToolModule/BYToolModule/extension/NSMutableAttributedString+exts.swift"; sourceTree = "<group>"; };
 		6B7122519032F8741212D5F611978469 /* MJRefreshAutoGifFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshAutoGifFooter.h; path = MJRefresh/Custom/Footer/Auto/MJRefreshAutoGifFooter.h; sourceTree = "<group>"; };
-		6B78AE1176F1FBDB770C139AD6F47115 /* SDAutoLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SDAutoLayout.framework; path = SDAutoLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B78AE1176F1FBDB770C139AD6F47115 /* SDAutoLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDAutoLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C0E5F196149F3549A99A305BB047E64 /* Dictionary+extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+extension.swift"; path = "BYToolModule/BYToolModule/extension/Dictionary+extension.swift"; sourceTree = "<group>"; };
-		6D43B5068E3D1458F7891981CCB2778F /* BYToolModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BYToolModule.framework; path = BYToolModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D43B5068E3D1458F7891981CCB2778F /* BYToolModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BYToolModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73591D47864719A5005A58E9555EB880 /* FFAlert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FFAlert.m; path = FFToolModule/FFToolModule/FF_Alert/FFAlert.m; sourceTree = "<group>"; };
 		73F6D7AE53D330950C763060C2A287CC /* MJRefreshBackFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackFooter.m; path = MJRefresh/Base/MJRefreshBackFooter.m; sourceTree = "<group>"; };
 		7458A8896ECC65773BABEBDAB62C0363 /* Date+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Extensions.swift"; path = "BYToolModule/BYToolModule/extension/Date+Extensions.swift"; sourceTree = "<group>"; };
@@ -327,7 +327,7 @@
 		87E21BF5F116B08B1A810783B046FA72 /* UIScrollView+MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+MJExtension.h"; path = "MJRefresh/UIScrollView+MJExtension.h"; sourceTree = "<group>"; };
 		8D67DE98062FA224DA1A873745BEE537 /* Pods-KidsNote-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KidsNote-dummy.m"; sourceTree = "<group>"; };
 		8E706F084D1C83B7A3E87480922E6901 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9A17FA3DE86DEBA6E48C6E494F47F872 /* FFCountDownButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FFCountDownButton.h; path = FFToolModule/FFToolModule/FF_CountDownButton/FFCountDownButton.h; sourceTree = "<group>"; };
 		9BA75A937812180BBF04364676A86012 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		9F3B4B14143F2C2C0AAA7AE775A55F55 /* UIColor+CZAddition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+CZAddition.h"; path = "FFToolModule/FFToolModule/FF_OC_Category/UIColor+CZAddition.h"; sourceTree = "<group>"; };
@@ -337,7 +337,7 @@
 		A4FC1A5529073410CA1748C5776EDBFC /* MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefresh.h; path = MJRefresh/MJRefresh.h; sourceTree = "<group>"; };
 		A5D3DB61054320D039EC41CA53F6DFF5 /* FFPassWordTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FFPassWordTool.h; path = FFToolModule/FFToolModule/FF_OC_Category/FFPassWordTool.h; sourceTree = "<group>"; };
 		A7479E5829E3220E4FB291FCB6DA4E12 /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshBackFooter.h; path = MJRefresh/Base/MJRefreshBackFooter.h; sourceTree = "<group>"; };
-		A87C4A02A4E22F9EF09F05AEFC26A18B /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBProgressHUD.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A87C4A02A4E22F9EF09F05AEFC26A18B /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9DC2E4BC9B17E1E4BF2FD297680539F /* UIView+CZAddition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+CZAddition.h"; path = "FFToolModule/FFToolModule/FF_OC_Category/UIView+CZAddition.h"; sourceTree = "<group>"; };
 		ABAC01CC28AE90DE4E5220C82B492EC4 /* FFCountDownButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FFCountDownButton.m; path = FFToolModule/FFToolModule/FF_CountDownButton/FFCountDownButton.m; sourceTree = "<group>"; };
 		ABF4D746C1932531B7EADC1F1F32B306 /* FFAlert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FFAlert.h; path = FFToolModule/FFToolModule/FF_Alert/FFAlert.h; sourceTree = "<group>"; };
@@ -408,7 +408,7 @@
 		F34CFA60C066E03159688CBF1ACAC446 /* NSBundle+MJRefresh.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+MJRefresh.m"; path = "MJRefresh/NSBundle+MJRefresh.m"; sourceTree = "<group>"; };
 		F3AEBF50887ED7750329EC79E925D6DF /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		F4C2A497A99164968C549CA76DD28E05 /* MJRefreshBackStateFooter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshBackStateFooter.m; path = MJRefresh/Custom/Footer/Back/MJRefreshBackStateFooter.m; sourceTree = "<group>"; };
-		F4D766A7F6BB17DBEBA1058E16A30C0A /* MJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MJRefresh.framework; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4D766A7F6BB17DBEBA1058E16A30C0A /* MJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F52F7A63B3DE3860D2BDB10005C32F87 /* NSBundle+MJRefresh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+MJRefresh.h"; path = "MJRefresh/NSBundle+MJRefresh.h"; sourceTree = "<group>"; };
 		F58CD02A1BEA2ACADE38545042F5E7B5 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		FB0FEFC519EC8144C8608365082124C7 /* UITextView+FFLimitCounter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextView+FFLimitCounter.h"; path = "FFToolModule/FFToolModule/FF_TextView_PlaceHolder/UITextView+FFLimitCounter.h"; sourceTree = "<group>"; };
@@ -570,7 +570,6 @@
 				04BCF9F6F5E9BE6A2B28E407A10C03E3 /* extension */,
 				BE4191CD77D8E5662FB4FE0FEA9BD38B /* Support Files */,
 			);
-			name = BYToolModule;
 			path = BYToolModule;
 			sourceTree = "<group>";
 		};
@@ -627,7 +626,6 @@
 				1CE73D248FD9D0E2E473B1520A2EDFE8 /* MBProgressHUD.m */,
 				2E7E3DD5695F649A5981A86DF256AB0A /* Support Files */,
 			);
-			name = MBProgressHUD;
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -744,7 +742,6 @@
 				9591F7A91AB1A32E44C5A4A13C203A76 /* FF_Wrong_Alert */,
 				32E93AFCCE8258CCDAAC1BD97439520C /* Support Files */,
 			);
-			name = FFToolModule;
 			path = FFToolModule;
 			sourceTree = "<group>";
 		};
@@ -791,7 +788,6 @@
 				EAAE01249EBF282BF7E0228C7666D90D /* UIView+SDAutoLayout.m */,
 				6678A388F12D077318614AF38BF6D7D4 /* Support Files */,
 			);
-			name = SDAutoLayout;
 			path = SDAutoLayout;
 			sourceTree = "<group>";
 		};
@@ -817,7 +813,6 @@
 				9BA75A937812180BBF04364676A86012 /* Validation.swift */,
 				1AD48EC62E83F9962D442B9370C2CC51 /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -866,7 +861,6 @@
 				5FA2045C14C3C840CF5914007C179F3F /* Resources */,
 				FD28759B6E1A1B7853596932EAA6059A /* Support Files */,
 			);
-			name = MJRefresh;
 			path = MJRefresh;
 			sourceTree = "<group>";
 		};
@@ -1139,7 +1133,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 0940;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1418,6 +1412,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
