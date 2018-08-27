@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         
-        let menuContrainer = FWSideMenuContainerViewController.container(centerViewController: FWTabBarController(), leftMenuViewController: RecentViewController(), rightMenuViewController:nil)
+        let menuContrainer = FWSideMenuContainerViewController.container(centerViewController: FWTabBarController(), leftMenuViewController: SideMenuViewController(), rightMenuViewController:nil)
         menuContrainer.leftMenuWidth = kMenuWidth
         
         self.window?.rootViewController = menuContrainer

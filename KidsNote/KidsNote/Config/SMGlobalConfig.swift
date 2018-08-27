@@ -42,7 +42,6 @@ let MTabBar_Height: CGFloat = FFAppDevicePulgin.toolBarHeight
 /**状态栏高度 */
 let MStatusBar_Height: CGFloat = FFAppDevicePulgin.statusBarHeight
 
-let SM_ROOTVC = (UIApplication.shared.keyWindow?.rootViewController! as! SMTabBarVC)
 let H3_FONT = UIFont.systemFont(ofSize: 15)
 let LINEW = 0.5
 let BANN_PI:CGFloat     = (300/375.0)//(H/W)

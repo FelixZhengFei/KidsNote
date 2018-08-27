@@ -10,12 +10,6 @@
 		7692BDC221339419007213AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDC121339419007213AE /* AppDelegate.swift */; };
 		7692BDCC2133941C007213AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7692BDCA2133941C007213AE /* LaunchScreen.storyboard */; };
 		7692BDD921339582007213AE /* SMGlobalConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDD821339582007213AE /* SMGlobalConfig.swift */; };
-		7692BDE2213395B1007213AE /* SMTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDDB213395B1007213AE /* SMTabBar.swift */; };
-		7692BDE3213395B1007213AE /* SMBaseMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDDC213395B1007213AE /* SMBaseMappable.swift */; };
-		7692BDE4213395B2007213AE /* SMNavgationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDDD213395B1007213AE /* SMNavgationVC.swift */; };
-		7692BDE6213395B2007213AE /* SMBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDDF213395B1007213AE /* SMBaseVC.swift */; };
-		7692BDE7213395B2007213AE /* SMNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDE0213395B1007213AE /* SMNavBarView.swift */; };
-		7692BDE8213395B2007213AE /* SMTabBar.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7692BDE1213395B1007213AE /* SMTabBar.plist */; };
 		7692BDED213395E9007213AE /* FWSideMenuContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDEA213395E8007213AE /* FWSideMenuContainerViewController.swift */; };
 		7692BDEE213395E9007213AE /* FWSideMenuShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDEB213395E8007213AE /* FWSideMenuShadow.swift */; };
 		7692BDEF213395E9007213AE /* UIViewController+FWSideMenuExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDEC213395E9007213AE /* UIViewController+FWSideMenuExtension.swift */; };
@@ -27,6 +21,15 @@
 		7692BDFB21339680007213AE /* SeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDFA21339680007213AE /* SeeViewController.swift */; };
 		7692BDFD213396D0007213AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7692BDFC213396D0007213AE /* Assets.xcassets */; };
 		7692BDFF213397BE007213AE /* QworldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDFE213397BE007213AE /* QworldViewController.swift */; };
+		7692BE0821339883007213AE /* SideMenuBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7692BE0121339882007213AE /* SideMenuBottomView.xib */; };
+		7692BE0921339883007213AE /* SideMenuBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BE0221339882007213AE /* SideMenuBottomView.swift */; };
+		7692BE0A21339883007213AE /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BE0321339883007213AE /* SideMenuTableViewCell.swift */; };
+		7692BE0B21339883007213AE /* SideMenuHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7692BE0421339883007213AE /* SideMenuHeaderView.xib */; };
+		7692BE0C21339883007213AE /* SideMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7692BE0521339883007213AE /* SideMenuTableViewCell.xib */; };
+		7692BE0D21339883007213AE /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BE0621339883007213AE /* SideMenuViewController.swift */; };
+		7692BE0E21339883007213AE /* SideMenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BE0721339883007213AE /* SideMenuHeaderView.swift */; };
+		7692BE10213398A1007213AE /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BE0F213398A0007213AE /* SubViewController.swift */; };
+		7692BE1221339947007213AE /* KNBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BE1121339947007213AE /* KNBaseVC.swift */; };
 		A684C5E42402FC1985840EA7 /* Pods_KidsNote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8331680565913DFA7118B8E0 /* Pods_KidsNote.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,12 +39,6 @@
 		7692BDCB2133941C007213AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7692BDCD2133941C007213AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7692BDD821339582007213AE /* SMGlobalConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMGlobalConfig.swift; sourceTree = "<group>"; };
-		7692BDDB213395B1007213AE /* SMTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMTabBar.swift; sourceTree = "<group>"; };
-		7692BDDC213395B1007213AE /* SMBaseMappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMBaseMappable.swift; sourceTree = "<group>"; };
-		7692BDDD213395B1007213AE /* SMNavgationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMNavgationVC.swift; sourceTree = "<group>"; };
-		7692BDDF213395B1007213AE /* SMBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMBaseVC.swift; sourceTree = "<group>"; };
-		7692BDE0213395B1007213AE /* SMNavBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMNavBarView.swift; sourceTree = "<group>"; };
-		7692BDE1213395B1007213AE /* SMTabBar.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SMTabBar.plist; sourceTree = "<group>"; };
 		7692BDEA213395E8007213AE /* FWSideMenuContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWSideMenuContainerViewController.swift; sourceTree = "<group>"; };
 		7692BDEB213395E8007213AE /* FWSideMenuShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWSideMenuShadow.swift; sourceTree = "<group>"; };
 		7692BDEC213395E9007213AE /* UIViewController+FWSideMenuExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+FWSideMenuExtension.swift"; sourceTree = "<group>"; };
@@ -53,6 +50,15 @@
 		7692BDFA21339680007213AE /* SeeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeeViewController.swift; sourceTree = "<group>"; };
 		7692BDFC213396D0007213AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7692BDFE213397BE007213AE /* QworldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QworldViewController.swift; sourceTree = "<group>"; };
+		7692BE0121339882007213AE /* SideMenuBottomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuBottomView.xib; sourceTree = "<group>"; };
+		7692BE0221339882007213AE /* SideMenuBottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuBottomView.swift; sourceTree = "<group>"; };
+		7692BE0321339883007213AE /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
+		7692BE0421339883007213AE /* SideMenuHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuHeaderView.xib; sourceTree = "<group>"; };
+		7692BE0521339883007213AE /* SideMenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuTableViewCell.xib; sourceTree = "<group>"; };
+		7692BE0621339883007213AE /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		7692BE0721339883007213AE /* SideMenuHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuHeaderView.swift; sourceTree = "<group>"; };
+		7692BE0F213398A0007213AE /* SubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
+		7692BE1121339947007213AE /* KNBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KNBaseVC.swift; sourceTree = "<group>"; };
 		8331680565913DFA7118B8E0 /* Pods_KidsNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KidsNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD718234B3A4A8A70F2D5D6E /* Pods-KidsNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KidsNote.release.xcconfig"; path = "Pods/Target Support Files/Pods-KidsNote/Pods-KidsNote.release.xcconfig"; sourceTree = "<group>"; };
 		FCBDC78A6D9C024D7FCCCA7E /* Pods-KidsNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KidsNote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KidsNote/Pods-KidsNote.debug.xcconfig"; sourceTree = "<group>"; };
@@ -124,10 +130,12 @@
 			isa = PBXGroup;
 			children = (
 				7692BDDA213395A3007213AE /* BaseView */,
+				7692BE0021339869007213AE /* SideMenuViewController */,
 				7692BDF621339660007213AE /* RecentViewController.swift */,
 				7692BDF82133966C007213AE /* BuddyViewController.swift */,
 				7692BDFE213397BE007213AE /* QworldViewController.swift */,
 				7692BDFA21339680007213AE /* SeeViewController.swift */,
+				7692BE0F213398A0007213AE /* SubViewController.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -159,12 +167,7 @@
 		7692BDDA213395A3007213AE /* BaseView */ = {
 			isa = PBXGroup;
 			children = (
-				7692BDDC213395B1007213AE /* SMBaseMappable.swift */,
-				7692BDDF213395B1007213AE /* SMBaseVC.swift */,
-				7692BDE0213395B1007213AE /* SMNavBarView.swift */,
-				7692BDDD213395B1007213AE /* SMNavgationVC.swift */,
-				7692BDE1213395B1007213AE /* SMTabBar.plist */,
-				7692BDDB213395B1007213AE /* SMTabBar.swift */,
+				7692BE1121339947007213AE /* KNBaseVC.swift */,
 				7692BDF12133960C007213AE /* FWNavigationController.swift */,
 				7692BDF22133960D007213AE /* FWTabBar.swift */,
 				7692BDF02133960C007213AE /* FWTabBarController.swift */,
@@ -180,6 +183,20 @@
 				7692BDEC213395E9007213AE /* UIViewController+FWSideMenuExtension.swift */,
 			);
 			path = FWSideMenu;
+			sourceTree = "<group>";
+		};
+		7692BE0021339869007213AE /* SideMenuViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7692BE0221339882007213AE /* SideMenuBottomView.swift */,
+				7692BE0121339882007213AE /* SideMenuBottomView.xib */,
+				7692BE0721339883007213AE /* SideMenuHeaderView.swift */,
+				7692BE0421339883007213AE /* SideMenuHeaderView.xib */,
+				7692BE0321339883007213AE /* SideMenuTableViewCell.swift */,
+				7692BE0521339883007213AE /* SideMenuTableViewCell.xib */,
+				7692BE0621339883007213AE /* SideMenuViewController.swift */,
+			);
+			path = SideMenuViewController;
 			sourceTree = "<group>";
 		};
 		8C64A6AC4736F775B0ABF073 /* Frameworks */ = {
@@ -251,8 +268,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7692BDE8213395B2007213AE /* SMTabBar.plist in Resources */,
+				7692BE0821339883007213AE /* SideMenuBottomView.xib in Resources */,
 				7692BDFD213396D0007213AE /* Assets.xcassets in Resources */,
+				7692BE0C21339883007213AE /* SideMenuTableViewCell.xib in Resources */,
+				7692BE0B21339883007213AE /* SideMenuHeaderView.xib in Resources */,
 				7692BDCC2133941C007213AE /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,20 +349,21 @@
 			files = (
 				7692BDF52133960D007213AE /* FWTabBar.swift in Sources */,
 				7692BDF42133960D007213AE /* FWNavigationController.swift in Sources */,
-				7692BDE4213395B2007213AE /* SMNavgationVC.swift in Sources */,
 				7692BDFF213397BE007213AE /* QworldViewController.swift in Sources */,
 				7692BDEF213395E9007213AE /* UIViewController+FWSideMenuExtension.swift in Sources */,
 				7692BDED213395E9007213AE /* FWSideMenuContainerViewController.swift in Sources */,
 				7692BDF721339660007213AE /* RecentViewController.swift in Sources */,
-				7692BDE2213395B1007213AE /* SMTabBar.swift in Sources */,
+				7692BE1221339947007213AE /* KNBaseVC.swift in Sources */,
+				7692BE0D21339883007213AE /* SideMenuViewController.swift in Sources */,
 				7692BDEE213395E9007213AE /* FWSideMenuShadow.swift in Sources */,
+				7692BE0921339883007213AE /* SideMenuBottomView.swift in Sources */,
 				7692BDC221339419007213AE /* AppDelegate.swift in Sources */,
-				7692BDE7213395B2007213AE /* SMNavBarView.swift in Sources */,
+				7692BE10213398A1007213AE /* SubViewController.swift in Sources */,
 				7692BDD921339582007213AE /* SMGlobalConfig.swift in Sources */,
 				7692BDFB21339680007213AE /* SeeViewController.swift in Sources */,
-				7692BDE6213395B2007213AE /* SMBaseVC.swift in Sources */,
+				7692BE0E21339883007213AE /* SideMenuHeaderView.swift in Sources */,
+				7692BE0A21339883007213AE /* SideMenuTableViewCell.swift in Sources */,
 				7692BDF92133966C007213AE /* BuddyViewController.swift in Sources */,
-				7692BDE3213395B1007213AE /* SMBaseMappable.swift in Sources */,
 				7692BDF32133960D007213AE /* FWTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
