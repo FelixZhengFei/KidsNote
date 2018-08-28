@@ -6,8 +6,9 @@
 //  Copyright © 2018年 郑强飞. All rights reserved.
 //
 
-#ifndef KDBridgeHeader_h
-#define KDBridgeHeader_h
-
-
-#endif /* KDBridgeHeader_h */
+#import "PIVoiceRecordView.h"
+#import "LGAudioPlayer.h"
+#import "LGVoiceRecorder.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <ReactiveCocoa/RACEXTScope.h>
+#import "PIVoiceRecordViewController.h"

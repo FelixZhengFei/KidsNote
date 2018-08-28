@@ -14,8 +14,15 @@ PODS:
   - FFToolModule/FF_OC_Category (1.1.8)
   - FFToolModule/FF_TextView_PlaceHolder (1.1.8)
   - FFToolModule/FF_Wrong_Alert (1.1.8)
+  - Masonry (1.0.2)
   - MBProgressHUD (1.1.0)
   - MJRefresh (3.1.15.3)
+  - ReactiveCocoa (2.1.8):
+    - ReactiveCocoa/Core (= 2.1.8)
+    - ReactiveCocoa/no-arc (= 2.1.8)
+  - ReactiveCocoa/Core (2.1.8):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.1.8)
   - SDAutoLayout (2.2.0)
   - SDWebImage (4.4.2):
     - SDWebImage/Core (= 4.4.2)
@@ -25,8 +32,10 @@ DEPENDENCIES:
   - Alamofire
   - BYToolModule
   - FFToolModule
+  - Masonry (~> 1.0.2)
   - MBProgressHUD
   - MJRefresh
+  - ReactiveCocoa (~> 2.1.8)
   - SDAutoLayout
   - SDWebImage
 
@@ -34,11 +43,13 @@ SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   BYToolModule: 9bd4603c1d92c7e4a8b1adb6723be3cf5d30c87d
   FFToolModule: 2e37e6c9a5d24ba87c966aff747ae30786924927
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
+  ReactiveCocoa: f89f2e009a87951b50321bf9feb958823fcc617e
   SDAutoLayout: c5509e77ae75735d9a39f7bc83dba6d3f75d49d8
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
 
-PODFILE CHECKSUM: d5b23d999cef40b7ab9008e54e558cd3c0c8d460
+PODFILE CHECKSUM: bd8cc3c9a9b3127c590baba9ae1cbfabe46d5e3f
 
 COCOAPODS: 1.4.0
