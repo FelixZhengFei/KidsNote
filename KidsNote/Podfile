@@ -9,6 +9,8 @@ pod 'SDAutoLayout'
 pod 'Alamofire'
 pod 'FFToolModule’
 pod 'BYToolModule’
+pod 'SDWebImage’
+
 
     use_frameworks!
 

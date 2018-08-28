@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76439E9E2133D56300F1C454 /* KDAppHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76439E9D2133D56300F1C454 /* KDAppHomeView.swift */; };
+		76439EA12133D57C00F1C454 /* KDAppHomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76439EA02133D57C00F1C454 /* KDAppHomeView.xib */; };
+		76439EA42133E24500F1C454 /* KDDuShuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76439EA32133E24500F1C454 /* KDDuShuVC.swift */; };
+		76439EA82133E2C100F1C454 /* KDDuSHuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76439EA62133E2C100F1C454 /* KDDuSHuCell.swift */; };
+		76439EA92133E2C100F1C454 /* KDDuSHuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76439EA72133E2C100F1C454 /* KDDuSHuCell.xib */; };
+		76439EAC2133E80000F1C454 /* KDDuShuDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76439EAA2133E80000F1C454 /* KDDuShuDetailVC.swift */; };
+		76439EAD2133E80000F1C454 /* KDDuShuDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76439EAB2133E80000F1C454 /* KDDuShuDetailVC.xib */; };
+		76439EB12133EDE600F1C454 /* SMWebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76439EB02133EDE600F1C454 /* SMWebVC.swift */; };
+		76439EB32133EE9100F1C454 /* SMWrongAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76439EB22133EE9100F1C454 /* SMWrongAlert.swift */; };
 		7692BDC221339419007213AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDC121339419007213AE /* AppDelegate.swift */; };
 		7692BDCC2133941C007213AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7692BDCA2133941C007213AE /* LaunchScreen.storyboard */; };
 		7692BDD921339582007213AE /* SMGlobalConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDD821339582007213AE /* SMGlobalConfig.swift */; };
@@ -36,6 +45,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		76439E9D2133D56300F1C454 /* KDAppHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDAppHomeView.swift; sourceTree = "<group>"; };
+		76439EA02133D57C00F1C454 /* KDAppHomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KDAppHomeView.xib; sourceTree = "<group>"; };
+		76439EA32133E24500F1C454 /* KDDuShuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDDuShuVC.swift; sourceTree = "<group>"; };
+		76439EA62133E2C100F1C454 /* KDDuSHuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDDuSHuCell.swift; sourceTree = "<group>"; };
+		76439EA72133E2C100F1C454 /* KDDuSHuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KDDuSHuCell.xib; sourceTree = "<group>"; };
+		76439EAA2133E80000F1C454 /* KDDuShuDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDDuShuDetailVC.swift; sourceTree = "<group>"; };
+		76439EAB2133E80000F1C454 /* KDDuShuDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KDDuShuDetailVC.xib; sourceTree = "<group>"; };
+		76439EB02133EDE600F1C454 /* SMWebVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMWebVC.swift; sourceTree = "<group>"; };
+		76439EB22133EE9100F1C454 /* SMWrongAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMWrongAlert.swift; sourceTree = "<group>"; };
 		7692BDBE21339419007213AE /* KidsNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KidsNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7692BDC121339419007213AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7692BDCB2133941C007213AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +81,7 @@
 		7692BE1121339947007213AE /* KNBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KNBaseVC.swift; sourceTree = "<group>"; };
 		7692BE1821339E73007213AE /* RecentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecentTableViewCell.xib; sourceTree = "<group>"; };
 		7692BE1921339E73007213AE /* RecentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentTableViewCell.swift; sourceTree = "<group>"; };
+		7692BE1C2133A5CF007213AE /* KDBridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KDBridgeHeader.h; sourceTree = "<group>"; };
 		8331680565913DFA7118B8E0 /* Pods_KidsNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KidsNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD718234B3A4A8A70F2D5D6E /* Pods-KidsNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KidsNote.release.xcconfig"; path = "Pods/Target Support Files/Pods-KidsNote/Pods-KidsNote.release.xcconfig"; sourceTree = "<group>"; };
 		FCBDC78A6D9C024D7FCCCA7E /* Pods-KidsNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KidsNote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KidsNote/Pods-KidsNote.debug.xcconfig"; sourceTree = "<group>"; };
@@ -87,6 +106,51 @@
 				BD718234B3A4A8A70F2D5D6E /* Pods-KidsNote.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		76439E9F2133D56C00F1C454 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				76439E9D2133D56300F1C454 /* KDAppHomeView.swift */,
+				76439EA02133D57C00F1C454 /* KDAppHomeView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		76439EA22133E13400F1C454 /* 读书 */ = {
+			isa = PBXGroup;
+			children = (
+				76439EAF2133E80900F1C454 /* List */,
+				76439EAE2133E80700F1C454 /* Detail */,
+			);
+			path = "读书";
+			sourceTree = "<group>";
+		};
+		76439EA52133E29C00F1C454 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				76439EA62133E2C100F1C454 /* KDDuSHuCell.swift */,
+				76439EA72133E2C100F1C454 /* KDDuSHuCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		76439EAE2133E80700F1C454 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				76439EAA2133E80000F1C454 /* KDDuShuDetailVC.swift */,
+				76439EAB2133E80000F1C454 /* KDDuShuDetailVC.xib */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		76439EAF2133E80900F1C454 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				76439EA52133E29C00F1C454 /* Cell */,
+				76439EA32133E24500F1C454 /* KDDuShuVC.swift */,
+			);
+			path = List;
 			sourceTree = "<group>";
 		};
 		7692BDB521339419007213AE = {
@@ -125,6 +189,8 @@
 		7692BDD321339513007213AE /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				76439EB22133EE9100F1C454 /* SMWrongAlert.swift */,
+				76439EB02133EDE600F1C454 /* SMWebVC.swift */,
 				7692BDE9213395DF007213AE /* FWSideMenu */,
 			);
 			path = Tools;
@@ -140,6 +206,7 @@
 				7692BE1421339D16007213AE /* 课程表 */,
 				7692BE1321339D13007213AE /* 动态 */,
 				7692BE0F213398A0007213AE /* SubViewController.swift */,
+				76439EA22133E13400F1C454 /* 读书 */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -155,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				7692BDD821339582007213AE /* SMGlobalConfig.swift */,
+				7692BE1C2133A5CF007213AE /* KDBridgeHeader.h */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -231,6 +299,7 @@
 		7692BE1621339D1C007213AE /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
+				76439E9F2133D56C00F1C454 /* View */,
 				7692BDF621339660007213AE /* KDAppHomeVC.swift */,
 			);
 			path = "首页";
@@ -314,11 +383,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76439EA92133E2C100F1C454 /* KDDuSHuCell.xib in Resources */,
 				7692BE0821339883007213AE /* SideMenuBottomView.xib in Resources */,
 				7692BDFD213396D0007213AE /* Assets.xcassets in Resources */,
+				76439EA12133D57C00F1C454 /* KDAppHomeView.xib in Resources */,
 				7692BE0C21339883007213AE /* SideMenuTableViewCell.xib in Resources */,
 				7692BE0B21339883007213AE /* SideMenuHeaderView.xib in Resources */,
 				7692BE1A21339E73007213AE /* RecentTableViewCell.xib in Resources */,
+				76439EAD2133E80000F1C454 /* KDDuShuDetailVC.xib in Resources */,
 				7692BDCC2133941C007213AE /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +411,7 @@
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/SDAutoLayout/SDAutoLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -348,6 +421,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDAutoLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -396,12 +470,17 @@
 			files = (
 				7692BDF52133960D007213AE /* FWTabBar.swift in Sources */,
 				7692BDF42133960D007213AE /* FWNavigationController.swift in Sources */,
+				76439E9E2133D56300F1C454 /* KDAppHomeView.swift in Sources */,
 				7692BDFF213397BE007213AE /* QworldViewController.swift in Sources */,
+				76439EB32133EE9100F1C454 /* SMWrongAlert.swift in Sources */,
 				7692BDEF213395E9007213AE /* UIViewController+FWSideMenuExtension.swift in Sources */,
 				7692BDED213395E9007213AE /* FWSideMenuContainerViewController.swift in Sources */,
 				7692BDF721339660007213AE /* KDAppHomeVC.swift in Sources */,
 				7692BE1221339947007213AE /* KNBaseVC.swift in Sources */,
 				7692BE0D21339883007213AE /* SideMenuViewController.swift in Sources */,
+				76439EAC2133E80000F1C454 /* KDDuShuDetailVC.swift in Sources */,
+				76439EA42133E24500F1C454 /* KDDuShuVC.swift in Sources */,
+				76439EA82133E2C100F1C454 /* KDDuSHuCell.swift in Sources */,
 				7692BDEE213395E9007213AE /* FWSideMenuShadow.swift in Sources */,
 				7692BE0921339883007213AE /* SideMenuBottomView.swift in Sources */,
 				7692BDC221339419007213AE /* AppDelegate.swift in Sources */,
@@ -413,6 +492,7 @@
 				7692BDF92133966C007213AE /* KDContactHomeVC.swift in Sources */,
 				7692BDF32133960D007213AE /* FWTabBarController.swift in Sources */,
 				7692BE1B21339E73007213AE /* RecentTableViewCell.swift in Sources */,
+				76439EB12133EDE600F1C454 /* SMWebVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,7 +630,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9854286B7Z;
+				DEVELOPMENT_TEAM = H928XCDSK5;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = KidsNote/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -559,6 +640,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = EE.KidsNote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = KidsNote/Config/KDBridgeHeader.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -570,7 +652,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9854286B7Z;
+				DEVELOPMENT_TEAM = H928XCDSK5;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = KidsNote/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -579,6 +662,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = EE.KidsNote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = KidsNote/Config/KDBridgeHeader.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

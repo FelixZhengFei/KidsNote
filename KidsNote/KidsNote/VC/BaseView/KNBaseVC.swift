@@ -19,6 +19,7 @@ class KNBaseVC: UIViewController {
             self.navigationItem.title = newValue
         }
     }
+    public var start_Y:CGFloat = MNavBar_H
     
     override func viewDidLoad() {
         super.viewDidLoad()
