@@ -22,14 +22,9 @@
 		7692BDED213395E9007213AE /* FWSideMenuContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDEA213395E8007213AE /* FWSideMenuContainerViewController.swift */; };
 		7692BDEE213395E9007213AE /* FWSideMenuShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDEB213395E8007213AE /* FWSideMenuShadow.swift */; };
 		7692BDEF213395E9007213AE /* UIViewController+FWSideMenuExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDEC213395E9007213AE /* UIViewController+FWSideMenuExtension.swift */; };
-		7692BDF32133960D007213AE /* FWTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDF02133960C007213AE /* FWTabBarController.swift */; };
 		7692BDF42133960D007213AE /* FWNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDF12133960C007213AE /* FWNavigationController.swift */; };
-		7692BDF52133960D007213AE /* FWTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDF22133960D007213AE /* FWTabBar.swift */; };
 		7692BDF721339660007213AE /* KDAppHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDF621339660007213AE /* KDAppHomeVC.swift */; };
-		7692BDF92133966C007213AE /* KDContactHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDF82133966C007213AE /* KDContactHomeVC.swift */; };
-		7692BDFB21339680007213AE /* KDSyllabusHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDFA21339680007213AE /* KDSyllabusHomeVC.swift */; };
 		7692BDFD213396D0007213AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7692BDFC213396D0007213AE /* Assets.xcassets */; };
-		7692BDFF213397BE007213AE /* QworldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDFE213397BE007213AE /* QworldViewController.swift */; };
 		7692BE0821339883007213AE /* SideMenuBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7692BE0121339882007213AE /* SideMenuBottomView.xib */; };
 		7692BE0921339883007213AE /* SideMenuBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BE0221339882007213AE /* SideMenuBottomView.swift */; };
 		7692BE0A21339883007213AE /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BE0321339883007213AE /* SideMenuTableViewCell.swift */; };
@@ -39,13 +34,12 @@
 		7692BE0E21339883007213AE /* SideMenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BE0721339883007213AE /* SideMenuHeaderView.swift */; };
 		7692BE10213398A1007213AE /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BE0F213398A0007213AE /* SubViewController.swift */; };
 		7692BE1221339947007213AE /* KNBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BE1121339947007213AE /* KNBaseVC.swift */; };
-		7692BE1A21339E73007213AE /* RecentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7692BE1821339E73007213AE /* RecentTableViewCell.xib */; };
-		7692BE1B21339E73007213AE /* RecentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BE1921339E73007213AE /* RecentTableViewCell.swift */; };
 		76A3608B213522DC00A6A738 /* PIVoiceRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A36083213522DA00A6A738 /* PIVoiceRecordView.m */; };
 		76A3608C213522DC00A6A738 /* LGAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A36084213522DA00A6A738 /* LGAudioPlayer.m */; };
 		76A3608D213522DC00A6A738 /* LGVoiceRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A36085213522DB00A6A738 /* LGVoiceRecorder.m */; };
 		76A3608E213522DC00A6A738 /* UIColor+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A36089213522DB00A6A738 /* UIColor+Addition.m */; };
 		76A36091213524A400A6A738 /* PIVoiceRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A3608F213524A400A6A738 /* PIVoiceRecordViewController.m */; };
+		76A360932135395500A6A738 /* EEImageBroweView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A360922135395500A6A738 /* EEImageBroweView.swift */; };
 		A684C5E42402FC1985840EA7 /* Pods_KidsNote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8331680565913DFA7118B8E0 /* Pods_KidsNote.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,14 +61,9 @@
 		7692BDEA213395E8007213AE /* FWSideMenuContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWSideMenuContainerViewController.swift; sourceTree = "<group>"; };
 		7692BDEB213395E8007213AE /* FWSideMenuShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWSideMenuShadow.swift; sourceTree = "<group>"; };
 		7692BDEC213395E9007213AE /* UIViewController+FWSideMenuExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+FWSideMenuExtension.swift"; sourceTree = "<group>"; };
-		7692BDF02133960C007213AE /* FWTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWTabBarController.swift; sourceTree = "<group>"; };
 		7692BDF12133960C007213AE /* FWNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWNavigationController.swift; sourceTree = "<group>"; };
-		7692BDF22133960D007213AE /* FWTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWTabBar.swift; sourceTree = "<group>"; };
 		7692BDF621339660007213AE /* KDAppHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDAppHomeVC.swift; sourceTree = "<group>"; };
-		7692BDF82133966C007213AE /* KDContactHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDContactHomeVC.swift; sourceTree = "<group>"; };
-		7692BDFA21339680007213AE /* KDSyllabusHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDSyllabusHomeVC.swift; sourceTree = "<group>"; };
 		7692BDFC213396D0007213AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7692BDFE213397BE007213AE /* QworldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QworldViewController.swift; sourceTree = "<group>"; };
 		7692BE0121339882007213AE /* SideMenuBottomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuBottomView.xib; sourceTree = "<group>"; };
 		7692BE0221339882007213AE /* SideMenuBottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuBottomView.swift; sourceTree = "<group>"; };
 		7692BE0321339883007213AE /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
@@ -84,8 +73,6 @@
 		7692BE0721339883007213AE /* SideMenuHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuHeaderView.swift; sourceTree = "<group>"; };
 		7692BE0F213398A0007213AE /* SubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
 		7692BE1121339947007213AE /* KNBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KNBaseVC.swift; sourceTree = "<group>"; };
-		7692BE1821339E73007213AE /* RecentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecentTableViewCell.xib; sourceTree = "<group>"; };
-		7692BE1921339E73007213AE /* RecentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentTableViewCell.swift; sourceTree = "<group>"; };
 		7692BE1C2133A5CF007213AE /* KDBridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KDBridgeHeader.h; sourceTree = "<group>"; };
 		76A36083213522DA00A6A738 /* PIVoiceRecordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIVoiceRecordView.m; sourceTree = "<group>"; };
 		76A36084213522DA00A6A738 /* LGAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGAudioPlayer.m; sourceTree = "<group>"; };
@@ -97,6 +84,7 @@
 		76A3608A213522DC00A6A738 /* LGAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGAudioPlayer.h; sourceTree = "<group>"; };
 		76A3608F213524A400A6A738 /* PIVoiceRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIVoiceRecordViewController.m; sourceTree = "<group>"; };
 		76A36090213524A400A6A738 /* PIVoiceRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIVoiceRecordViewController.h; sourceTree = "<group>"; };
+		76A360922135395500A6A738 /* EEImageBroweView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEImageBroweView.swift; sourceTree = "<group>"; };
 		8331680565913DFA7118B8E0 /* Pods_KidsNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KidsNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD718234B3A4A8A70F2D5D6E /* Pods-KidsNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KidsNote.release.xcconfig"; path = "Pods/Target Support Files/Pods-KidsNote/Pods-KidsNote.release.xcconfig"; sourceTree = "<group>"; };
 		FCBDC78A6D9C024D7FCCCA7E /* Pods-KidsNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KidsNote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KidsNote/Pods-KidsNote.debug.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +141,7 @@
 		76439EAE2133E80700F1C454 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				76A360922135395500A6A738 /* EEImageBroweView.swift */,
 				76439EAA2133E80000F1C454 /* KDDuShuDetailVC.swift */,
 				76439EAB2133E80000F1C454 /* KDDuShuDetailVC.xib */,
 				76A36090213524A400A6A738 /* PIVoiceRecordViewController.h */,
@@ -220,10 +209,6 @@
 				7692BDDA213395A3007213AE /* BaseView */,
 				7692BE0021339869007213AE /* SideMenuViewController */,
 				7692BE1621339D1C007213AE /* 首页 */,
-				7692BE1521339D19007213AE /* 联系人 */,
-				7692BE1421339D16007213AE /* 课程表 */,
-				7692BE1321339D13007213AE /* 动态 */,
-				7692BE0F213398A0007213AE /* SubViewController.swift */,
 				76439EA22133E13400F1C454 /* 读书 */,
 			);
 			path = VC;
@@ -257,10 +242,9 @@
 		7692BDDA213395A3007213AE /* BaseView */ = {
 			isa = PBXGroup;
 			children = (
+				7692BE0F213398A0007213AE /* SubViewController.swift */,
 				7692BE1121339947007213AE /* KNBaseVC.swift */,
 				7692BDF12133960C007213AE /* FWNavigationController.swift */,
-				7692BDF22133960D007213AE /* FWTabBar.swift */,
-				7692BDF02133960C007213AE /* FWTabBarController.swift */,
 			);
 			path = BaseView;
 			sourceTree = "<group>";
@@ -289,31 +273,6 @@
 			path = SideMenuViewController;
 			sourceTree = "<group>";
 		};
-		7692BE1321339D13007213AE /* 动态 */ = {
-			isa = PBXGroup;
-			children = (
-				7692BDFE213397BE007213AE /* QworldViewController.swift */,
-			);
-			path = "动态";
-			sourceTree = "<group>";
-		};
-		7692BE1421339D16007213AE /* 课程表 */ = {
-			isa = PBXGroup;
-			children = (
-				7692BE1721339E6B007213AE /* Cell */,
-				7692BDFA21339680007213AE /* KDSyllabusHomeVC.swift */,
-			);
-			path = "课程表";
-			sourceTree = "<group>";
-		};
-		7692BE1521339D19007213AE /* 联系人 */ = {
-			isa = PBXGroup;
-			children = (
-				7692BDF82133966C007213AE /* KDContactHomeVC.swift */,
-			);
-			path = "联系人";
-			sourceTree = "<group>";
-		};
 		7692BE1621339D1C007213AE /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
@@ -321,15 +280,6 @@
 				7692BDF621339660007213AE /* KDAppHomeVC.swift */,
 			);
 			path = "首页";
-			sourceTree = "<group>";
-		};
-		7692BE1721339E6B007213AE /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				7692BE1921339E73007213AE /* RecentTableViewCell.swift */,
-				7692BE1821339E73007213AE /* RecentTableViewCell.xib */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		76A36082213522C600A6A738 /* 录音 */ = {
@@ -422,7 +372,6 @@
 				76439EA12133D57C00F1C454 /* KDAppHomeView.xib in Resources */,
 				7692BE0C21339883007213AE /* SideMenuTableViewCell.xib in Resources */,
 				7692BE0B21339883007213AE /* SideMenuHeaderView.xib in Resources */,
-				7692BE1A21339E73007213AE /* RecentTableViewCell.xib in Resources */,
 				76439EAD2133E80000F1C454 /* KDDuShuDetailVC.xib in Resources */,
 				7692BDCC2133941C007213AE /* LaunchScreen.storyboard in Resources */,
 			);
@@ -505,10 +454,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7692BDF52133960D007213AE /* FWTabBar.swift in Sources */,
 				7692BDF42133960D007213AE /* FWNavigationController.swift in Sources */,
 				76439E9E2133D56300F1C454 /* KDAppHomeView.swift in Sources */,
-				7692BDFF213397BE007213AE /* QworldViewController.swift in Sources */,
 				76439EB32133EE9100F1C454 /* SMWrongAlert.swift in Sources */,
 				7692BDEF213395E9007213AE /* UIViewController+FWSideMenuExtension.swift in Sources */,
 				7692BDED213395E9007213AE /* FWSideMenuContainerViewController.swift in Sources */,
@@ -524,15 +471,12 @@
 				76A3608B213522DC00A6A738 /* PIVoiceRecordView.m in Sources */,
 				76A36091213524A400A6A738 /* PIVoiceRecordViewController.m in Sources */,
 				7692BDC221339419007213AE /* AppDelegate.swift in Sources */,
+				76A360932135395500A6A738 /* EEImageBroweView.swift in Sources */,
 				7692BE10213398A1007213AE /* SubViewController.swift in Sources */,
 				76A3608D213522DC00A6A738 /* LGVoiceRecorder.m in Sources */,
 				7692BDD921339582007213AE /* SMGlobalConfig.swift in Sources */,
-				7692BDFB21339680007213AE /* KDSyllabusHomeVC.swift in Sources */,
 				7692BE0E21339883007213AE /* SideMenuHeaderView.swift in Sources */,
 				7692BE0A21339883007213AE /* SideMenuTableViewCell.swift in Sources */,
-				7692BDF92133966C007213AE /* KDContactHomeVC.swift in Sources */,
-				7692BDF32133960D007213AE /* FWTabBarController.swift in Sources */,
-				7692BE1B21339E73007213AE /* RecentTableViewCell.swift in Sources */,
 				76439EB12133EDE600F1C454 /* SMWebVC.swift in Sources */,
 				76A3608E213522DC00A6A738 /* UIColor+Addition.m in Sources */,
 			);

@@ -11,15 +11,18 @@ import SDWebImage
 
 class KDDuShuDetailVC: KNBaseVC {
 
-    @IBOutlet weak var siImageView: UIImageView!
     @IBOutlet weak var luyinView: UIView!
+    fileprivate var borowView: EEImageBroweView!
+
+    
     var hasImage:Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "静夜思"
+        configShowImageView()
         configButtomview()
-        siImageView.sd_setImage(with: URL(string: "http://i65.tinypic.com/wgzrww.jpg"), placeholderImage: UIImage(named: "header"))
+//        siImageView.sd_setImage(with: URL(string: "http://i65.tinypic.com/wgzrww.jpg"), placeholderImage: UIImage(named: "header"))
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,6 +33,17 @@ class KDDuShuDetailVC: KNBaseVC {
         let vc = SMWebVC()
         vc.urlString  = "https://m.qbaobei.com/v/video_569.html"
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
+    /**配置UI*/
+    fileprivate func configShowImageView() {
+        let imageHeight = (MSC_HEIGHT - MNavBar_H - 160)
+        borowView = EEImageBroweView(frame: CGRect(x:10, y: 5, width: MSC_WIDTH - 20, height: imageHeight))
+        borowView.viewAddLayerCorner(cornerRadius: 5, UIColor.ff_HexColor(0x9681FC))
+        borowView.originImage = #imageLiteral(resourceName: "jingyeshi")
+        borowView.configImage()
+        self.view.addSubview(borowView)
     }
 
     func configButtomview() {

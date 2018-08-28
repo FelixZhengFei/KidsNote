@@ -20,6 +20,7 @@ class SMWebVC : KNBaseVC,WKNavigationDelegate,WKUIDelegate,WKScriptMessageHandle
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        start_Y = 0
         self.view.backgroundColor=UIColor.white
         configWebView()
         creatProgressView()

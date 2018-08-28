@@ -36,6 +36,13 @@ class KDAppHomeVC: KNBaseVC {
         buttonItem.imageInsets = UIEdgeInsetsMake(0, -6, 0, 0)
         self.navigationItem.leftBarButtonItem = buttonItem
         
+        let buttonItem2: UIBarButtonItem = UIBarButtonItem(image: UIImage(named: "mqz_nav_add"), style: .plain, target: self, action: #selector(rightBtnAction))
+        buttonItem2.imageInsets = UIEdgeInsetsMake(0, 0, 0, -6)
+        self.navigationItem.rightBarButtonItem = buttonItem2
+    }
+    
+    @objc func rightBtnAction() {
+        FFPrint("添加联系人")
     }
     
     @objc func leftBtnAction() {
