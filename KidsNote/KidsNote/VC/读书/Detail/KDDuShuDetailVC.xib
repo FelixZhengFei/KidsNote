@@ -163,30 +163,7 @@
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uOT-uY-fcN">
                     <rect key="frame" x="0.0" y="547" width="375" height="120"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="按住录音" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2H-U3-X2s">
-                            <rect key="frame" x="159" y="93" width="58" height="17"/>
-                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                            <color key="textColor" red="0.2627450980392157" green="0.51764705882352935" blue="0.75294117647058822" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFW-ya-oqO">
-                            <rect key="frame" x="163" y="43" width="50" height="50"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="50" id="M5t-3r-B8m"/>
-                                <constraint firstAttribute="width" constant="50" id="hwb-ah-V66"/>
-                            </constraints>
-                            <state key="normal" image="luyin_btn"/>
-                            <state key="highlighted" image="luyin_btn"/>
-                        </button>
-                    </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstItem="BFW-ya-oqO" firstAttribute="centerX" secondItem="uOT-uY-fcN" secondAttribute="centerX" id="7jK-bo-1nY"/>
-                        <constraint firstItem="n2H-U3-X2s" firstAttribute="top" secondItem="BFW-ya-oqO" secondAttribute="bottom" id="MzM-1K-L7b"/>
-                        <constraint firstAttribute="bottom" secondItem="n2H-U3-X2s" secondAttribute="bottom" constant="10" id="U94-MY-CgO"/>
-                        <constraint firstItem="n2H-U3-X2s" firstAttribute="centerX" secondItem="uOT-uY-fcN" secondAttribute="centerX" id="sA6-Bf-AUS"/>
-                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -209,7 +186,6 @@
     <resources>
         <image name="bofang" width="64" height="64"/>
         <image name="goto_btn" width="32" height="32"/>
-        <image name="luyin_btn" width="64" height="64"/>
         <image name="take_phote" width="70" height="64"/>
     </resources>
 </document>
