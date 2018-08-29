@@ -91,7 +91,11 @@
 		76A230BB213550F900A3695A /* WHWeatherSnowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A23082213550F900A3695A /* WHWeatherSnowView.m */; };
 		76A230BC213550F900A3695A /* WHWeatherView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A23084213550F900A3695A /* WHWeatherView.m */; };
 		76A230C521365DA800A3695A /* KDJieQiListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A230C321365DA800A3695A /* KDJieQiListVC.swift */; };
-		76A230C621365DA800A3695A /* KDJieQiListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76A230C421365DA800A3695A /* KDJieQiListVC.xib */; };
+		76A230CC213669CE00A3695A /* KDShijHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A230CA213669CE00A3695A /* KDShijHomeCell.swift */; };
+		76A230CD213669CE00A3695A /* KDShijHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76A230CB213669CE00A3695A /* KDShijHomeCell.xib */; };
+		76A230CF21366C9500A3695A /* SMBaseMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A230CE21366C9500A3695A /* SMBaseMappable.swift */; };
+		76A230D121366C9C00A3695A /* KDShiJieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A230D021366C9C00A3695A /* KDShiJieModel.swift */; };
+		76A230D5213670BC00A3695A /* jieqiinfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 76A230D4213670BC00A3695A /* jieqiinfo.plist */; };
 		76A3608B213522DC00A6A738 /* PIVoiceRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A36083213522DA00A6A738 /* PIVoiceRecordView.m */; };
 		76A3608C213522DC00A6A738 /* LGAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A36084213522DA00A6A738 /* LGAudioPlayer.m */; };
 		76A3608D213522DC00A6A738 /* LGVoiceRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A36085213522DB00A6A738 /* LGVoiceRecorder.m */; };
@@ -197,7 +201,11 @@
 		76A23083213550F900A3695A /* WHWeatherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHWeatherView.h; sourceTree = "<group>"; };
 		76A23084213550F900A3695A /* WHWeatherView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHWeatherView.m; sourceTree = "<group>"; };
 		76A230C321365DA800A3695A /* KDJieQiListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDJieQiListVC.swift; sourceTree = "<group>"; };
-		76A230C421365DA800A3695A /* KDJieQiListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KDJieQiListVC.xib; sourceTree = "<group>"; };
+		76A230CA213669CE00A3695A /* KDShijHomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDShijHomeCell.swift; sourceTree = "<group>"; };
+		76A230CB213669CE00A3695A /* KDShijHomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KDShijHomeCell.xib; sourceTree = "<group>"; };
+		76A230CE21366C9500A3695A /* SMBaseMappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMBaseMappable.swift; sourceTree = "<group>"; };
+		76A230D021366C9C00A3695A /* KDShiJieModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDShiJieModel.swift; sourceTree = "<group>"; };
+		76A230D4213670BC00A3695A /* jieqiinfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = jieqiinfo.plist; sourceTree = "<group>"; };
 		76A36083213522DA00A6A738 /* PIVoiceRecordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIVoiceRecordView.m; sourceTree = "<group>"; };
 		76A36084213522DA00A6A738 /* LGAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGAudioPlayer.m; sourceTree = "<group>"; };
 		76A36085213522DB00A6A738 /* LGVoiceRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGVoiceRecorder.m; sourceTree = "<group>"; };
@@ -343,6 +351,7 @@
 		7692BDD521339521007213AE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				76A230D021366C9C00A3695A /* KDShiJieModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -352,6 +361,7 @@
 			children = (
 				7692BDD821339582007213AE /* SMGlobalConfig.swift */,
 				7692BE1C2133A5CF007213AE /* KDBridgeHeader.h */,
+				76A230D4213670BC00A3695A /* jieqiinfo.plist */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -370,6 +380,7 @@
 			children = (
 				7692BE0F213398A0007213AE /* SubViewController.swift */,
 				7692BE1121339947007213AE /* KNBaseVC.swift */,
+				76A230CE21366C9500A3695A /* SMBaseMappable.swift */,
 				7692BDF12133960C007213AE /* FWNavigationController.swift */,
 			);
 			path = BaseView;
@@ -546,10 +557,35 @@
 		76A230BD21364BB200A3695A /* 节气 */ = {
 			isa = PBXGroup;
 			children = (
-				76A230C321365DA800A3695A /* KDJieQiListVC.swift */,
-				76A230C421365DA800A3695A /* KDJieQiListVC.xib */,
+				76A230C72136688B00A3695A /* List */,
+				76A230C82136689400A3695A /* Detail */,
 			);
 			path = "节气";
+			sourceTree = "<group>";
+		};
+		76A230C72136688B00A3695A /* List */ = {
+			isa = PBXGroup;
+			children = (
+				76A230C9213669AD00A3695A /* Cell */,
+				76A230C321365DA800A3695A /* KDJieQiListVC.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		76A230C82136689400A3695A /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		76A230C9213669AD00A3695A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				76A230CA213669CE00A3695A /* KDShijHomeCell.swift */,
+				76A230CB213669CE00A3695A /* KDShijHomeCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		76A36082213522C600A6A738 /* 录音 */ = {
@@ -640,6 +676,7 @@
 				76A230B9213550F900A3695A /* ele_sunnyBirdInvertedImage8.png in Resources */,
 				76439EA92133E2C100F1C454 /* KDDuSHuCell.xib in Resources */,
 				76A2308E213550F900A3695A /* ele_sunnyNightWave1.png in Resources */,
+				76A230D5213670BC00A3695A /* jieqiinfo.plist in Resources */,
 				76A2309B213550F900A3695A /* ele_sunnySunshine.png in Resources */,
 				76A2308A213550F900A3695A /* ele_sunnyBird6.png in Resources */,
 				76A230A7213550F900A3695A /* ele_sunnyCloud2.png in Resources */,
@@ -665,8 +702,8 @@
 				76A230AD213550F900A3695A /* ele_white_cloud_7.png in Resources */,
 				7692BE0C21339883007213AE /* SideMenuTableViewCell.xib in Resources */,
 				76A23092213550F900A3695A /* ele_sunnyBird4.png in Resources */,
+				76A230CD213669CE00A3695A /* KDShijHomeCell.xib in Resources */,
 				76A230AF213550F900A3695A /* ele_white_cloud_4.png in Resources */,
-				76A230C621365DA800A3695A /* KDJieQiListVC.xib in Resources */,
 				76A230A8213550F900A3695A /* ele_sunnyNightFirefly.png in Resources */,
 				76A230B2213550F900A3695A /* ele_white_cloud_3.png in Resources */,
 				76A230AC213550F900A3695A /* ele_white_cloud_6.png in Resources */,
@@ -779,6 +816,7 @@
 				76A23087213550F900A3695A /* WHWeatherRainView.m in Sources */,
 				76439EB32133EE9100F1C454 /* SMWrongAlert.swift in Sources */,
 				7692BDEF213395E9007213AE /* UIViewController+FWSideMenuExtension.swift in Sources */,
+				76A230CC213669CE00A3695A /* KDShijHomeCell.swift in Sources */,
 				7692BDED213395E9007213AE /* FWSideMenuContainerViewController.swift in Sources */,
 				7692BDF721339660007213AE /* KDAppHomeVC.swift in Sources */,
 				7692BE1221339947007213AE /* KNBaseVC.swift in Sources */,
@@ -792,11 +830,13 @@
 				76A3608C213522DC00A6A738 /* LGAudioPlayer.m in Sources */,
 				7692BDEE213395E9007213AE /* FWSideMenuShadow.swift in Sources */,
 				7692BE0921339883007213AE /* SideMenuBottomView.swift in Sources */,
+				76A230D121366C9C00A3695A /* KDShiJieModel.swift in Sources */,
 				76A3608B213522DC00A6A738 /* PIVoiceRecordView.m in Sources */,
 				76A36091213524A400A6A738 /* PIVoiceRecordViewController.m in Sources */,
 				7692BDC221339419007213AE /* AppDelegate.swift in Sources */,
 				76A230BC213550F900A3695A /* WHWeatherView.m in Sources */,
 				76A360932135395500A6A738 /* EEImageBroweView.swift in Sources */,
+				76A230CF21366C9500A3695A /* SMBaseMappable.swift in Sources */,
 				7692BE10213398A1007213AE /* SubViewController.swift in Sources */,
 				76A3608D213522DC00A6A738 /* LGVoiceRecorder.m in Sources */,
 				76A230BB213550F900A3695A /* WHWeatherSnowView.m in Sources */,

@@ -12,13 +12,18 @@ import BYToolModule
 class KDAppHomeView: UIView,FFLoadXibProtocol {
     
     var dusShuBlcock:(() -> Void)?
-    
+    var shijieBlcock:(() -> Void)? //24时节
+
     override func awakeFromNib() {
         
     }
     
     @IBAction func duShuButtonClicked(_ sender: Any) {
         dusShuBlcock!()
+    }
+    @IBAction func shijieButtonClicked(_ sender: Any) {
+        shijieBlcock!()
+
     }
     
 //    override init(frame: CGRect) {

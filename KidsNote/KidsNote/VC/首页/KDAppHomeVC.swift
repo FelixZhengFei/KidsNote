@@ -34,7 +34,9 @@ class KDAppHomeVC: KNBaseVC {
         homeView.dusShuBlcock = {
             weakSelf?.dushuButtonCcliekd()
         }
-        
+        homeView.shijieBlcock = {
+            weakSelf?.shijieButtonClecked()
+        }
         let buttonItem: UIBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu"), style: .plain, target: self, action: #selector(leftBtnAction))
         buttonItem.imageInsets = UIEdgeInsetsMake(0, -6, 0, 0)
         self.navigationItem.leftBarButtonItem = buttonItem
@@ -52,8 +54,16 @@ class KDAppHomeVC: KNBaseVC {
         self.menuContainerViewController.toggleLeftSideMenu(completeBolck: nil)
     }
 
+    /**古诗列表*/
     fileprivate func dushuButtonCcliekd() {
         self.navigationController?.pushViewController(KDDuShuVC(), animated: true)
+    }
+    
+    /**24时节*/
+    fileprivate func shijieButtonClecked() {
+        self.navigationController?.pushViewController(KDJieQiListVC(), animated: true)
+
+        
     }
     
 }
