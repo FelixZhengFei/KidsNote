@@ -7,14 +7,12 @@
 //
 
 import UIKit
+import WebKit
 
 class KDJieQiDetailVC: KNBaseVC {
-
-    @IBOutlet weak var deicbleLabel: UILabel!
+    
     @IBOutlet weak var bgImageView: UIImageView!
     public var currentModel:KDShiJieModel!
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,33 +20,22 @@ class KDJieQiDetailVC: KNBaseVC {
         bgImageView.image = UIImage(named: "\(currentModel.imageName!)")
         updateCell()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-}
-
-extension KDJieQiDetailVC {
-
     fileprivate func updateCell() {
-        let jiJieType = currentModel.type ?? "1"
-        var decibelString = ""
-        if jiJieType == "1" {
-decibelString = currentModel.detailText ?? ""
-//            deicbleLabel.text = decibelString
-        
-
-        let paraph = NSMutableParagraphStyle()
-        //将行间距设置为28
-        paraph.lineSpacing = 10
-        //样式属性集合
-        let attributes = [kCTFontAttributeName:UIFont.systemFont(ofSize:17),kCTParagraphStyleAttributeName: paraph]
-        deicbleLabel.attributedText = NSAttributedString(string: decibelString, attributes: attributes as [NSAttributedStringKey : Any])
-        
-        
-        
+        let type = currentModel.type ?? "1"
+        if let path = Bundle.main.path(forResource: "shijie_html_\(type).html", ofType: nil) {
+            let urlStr = URL(fileURLWithPath: path)
+            let webView = WKWebView(frame: CGRect(x: 0, y: 0, width: MSC_WIDTH, height:MSC_HEIGHT -  MNavBar_H))
+            webView.load(URLRequest(url:urlStr))
+            webView.scrollView.showsVerticalScrollIndicator = false
+            self.view.addSubview(webView)
+            webView.alpha = 0.75
+            webView.backgroundColor = UIColor.clear
         }
-        
     }
 }
+
