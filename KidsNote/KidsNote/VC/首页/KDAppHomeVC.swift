@@ -11,6 +11,7 @@ import UIKit
 
 class KDAppHomeVC: KNBaseVC {
     fileprivate lazy var homeView = KDAppHomeView.ff_LoadXib()
+    fileprivate lazy var  weatherView = WHWeatherView()
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -21,6 +22,8 @@ class KDAppHomeVC: KNBaseVC {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
         self.title = "首页"
+        self.navigationController?.navigationBar.isHidden = true
+        configWeatherView()
         configViews()
     }
     
@@ -55,3 +58,14 @@ class KDAppHomeVC: KNBaseVC {
     
 }
 
+extension KDAppHomeVC {
+    fileprivate func configWeatherView() {
+        self.weatherView.weatherBackImageView.image = UIImage(named: "sun_0")
+        self.weatherView.weatherBackImageView.frame = CGRect(x: 0, y: 0, width: MSC_WIDTH, height: MSC_HEIGHT)
+        self.view.addSubview(self.weatherView.weatherBackImageView)
+        self.weatherView.frame = CGRect(x: 0, y: 0, width: MSC_WIDTH, height: MSC_HEIGHT)
+        self.weatherView.showWeatherAnimation(with: .sun)
+        self.view.addSubview(self.weatherView)
+    }
+    
+}

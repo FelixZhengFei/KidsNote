@@ -12,3 +12,6 @@
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import <ReactiveCocoa/RACEXTScope.h>
 #import "PIVoiceRecordViewController.h"
+#import "WHWeatherView.h"
+#import "WHWeatherHeader.h"
+
