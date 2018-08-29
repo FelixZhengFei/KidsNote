@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KDJieQiDetailVC" customModule="KidsNote" customModuleProvider="target">
+            <connections>
+                <outlet property="bgImageView" destination="GFf-lR-gHz" id="bao-tZ-MFG"/>
+                <outlet property="deicbleLabel" destination="m2I-GN-hH3" id="347-6v-VWD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jieqi_1" translatesAutoresizingMaskIntoConstraints="NO" id="GFf-lR-gHz">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <visualEffectView alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YlU-ol-zbd">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="O9A-vH-uEK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="extraLight"/>
+                </visualEffectView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wad-zS-mfS">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </scrollView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2I-GN-hH3">
+                    <rect key="frame" x="30" y="60" width="315" height="258"/>
+                    <string key="text">二十四节气，于中国先秦时期就已经订立、到汉代完全确立的用来指导农事的补充历法，是通过观察太阳周年运动，认知一年中时令、气候、物候等方面变化规律所形成的知识体系。它把太阳周年运动轨迹划分为24等份，每一等份为一个节气，始于立春，终于大寒，周而复始，既是历代官府颁布的时间准绳，也是指导农业生产的指南针，日常生活中人们预知冷暖雪雨的指南针，是中华民族劳动人民长期经验的积累成果和智慧的结晶</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="YlU-ol-zbd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="7Fn-hA-YCf"/>
+                <constraint firstItem="GFf-lR-gHz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7Th-Ev-R1l"/>
+                <constraint firstAttribute="bottom" secondItem="YlU-ol-zbd" secondAttribute="bottom" id="9Ci-kQ-Oss"/>
+                <constraint firstAttribute="bottom" secondItem="Wad-zS-mfS" secondAttribute="bottom" id="DeK-Z5-axg"/>
+                <constraint firstItem="Wad-zS-mfS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ee6-Pi-NAB"/>
+                <constraint firstItem="GFf-lR-gHz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="EeE-RF-HyP"/>
+                <constraint firstItem="m2I-GN-hH3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="MDB-Ta-v94"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="m2I-GN-hH3" secondAttribute="trailing" constant="30" id="MZE-A1-oGP"/>
+                <constraint firstItem="YlU-ol-zbd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NNI-vJ-2G9"/>
+                <constraint firstAttribute="trailing" secondItem="YlU-ol-zbd" secondAttribute="trailing" id="bmH-Um-11O"/>
+                <constraint firstAttribute="bottom" secondItem="GFf-lR-gHz" secondAttribute="bottom" id="hVe-vD-NsA"/>
+                <constraint firstItem="m2I-GN-hH3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="iOd-jB-xPc"/>
+                <constraint firstItem="Wad-zS-mfS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jVe-kI-aHg"/>
+                <constraint firstAttribute="trailing" secondItem="Wad-zS-mfS" secondAttribute="trailing" id="rgN-qj-o7x"/>
+                <constraint firstAttribute="trailing" secondItem="GFf-lR-gHz" secondAttribute="trailing" id="uKq-SD-vMs"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="jieqi_1" width="375" height="667"/>
+    </resources>
+</document>

@@ -14,5 +14,6 @@ class KDShiJieModel: SMBaseMappable {
     var imageName:String? //背景图片
     var seasonImage:String? //季节图片
     var startTime:String? //时间
+    var detailText:String? //时间
 
 }

@@ -61,7 +61,9 @@ extension KDJieQiListVC:UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.navigationController?.pushViewController(KDDuShuDetailVC(), animated: true)
+        let vc = KDJieQiDetailVC()
+        vc.currentModel = dataSourceArray[indexPath.row]
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
