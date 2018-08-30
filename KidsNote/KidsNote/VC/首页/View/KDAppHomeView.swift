@@ -11,6 +11,10 @@ import BYToolModule
 
 class KDAppHomeView: UIView,FFLoadXibProtocol {
     
+    @IBOutlet weak var cityLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var wenduLabel: UILabel!
+    
     var dusShuBlcock:(() -> Void)?
     var shijieBlcock:(() -> Void)? //24时节
 

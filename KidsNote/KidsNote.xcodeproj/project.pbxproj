@@ -122,6 +122,9 @@
 		76A2310B2136932C00A3695A /* shijie_html_15.html in Resources */ = {isa = PBXBuildFile; fileRef = 76A230F42136932B00A3695A /* shijie_html_15.html */; };
 		76A2310C2136932C00A3695A /* shijie_html_9.html in Resources */ = {isa = PBXBuildFile; fileRef = 76A230F52136932B00A3695A /* shijie_html_9.html */; };
 		76A2310D2136932C00A3695A /* shijie_html_19.html in Resources */ = {isa = PBXBuildFile; fileRef = 76A230F62136932C00A3695A /* shijie_html_19.html */; };
+		76A2310F21378EC100A3695A /* FFLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A2310E21378EC100A3695A /* FFLocationManager.swift */; };
+		76A2311121378F1C00A3695A /* FFMemoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A2311021378F1B00A3695A /* FFMemoryManager.swift */; };
+		76A23113213795A800A3695A /* SMNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A23112213795A800A3695A /* SMNetworkManager.swift */; };
 		76A3608B213522DC00A6A738 /* PIVoiceRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A36083213522DA00A6A738 /* PIVoiceRecordView.m */; };
 		76A3608C213522DC00A6A738 /* LGAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A36084213522DA00A6A738 /* LGAudioPlayer.m */; };
 		76A3608D213522DC00A6A738 /* LGVoiceRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A36085213522DB00A6A738 /* LGVoiceRecorder.m */; };
@@ -258,6 +261,9 @@
 		76A230F42136932B00A3695A /* shijie_html_15.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = shijie_html_15.html; sourceTree = "<group>"; };
 		76A230F52136932B00A3695A /* shijie_html_9.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = shijie_html_9.html; sourceTree = "<group>"; };
 		76A230F62136932C00A3695A /* shijie_html_19.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = shijie_html_19.html; sourceTree = "<group>"; };
+		76A2310E21378EC100A3695A /* FFLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFLocationManager.swift; sourceTree = "<group>"; };
+		76A2311021378F1B00A3695A /* FFMemoryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFMemoryManager.swift; sourceTree = "<group>"; };
+		76A23112213795A800A3695A /* SMNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMNetworkManager.swift; sourceTree = "<group>"; };
 		76A36083213522DA00A6A738 /* PIVoiceRecordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIVoiceRecordView.m; sourceTree = "<group>"; };
 		76A36084213522DA00A6A738 /* LGAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGAudioPlayer.m; sourceTree = "<group>"; };
 		76A36085213522DB00A6A738 /* LGVoiceRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGVoiceRecorder.m; sourceTree = "<group>"; };
@@ -383,6 +389,9 @@
 				76A36082213522C600A6A738 /* 录音 */,
 				76439EB22133EE9100F1C454 /* SMWrongAlert.swift */,
 				76439EB02133EDE600F1C454 /* SMWebVC.swift */,
+				76A2310E21378EC100A3695A /* FFLocationManager.swift */,
+				76A2311021378F1B00A3695A /* FFMemoryManager.swift */,
+				76A23112213795A800A3695A /* SMNetworkManager.swift */,
 				7692BDE9213395DF007213AE /* FWSideMenu */,
 			);
 			path = Tools;
@@ -864,6 +873,7 @@
 				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/SDAutoLayout/SDAutoLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyUserDefaults/SwiftyUserDefaults.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -876,6 +886,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDAutoLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyUserDefaults.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -936,6 +947,7 @@
 				76A23085213550F900A3695A /* WHWeatherSunView.m in Sources */,
 				76439EA42133E24500F1C454 /* KDDuShuVC.swift in Sources */,
 				76A230C521365DA800A3695A /* KDJieQiListVC.swift in Sources */,
+				76A2311121378F1C00A3695A /* FFMemoryManager.swift in Sources */,
 				76A230D82136747800A3695A /* KDJieQiDetailVC.swift in Sources */,
 				76A23088213550F900A3695A /* WHWeatherLightingView.m in Sources */,
 				76439EA82133E2C100F1C454 /* KDDuSHuCell.swift in Sources */,
@@ -943,6 +955,7 @@
 				7692BDEE213395E9007213AE /* FWSideMenuShadow.swift in Sources */,
 				7692BE0921339883007213AE /* SideMenuBottomView.swift in Sources */,
 				76A230D121366C9C00A3695A /* KDShiJieModel.swift in Sources */,
+				76A23113213795A800A3695A /* SMNetworkManager.swift in Sources */,
 				76A3608B213522DC00A6A738 /* PIVoiceRecordView.m in Sources */,
 				76A36091213524A400A6A738 /* PIVoiceRecordViewController.m in Sources */,
 				7692BDC221339419007213AE /* AppDelegate.swift in Sources */,
@@ -952,6 +965,7 @@
 				7692BE10213398A1007213AE /* SubViewController.swift in Sources */,
 				76A3608D213522DC00A6A738 /* LGVoiceRecorder.m in Sources */,
 				76A230BB213550F900A3695A /* WHWeatherSnowView.m in Sources */,
+				76A2310F21378EC100A3695A /* FFLocationManager.swift in Sources */,
 				7692BDD921339582007213AE /* SMGlobalConfig.swift in Sources */,
 				7692BE0E21339883007213AE /* SideMenuHeaderView.swift in Sources */,
 				76A23089213550F900A3695A /* WHWeatherBaseView.m in Sources */,

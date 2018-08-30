@@ -24,20 +24,38 @@
                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MUZ-Kw-x6g">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                                     <subviews>
-                                        <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12月11日 星期日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Fh-vZ-b1E">
-                                            <rect key="frame" x="119" y="90" width="137" height="19"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="杭州" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXB-Ks-wm4">
+                                            <rect key="frame" x="163" y="40" width="49" height="29"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12月11日 星期日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Fh-vZ-b1E">
+                                            <rect key="frame" x="136" y="79" width="103" height="17"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" red="1" green="0.50980392159999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="温度 29～34" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8H-BH-psk">
+                                            <rect key="frame" x="141.5" y="106" width="92.5" height="19.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
+                                        <constraint firstItem="M8H-BH-psk" firstAttribute="top" secondItem="4Fh-vZ-b1E" secondAttribute="bottom" constant="10" id="2av-4X-foa"/>
+                                        <constraint firstItem="PXB-Ks-wm4" firstAttribute="centerX" secondItem="MUZ-Kw-x6g" secondAttribute="centerX" id="Cj4-wV-yEu"/>
+                                        <constraint firstItem="4Fh-vZ-b1E" firstAttribute="centerX" secondItem="MUZ-Kw-x6g" secondAttribute="centerX" id="Ivu-4f-QGX"/>
+                                        <constraint firstItem="M8H-BH-psk" firstAttribute="centerX" secondItem="MUZ-Kw-x6g" secondAttribute="centerX" id="NNQ-EY-AT5"/>
                                         <constraint firstAttribute="height" constant="200" id="Ub8-Ga-Keq"/>
+                                        <constraint firstItem="PXB-Ks-wm4" firstAttribute="top" secondItem="MUZ-Kw-x6g" secondAttribute="top" constant="40" id="WCo-Ou-S8a"/>
+                                        <constraint firstItem="4Fh-vZ-b1E" firstAttribute="top" secondItem="PXB-Ks-wm4" secondAttribute="bottom" constant="10" id="qUa-63-Bdy"/>
                                     </constraints>
                                 </view>
-                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cAf-r9-YtS">
+                                <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cAf-r9-YtS">
                                     <rect key="frame" x="0.0" y="200" width="375" height="467"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x6h-2K-Vld">
@@ -197,6 +215,11 @@
                 <constraint firstAttribute="trailing" secondItem="ZDS-Nv-xZI" secondAttribute="trailing" id="o0q-Vi-0HY"/>
                 <constraint firstItem="ZDS-Nv-xZI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sQr-NP-E1b"/>
             </constraints>
+            <connections>
+                <outlet property="cityLabel" destination="PXB-Ks-wm4" id="Dwc-WX-Mdw"/>
+                <outlet property="timeLabel" destination="4Fh-vZ-b1E" id="bLb-27-Eqm"/>
+                <outlet property="wenduLabel" destination="M8H-BH-psk" id="zlW-aQ-ZXR"/>
+            </connections>
             <point key="canvasLocation" x="24.5" y="51.5"/>
         </view>
     </objects>

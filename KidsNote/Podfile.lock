@@ -27,6 +27,7 @@ PODS:
   - SDWebImage (4.4.2):
     - SDWebImage/Core (= 4.4.2)
   - SDWebImage/Core (4.4.2)
+  - SwiftyUserDefaults (3.0.1)
 
 DEPENDENCIES:
   - Alamofire
@@ -38,6 +39,7 @@ DEPENDENCIES:
   - ReactiveCocoa (~> 2.1.8)
   - SDAutoLayout
   - SDWebImage
+  - SwiftyUserDefaults
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
@@ -49,7 +51,8 @@ SPEC CHECKSUMS:
   ReactiveCocoa: f89f2e009a87951b50321bf9feb958823fcc617e
   SDAutoLayout: c5509e77ae75735d9a39f7bc83dba6d3f75d49d8
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  SwiftyUserDefaults: 3d273b1739b68ada3145dc754a70ec775bc5c8be
 
-PODFILE CHECKSUM: bd8cc3c9a9b3127c590baba9ae1cbfabe46d5e3f
+PODFILE CHECKSUM: cce5a250519356a9679ce738ca7e412fbe331c5d
 
 COCOAPODS: 1.4.0

@@ -21,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         menuContrainer.leftMenuWidth = kMenuWidth
         
         self.window?.rootViewController = menuContrainer
+        FFLocationManager.shared.start { (placemark) in
+        }
         self.window?.makeKeyAndVisible()
         return true
     }

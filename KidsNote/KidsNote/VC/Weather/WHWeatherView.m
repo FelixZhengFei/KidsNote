@@ -130,8 +130,8 @@ typedef NS_ENUM(NSInteger, WHWeatherBackViewType){
         self.willDisplayView = snowView;
     }
     
-    WHWeatherBackViewType weatherBackViewType = [self getWeatherBackViewType:nextAnimationNumber.integerValue];
-    UIImage *backImage;
+//    WHWeatherBackViewType weatherBackViewType = [self getWeatherBackViewType:nextAnimationNumber.integerValue];
+//    UIImage *backImage;
 //    if (weatherBackViewType == WHWeatherBackViewTypeSunDay) {
 //        backImage = [self getGradientImage:kSunDayTopColor and:kSunDayBottomColor];
 //    }else if (weatherBackViewType == WHWeatherBackViewTypeSunNight) {
@@ -147,9 +147,9 @@ typedef NS_ENUM(NSInteger, WHWeatherBackViewType){
                         options:UIViewAnimationOptionCurveEaseInOut
                      animations:^{
                         
-                         if (backImage) {
-                             self.weatherBackImageView.image = backImage;
-                         }
+//                         if (backImage) {
+//                             self.weatherBackImageView.image = backImage;
+//                         }
                          
                          if (self.willDisplayView) {
                              [self.willDisplayView startAnimation];
