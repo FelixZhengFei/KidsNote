@@ -13,38 +13,16 @@
 #import "WHWeatherSnowView.h"
 #import "WHWeatherHeader.h"
 
-#define kSunDayTopColor UIColorFromRGB(41, 145, 197)
-#define kSunDayBottomColor UIColorFromRGB(63, 159, 204)
-
-#define kSunNightTopColor UIColorFromRGB(11, 13, 30)
-#define kSunNightDayBottomColor UIColorFromRGB(28, 33, 52)
-
-#define kRainDayTopColor UIColorFromRGB(73, 115, 146)
-#define kRainDayBottomColor UIColorFromRGB(61, 96, 123)
-
-#define kRainNightTopColor UIColorFromRGB(13, 13, 18)
-#define kRainNightBottomColor UIColorFromRGB(25, 27, 36)
-
-#define kWeatherChangeAnimationDuration 1.0
-
-typedef NS_ENUM(NSInteger, WHWeatherBackViewType){
-    WHWeatherBackViewTypeSunDay = 0,
-    WHWeatherBackViewTypeSunNight = 1,
-    WHWeatherBackViewTypeRainDay = 2,
-    WHWeatherBackViewTypeRainNight = 3
-};
-
-
 @interface WHWeatherView ()
+
 @property (nonatomic, strong) WHWeatherBaseView *displayView;
 @property (nonatomic, strong) WHWeatherBaseView *willDisplayView;
-@property (nonatomic, strong) NSMutableArray *animationArray;
+
 @end
 
 @implementation WHWeatherView
 
-- (instancetype)init
-{
+- (instancetype)init {
     self = [super init];
     if (self) {
         [self configueWeather];
@@ -52,52 +30,21 @@ typedef NS_ENUM(NSInteger, WHWeatherBackViewType){
     return self;
 }
 
-- (void)configueWeather
-{
-    [self showWeatherAnimationWithType:WHWeatherTypeSun];
+- (void)configueWeather {
+//    [self showWeatherAnimationWithType:WHWeatherTypeSun];
 }
 
 #pragma mark -
 #pragma mark - Priavte Method
 
-- (void)showWeatherAnimationWithType:(WHWeatherType)weatherType
-{
-    [self addOrRemoveAnimationQueueWithType:NO addType:weatherType];
-}
-
-- (void)addOrRemoveAnimationQueueWithType:(BOOL)isRemove addType:(WHWeatherType)weatherType
-{
-    if (self.animationArray) {
-        if (isRemove) {
-            if (self.animationArray.count > 0) {
-                [self.animationArray removeObjectAtIndex:0];
-                
-                if (self.animationArray.count > 0) {
-                    [self startAnimationQueue];
-                }
-            }
-        }else{
-            if (self.animationArray.count == 0) {
-                [self.animationArray addObject:@(weatherType)];
-                [self startAnimationQueue];
-            }else{
-                [self.animationArray addObject:@(weatherType)];
-            }
-        }
-    }
-}
-
-- (void)startAnimationQueue
-{
-    if (!self.animationArray || !self.animationArray.count) {
-        return;
-    }
+- (void)showWeatherAnimationWithType:(int)codeDay {
     
-    NSNumber *nextAnimationNumber = self.animationArray[0];
-    WHWeatherType weatherType = nextAnimationNumber.integerValue;
     
-    if (weatherType == WHWeatherTypeSun || weatherType == WHWeatherTypeOther) {
-
+    WHWeatherType weatherType = [self getWeatherType:codeDay];
+    UIImage *backImage = [self getBackgourImage:codeDay];
+    
+    if (weatherType == WHWeatherTypeSun ) {
+        
         WHWeatherSunView *sunView = [[WHWeatherSunView alloc] init];
         sunView.frame = self.frame;
         [self addSubview:sunView];
@@ -128,33 +75,26 @@ typedef NS_ENUM(NSInteger, WHWeatherBackViewType){
         snowView.frame = self.frame;
         [self addSubview:snowView];
         self.willDisplayView = snowView;
+    } else {
+        
+        WHWeatherBaseView *sunView = [[WHWeatherBaseView alloc] init];
+        sunView.frame = self.frame;
+        [self addSubview:sunView];
+        self.willDisplayView = sunView;
     }
+        
     
-//    WHWeatherBackViewType weatherBackViewType = [self getWeatherBackViewType:nextAnimationNumber.integerValue];
-//    UIImage *backImage;
-//    if (weatherBackViewType == WHWeatherBackViewTypeSunDay) {
-//        backImage = [self getGradientImage:kSunDayTopColor and:kSunDayBottomColor];
-//    }else if (weatherBackViewType == WHWeatherBackViewTypeSunNight) {
-//        backImage = [self getGradientImage:kSunNightTopColor and:kSunNightDayBottomColor];
-//    }else if (weatherBackViewType == WHWeatherBackViewTypeRainDay) {
-//        backImage = [self getGradientImage:kRainDayTopColor and:kRainDayBottomColor];
-//    }else if (weatherBackViewType == WHWeatherBackViewTypeRainNight) {
-//        backImage = [self getGradientImage:kRainNightTopColor and:kRainNightBottomColor];
-//    }
     
-    [UIView animateWithDuration:kWeatherChangeAnimationDuration
+    [UIView animateWithDuration:1
                           delay:0.0
                         options:UIViewAnimationOptionCurveEaseInOut
                      animations:^{
-                        
-//                         if (backImage) {
-//                             self.weatherBackImageView.image = backImage;
-//                         }
-                         
                          if (self.willDisplayView) {
                              [self.willDisplayView startAnimation];
                          }
-                         
+                         if (backImage) {
+                             self.weatherBackImageView.image = backImage;
+                         }
                          if (self.displayView) {
                              [self.displayView stopAnimation];
                          }
@@ -164,7 +104,6 @@ typedef NS_ENUM(NSInteger, WHWeatherBackViewType){
                              [self.displayView removeFromSuperview];
                              self.displayView = nil;
                              self.displayView = self.willDisplayView;
-                             [self addOrRemoveAnimationQueueWithType:YES addType:0];
                          }
                      }];
 }
@@ -172,8 +111,7 @@ typedef NS_ENUM(NSInteger, WHWeatherBackViewType){
 #pragma mark -
 #pragma mark - Tools
 
-- (UIImage *)getGradientImage:(UIColor *)color1 and:(UIColor *)color2
-{
+- (UIImage *)getGradientImage:(UIColor *)color1 and:(UIColor *)color2 {
     CAGradientLayer *gradientLayer = [CAGradientLayer layer];
     gradientLayer.colors = @[(__bridge id)color1.CGColor,
                              (__bridge id)color2.CGColor];
@@ -189,87 +127,64 @@ typedef NS_ENUM(NSInteger, WHWeatherBackViewType){
     return gradientImage;
 }
 
-- (BOOL)isNowDayTime
-{
-    NSDate *date = [NSDate date];
-    NSCalendar *cal = [NSCalendar currentCalendar];
-    NSDateComponents *components = [cal components:NSCalendarUnitHour fromDate:date];
-    if ([components hour] >= 19 || [components hour] < 6) {
-        return NO;
-    }else{
-        return YES;
-    }
-}
 
-- (WHWeatherType)getWeatherType:(NSInteger)type
-{
+- (WHWeatherType)getWeatherType:(NSInteger)type {
     if (type >= 0 && type < 4) { //晴天
         return WHWeatherTypeSun;
-    }
-    else if (type >= 4 && type < 10) { //多云
+        
+    } else if (type >= 4 && type < 10) { //多云
         return WHWeatherTypeClound;
-    }
-    else if (type >= 10 && type < 20) { //雨
+        
+    } else if (type >= 10 && type < 20) { //雨
         if (type == 11 || type == 12 || type == 16 || type == 17 || type == 18) { //雷
             return WHWeatherTypeRainLighting;
         }
         return WHWeatherTypeRain;
-    }
-    else if (type >= 20 && type < 26) { //雪
+        
+    } else if (type >= 20 && type < 26) { //雪
         return WHWeatherTypeSnow;
-    }
-    else{
+        
+    } else{
         return WHWeatherTypeOther;
     }
 }
 
-- (WHWeatherBackViewType)getWeatherBackViewType:(NSInteger)type
-{
-    BOOL isRain = NO;
-    
-    if (type >= 0 && type < 4) { //晴天
-        isRain = NO;
-    }
-    else if (type >= 4 && type < 10) { //多云
-        isRain = NO;
-    }
-    else if (type >= 10 && type < 20) { //雨
-        isRain = YES;
-    }
-    else if (type >= 20 && type < 26) { //雪
-        isRain = NO;
-    }
-    else{
-        isRain = YES;
-    }
-    
-    if ([self isNowDayTime]) {
-        if (isRain) {
-            return WHWeatherBackViewTypeRainDay;
-        }else{
-            return WHWeatherBackViewTypeSunDay;
+- (UIImage *)getBackgourImage:(NSInteger)codeDay {
+    UIImage *backImage = [UIImage imageNamed:@"rain_bg"];
+    if (codeDay >= 0 && codeDay < 4) { //晴天
+        backImage = [self getGradientImage:UIColorFromRGB(0,191,255) and:UIColorFromRGB(240,255,255)];
+
+    } else if (codeDay >= 4 && codeDay < 10) { //多云
+        backImage = [self getGradientImage:UIColorFromRGB(0,191,255) and:UIColor.whiteColor];
+        
+    } else if (codeDay >= 10 && codeDay < 20) { //雨
+        if (codeDay == 11 || codeDay == 12 || codeDay == 16 || codeDay == 17 || codeDay == 18) { //雷
+            backImage = [self getGradientImage:UIColorFromRGB(135,206,235) and:UIColorFromRGB(190,200,210)];
+        } else {
+        //雨
+            backImage = [self getGradientImage:UIColorFromRGB(73, 115, 146) and:UIColorFromRGB(240,255,255)];
         }
-    }else{
-        if (isRain) {
-            return WHWeatherBackViewTypeRainDay;
-        }else{
-            return WHWeatherBackViewTypeSunDay;
-        }
+        
+    } else if (codeDay >= 20 && codeDay < 26) { //雪
+        backImage = [UIImage imageNamed:@"rain_bg"];
+        
+    } else if (codeDay >= 26 && codeDay < 30)  { //沙尘暴
+        
+    } else if (codeDay >= 30 && codeDay < 32)  { //雾霾
+        
+    } else if (codeDay >= 32 && codeDay < 37)  { //风
+        
+    } else {
     }
+    
+    return backImage;
 }
 
 #pragma mark -
 #pragma mark - Getter
-- (NSMutableArray *)animationArray
-{
-    if (!_animationArray) {
-        _animationArray = [NSMutableArray array];
-    }
-    return _animationArray;
-}
 
-- (UIImageView *)weatherBackImageView
-{
+
+- (UIImageView *)weatherBackImageView {
     if (!_weatherBackImageView) {
         _weatherBackImageView = [[UIImageView alloc] init];
         _weatherBackImageView.userInteractionEnabled = YES;

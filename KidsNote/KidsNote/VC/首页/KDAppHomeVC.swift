@@ -63,10 +63,7 @@ class KDAppHomeVC: KNBaseVC {
     /**24时节*/
     fileprivate func shijieButtonClecked() {
         self.navigationController?.pushViewController(KDJieQiListVC(), animated: true)
-        
-        
     }
-    
 }
 
 extension KDAppHomeVC {
@@ -96,57 +93,20 @@ extension KDAppHomeVC {
             let date = dic["date"] as? String,
             let high = dic["high"] as? String,
             let low = dic["low"] as? String{
-            FFPrint("code_day====\(code_day)")
-            FFPrint("\(text_day)")
-            FFPrint("date===\(date)")
-            FFPrint("\(high)")
-            FFPrint("\(low)")
             homeView.cityLabel.text =  FFMemoryManager.userCity
             homeView.timeLabel.text =  date
-            homeView.wenduLabel.text =  "温度：\(low)°C ~ \(high)°C"
-
+            homeView.wenduLabel.text = "\(text_day)  温度：\(low)°C ~ \(high)°C"
             configWeatherView(code_day)
         }
     }
     
     /**配置天气*/
     fileprivate func configWeatherView(_ codeDayString:String) {
-        let codeDay = Int(codeDayString) ?? 0
-        var bgImageName = "sun_bg"
-        var weathType:WHWeatherType = .sun
-        
-//        if codeDay >= 0 && codeDay < 4 { //晴天
-//            bgImageName = "sun_0"
-//            weathType = .sun
-//
-//        } else if codeDay >= 4 && codeDay < 10  { //多云
-//            bgImageName = "sun_1"
-//            weathType = .clound
-//
-//        } else if codeDay >= 10 && codeDay < 20  { //雨
-//            bgImageName = "rain_5"
-//            weathType = .rain
-//
-//        } else if codeDay >= 20 && codeDay < 26  { //雪
-//            bgImageName = "rain_5"
-//            weathType = .snow
-//
-//        } else if codeDay >= 26 && codeDay < 30  { //沙尘暴
-//
-//        } else if codeDay >= 30 && codeDay < 32  { //雾霾
-//            bgImageName = "rain_5"
-//            weathType = .rainLighting
-//
-//        } else if codeDay >= 32 && codeDay < 37  { //风
-//
-//        } else {  //未知
-//
-//        }
-        self.weatherView.weatherBackImageView.image = UIImage(named: bgImageName)
+        let codeDay = Int32(codeDayString) ?? 0
         self.weatherView.weatherBackImageView.frame = CGRect(x: 0, y: 0, width: MSC_WIDTH, height: MSC_HEIGHT)
         self.view.insertSubview(self.weatherView.weatherBackImageView, at: 0)
         self.weatherView.frame = CGRect(x: 0, y: 0, width: MSC_WIDTH, height: MSC_HEIGHT)
-        self.weatherView.showWeatherAnimation(with:weathType)
+        self.weatherView.showWeatherAnimation(withType: 29)
         self.view.insertSubview(self.weatherView, at: 1)
 
     }

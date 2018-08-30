@@ -17,8 +17,10 @@ typedef NS_ENUM(NSInteger, WHWeatherType){
     WHWeatherTypeOther = 5
 };
 
+
+
 @interface WHWeatherView : UIView
 @property (nonatomic, strong) UIImageView *weatherBackImageView;
 
-- (void)showWeatherAnimationWithType:(WHWeatherType)weatherType;
+- (void)showWeatherAnimationWithType:(int)codeDay;
 @end
