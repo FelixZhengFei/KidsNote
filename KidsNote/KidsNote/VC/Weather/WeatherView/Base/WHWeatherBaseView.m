@@ -164,6 +164,22 @@
     
 }
 
+- (CABasicAnimation *)fengAnimationWithDuration:(NSInteger)duration{
+    
+    CABasicAnimation* caBaseTransform = [CABasicAnimation animation];
+    caBaseTransform.duration = duration;
+    caBaseTransform.keyPath = @"transform";
+    caBaseTransform.repeatCount = MAXFLOAT;
+    caBaseTransform.removedOnCompletion = NO;
+    caBaseTransform.fillMode = kCAFillModeForwards;
+    caBaseTransform.fromValue = [NSValue valueWithCATransform3D:CATransform3DMakeTranslation(-170, -100, 0)];
+    caBaseTransform.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeTranslation(kScreenWidth, kScreenHeight/5, 0)];
+    
+    return caBaseTransform;
+    
+}
+
+
 - (CABasicAnimation *)rainAlphaWithDuration:(NSInteger)duration {
     
     CABasicAnimation *showViewAnn = [CABasicAnimation animationWithKeyPath:@"opacity"];

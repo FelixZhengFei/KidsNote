@@ -106,7 +106,7 @@ extension KDAppHomeVC {
         self.weatherView.weatherBackImageView.frame = CGRect(x: 0, y: 0, width: MSC_WIDTH, height: MSC_HEIGHT)
         self.view.insertSubview(self.weatherView.weatherBackImageView, at: 0)
         self.weatherView.frame = CGRect(x: 0, y: 0, width: MSC_WIDTH, height: MSC_HEIGHT)
-        self.weatherView.showWeatherAnimation(withType: 29)
+        self.weatherView.showWeatherAnimation(withType: 34)
         self.view.insertSubview(self.weatherView, at: 1)
 
     }

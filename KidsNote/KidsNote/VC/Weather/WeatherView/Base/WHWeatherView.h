@@ -14,7 +14,9 @@ typedef NS_ENUM(NSInteger, WHWeatherType){
     WHWeatherTypeRain = 2,
     WHWeatherTypeRainLighting = 3,
     WHWeatherTypeSnow = 4,
-    WHWeatherTypeOther = 5
+    WHWeatherTypeFeng = 5,
+
+    WHWeatherTypeOther = 6
 };
 
 

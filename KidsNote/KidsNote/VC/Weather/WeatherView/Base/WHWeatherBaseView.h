@@ -39,4 +39,6 @@
 - (CABasicAnimation *)rainAnimationWithDuration:(NSInteger)duration;
 //alpha animation
 - (CABasicAnimation *)rainAlphaWithDuration:(NSInteger)duration;
+
+- (CABasicAnimation *)fengAnimationWithDuration:(NSInteger)duration;
 @end

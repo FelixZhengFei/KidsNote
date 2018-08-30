@@ -12,6 +12,7 @@
 #import "WHWeatherRainView.h"
 #import "WHWeatherSnowView.h"
 #import "WHWeatherHeader.h"
+#import "WHWeatherFeng.h"
 
 @interface WHWeatherView ()
 
@@ -31,7 +32,7 @@
 }
 
 - (void)configueWeather {
-//    [self showWeatherAnimationWithType:WHWeatherTypeSun];
+    //    [self showWeatherAnimationWithType:WHWeatherTypeSun];
 }
 
 #pragma mark -
@@ -49,13 +50,20 @@
         sunView.frame = self.frame;
         [self addSubview:sunView];
         self.willDisplayView = sunView;
-    }else if (weatherType == WHWeatherTypeClound) {
+    } else if (weatherType == WHWeatherTypeClound) {
         
         WHWeatherClound *cloundView = [[WHWeatherClound alloc] init];
         cloundView.frame = self.frame;
         [self addSubview:cloundView];
         self.willDisplayView = cloundView;
-    }else if (weatherType == WHWeatherTypeRain) {
+    } else if (weatherType == WHWeatherTypeFeng) {
+        
+        WHWeatherFeng *cloundView = [[WHWeatherFeng alloc] init];
+        cloundView.frame = self.frame;
+        [self addSubview:cloundView];
+        self.willDisplayView = cloundView;
+        
+    } else if (weatherType == WHWeatherTypeRain) {
         
         WHWeatherRainView *rainView = [[WHWeatherRainView alloc] init];
         rainView.isLighting = NO;
@@ -70,7 +78,7 @@
         [self addSubview:rainView];
         self.willDisplayView = rainView;
     }else if (weatherType == WHWeatherTypeSnow) {
-        
+        self.weatherBackImageView.alpha = 0.8;
         WHWeatherSnowView *snowView = [[WHWeatherSnowView alloc] init];
         snowView.frame = self.frame;
         [self addSubview:snowView];
@@ -82,7 +90,7 @@
         [self addSubview:sunView];
         self.willDisplayView = sunView;
     }
-        
+    
     
     
     [UIView animateWithDuration:1
@@ -144,6 +152,9 @@
     } else if (type >= 20 && type < 26) { //雪
         return WHWeatherTypeSnow;
         
+    } else if (type >= 32 && type < 37)  { //风
+        return WHWeatherTypeFeng;
+        
     } else{
         return WHWeatherTypeOther;
     }
@@ -151,31 +162,32 @@
 
 - (UIImage *)getBackgourImage:(NSInteger)codeDay {
     UIImage *backImage = [UIImage imageNamed:@"rain_bg"];
-    if (codeDay >= 0 && codeDay < 4) { //晴天
-        backImage = [self getGradientImage:UIColorFromRGB(0,191,255) and:UIColorFromRGB(240,255,255)];
-
-    } else if (codeDay >= 4 && codeDay < 10) { //多云
-        backImage = [self getGradientImage:UIColorFromRGB(0,191,255) and:UIColor.whiteColor];
-        
-    } else if (codeDay >= 10 && codeDay < 20) { //雨
-        if (codeDay == 11 || codeDay == 12 || codeDay == 16 || codeDay == 17 || codeDay == 18) { //雷
-            backImage = [self getGradientImage:UIColorFromRGB(135,206,235) and:UIColorFromRGB(190,200,210)];
-        } else {
-        //雨
-            backImage = [self getGradientImage:UIColorFromRGB(73, 115, 146) and:UIColorFromRGB(240,255,255)];
-        }
-        
-    } else if (codeDay >= 20 && codeDay < 26) { //雪
-        backImage = [UIImage imageNamed:@"rain_bg"];
-        
-    } else if (codeDay >= 26 && codeDay < 30)  { //沙尘暴
-        
-    } else if (codeDay >= 30 && codeDay < 32)  { //雾霾
-        
-    } else if (codeDay >= 32 && codeDay < 37)  { //风
-        
-    } else {
-    }
+//    if (codeDay >= 0 && codeDay < 4) { //晴天
+//        backImage = [self getGradientImage:UIColorFromRGB(0,191,255) and:UIColorFromRGB(240,255,255)];
+//        
+//    } else if (codeDay >= 4 && codeDay < 10) { //多云
+//        backImage = [self getGradientImage:UIColorFromRGB(0,191,255) and:UIColorFromRGB(173,216,230)];
+//        
+//    } else if (codeDay >= 10 && codeDay < 20) { //雨
+//        if (codeDay == 11 || codeDay == 12 || codeDay == 16 || codeDay == 17 || codeDay == 18) { //雷
+//            backImage = [self getGradientImage:UIColorFromRGB(135,206,235) and:UIColorFromRGB(190,200,210)];
+//        } else {
+//            //雨
+//            backImage = [self getGradientImage:UIColorFromRGB(73, 115, 146) and:UIColorFromRGB(240,255,255)];
+//        }
+//        
+//    } else if (codeDay >= 20 && codeDay < 26) { //雪
+//        backImage = [UIImage imageNamed:@"snow2"];
+//        
+//    } else if (codeDay >= 26 && codeDay < 30)  { //沙尘暴
+//        
+//    } else if (codeDay >= 30 && codeDay < 32)  { //雾霾
+//        
+//    } else if (codeDay >= 32 && codeDay < 37)  { //风
+//        backImage = [self getGradientImage:UIColorFromRGB(30,144,255) and:UIColorFromRGB(245,245,245)];
+//        
+//    } else {
+//    }
     
     return backImage;
 }

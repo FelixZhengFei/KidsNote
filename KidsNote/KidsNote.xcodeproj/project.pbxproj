@@ -125,6 +125,7 @@
 		76A2310F21378EC100A3695A /* FFLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A2310E21378EC100A3695A /* FFLocationManager.swift */; };
 		76A2311121378F1C00A3695A /* FFMemoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A2311021378F1B00A3695A /* FFMemoryManager.swift */; };
 		76A23113213795A800A3695A /* SMNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A23112213795A800A3695A /* SMNetworkManager.swift */; };
+		76A231172137EEA700A3695A /* WHWeatherFeng.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A231162137EEA700A3695A /* WHWeatherFeng.m */; };
 		76A3608B213522DC00A6A738 /* PIVoiceRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A36083213522DA00A6A738 /* PIVoiceRecordView.m */; };
 		76A3608C213522DC00A6A738 /* LGAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A36084213522DA00A6A738 /* LGAudioPlayer.m */; };
 		76A3608D213522DC00A6A738 /* LGVoiceRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A36085213522DB00A6A738 /* LGVoiceRecorder.m */; };
@@ -264,6 +265,8 @@
 		76A2310E21378EC100A3695A /* FFLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFLocationManager.swift; sourceTree = "<group>"; };
 		76A2311021378F1B00A3695A /* FFMemoryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFMemoryManager.swift; sourceTree = "<group>"; };
 		76A23112213795A800A3695A /* SMNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMNetworkManager.swift; sourceTree = "<group>"; };
+		76A231152137EEA700A3695A /* WHWeatherFeng.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHWeatherFeng.h; sourceTree = "<group>"; };
+		76A231162137EEA700A3695A /* WHWeatherFeng.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHWeatherFeng.m; sourceTree = "<group>"; };
 		76A36083213522DA00A6A738 /* PIVoiceRecordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIVoiceRecordView.m; sourceTree = "<group>"; };
 		76A36084213522DA00A6A738 /* LGAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGAudioPlayer.m; sourceTree = "<group>"; };
 		76A36085213522DB00A6A738 /* LGVoiceRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGVoiceRecorder.m; sourceTree = "<group>"; };
@@ -485,9 +488,6 @@
 			isa = PBXGroup;
 			children = (
 				76A2303E213550F800A3695A /* WeatherView */,
-				76A2303D213550F800A3695A /* WHWeatherHeader.h */,
-				76A23083213550F900A3695A /* WHWeatherView.h */,
-				76A23084213550F900A3695A /* WHWeatherView.m */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -495,13 +495,13 @@
 		76A2303E213550F800A3695A /* WeatherView */ = {
 			isa = PBXGroup;
 			children = (
+				76A2311D2138128C00A3695A /* Base */,
+				76A2311C2138127D00A3695A /* Feng */,
 				76A2303F213550F800A3695A /* Sun */,
 				76A23042213550F800A3695A /* Clound */,
 				76A23045213550F800A3695A /* Rain */,
-				76A2304A213550F800A3695A /* WHWeatherBaseView.m */,
-				76A2304B213550F800A3695A /* Image */,
-				76A2307F213550F900A3695A /* WHWeatherBaseView.h */,
 				76A23080213550F900A3695A /* Snow */,
+				76A2304B213550F800A3695A /* Image */,
 			);
 			path = WeatherView;
 			sourceTree = "<group>";
@@ -681,6 +681,27 @@
 				76A230EC2136932B00A3695A /* shijie_html_24.html */,
 			);
 			path = Html;
+			sourceTree = "<group>";
+		};
+		76A2311C2138127D00A3695A /* Feng */ = {
+			isa = PBXGroup;
+			children = (
+				76A231152137EEA700A3695A /* WHWeatherFeng.h */,
+				76A231162137EEA700A3695A /* WHWeatherFeng.m */,
+			);
+			path = Feng;
+			sourceTree = "<group>";
+		};
+		76A2311D2138128C00A3695A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				76A2303D213550F800A3695A /* WHWeatherHeader.h */,
+				76A23083213550F900A3695A /* WHWeatherView.h */,
+				76A23084213550F900A3695A /* WHWeatherView.m */,
+				76A2307F213550F900A3695A /* WHWeatherBaseView.h */,
+				76A2304A213550F800A3695A /* WHWeatherBaseView.m */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		76A36082213522C600A6A738 /* 录音 */ = {
@@ -970,6 +991,7 @@
 				7692BE0E21339883007213AE /* SideMenuHeaderView.swift in Sources */,
 				76A23089213550F900A3695A /* WHWeatherBaseView.m in Sources */,
 				7692BE0A21339883007213AE /* SideMenuTableViewCell.swift in Sources */,
+				76A231172137EEA700A3695A /* WHWeatherFeng.m in Sources */,
 				76439EB12133EDE600F1C454 /* SMWebVC.swift in Sources */,
 				76A23086213550F900A3695A /* WHWeatherClound.m in Sources */,
 				76A3608E213522DC00A6A738 /* UIColor+Addition.m in Sources */,

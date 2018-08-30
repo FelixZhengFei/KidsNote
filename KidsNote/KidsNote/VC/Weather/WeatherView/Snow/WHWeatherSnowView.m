@@ -21,7 +21,7 @@
 
 -(void)configureView
 {
-    for (NSInteger i = 0; i < 43; i++) {
+    for (NSInteger i = 0; i < 100; i++) {
         
         UIImageView *snowView =  [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ele_snow.png"]];
         snowView.tag = 1000+i;
