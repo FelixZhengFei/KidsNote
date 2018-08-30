@@ -11,18 +11,21 @@ import UIKit
 class KDShijHomeCell: UITableViewCell {
     @IBOutlet weak var jieTitleLabel: UILabel!
     
+    @IBOutlet weak var headericon: UIImageView!
     @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var timeLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        headericon.viewAddLayerCorner(cornerRadius: 10, UIColor.clear)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
 
-    public func updateCellWithModel(model:KDShiJieModel) {
+    public func updateCellWithModel(model:KDShiJieModel,_ indexRow:Int) {
+        headericon.image = UIImage(named: "qije_small_\(indexRow)")
         jieTitleLabel.text = model.title
         timeLabel.text = model.startTime
         iconImageView.image = UIImage(named: "\(model.seasonImage!)")

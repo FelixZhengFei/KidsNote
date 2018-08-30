@@ -51,12 +51,12 @@ extension KDJieQiListVC:UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60
+        return 80
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath) as! KDShijHomeCell
-        cell.updateCellWithModel(model: dataSourceArray[indexPath.row])
+        cell.updateCellWithModel(model: dataSourceArray[indexPath.row],indexPath.row)
         return cell
     }
     
