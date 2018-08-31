@@ -12,6 +12,7 @@ import Alamofire
 
 class KDAppHomeVC: KNBaseVC {
     fileprivate lazy var homeView = KDAppHomeView.ff_LoadXib()
+    fileprivate lazy var timeBaseView = KDJieqiTimeView.ff_LoadXib()
     fileprivate lazy var  weatherView = WHWeatherView()
     
     override func viewWillAppear(_ animated: Bool) {
@@ -51,7 +52,9 @@ class KDAppHomeVC: KNBaseVC {
 
     /**24时节*/
     fileprivate func shijieButtonClecked() {
-        self.navigationController?.pushViewController(KDQijieHomeVC(), animated: true)
+        timeBaseView.frame = CGRect(x: 0, y: 0, width: MSC_WIDTH, height: MSC_HEIGHT)
+        self.view.addSubview(timeBaseView)
+//        self.navigationController?.pushViewController(KDQijieHomeVC(), animated: true)
     }
 }
 

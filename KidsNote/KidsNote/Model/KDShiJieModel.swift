@@ -15,3 +15,10 @@ class KDShiJieModel: SMBaseMappable {
     var seasonImage:String? //季节图片
     var startTime:String? //时间
 }
+
+class KDShiJieTimeModel: SMBaseMappable {
+    
+    var yangTimeString:String?
+    var title:String?
+    var yinTimeString:String?
+}

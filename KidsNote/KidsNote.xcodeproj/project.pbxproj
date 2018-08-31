@@ -20,6 +20,11 @@
 		764ED1AD213933C90076C265 /* start_ind@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 764ED1AC213933C90076C265 /* start_ind@2x.png */; };
 		764ED1B0213934BC0076C265 /* yanzi1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 764ED1AE213934BB0076C265 /* yanzi1.jpeg */; };
 		764ED1B1213934BC0076C265 /* yanzi2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 764ED1AF213934BC0076C265 /* yanzi2.jpeg */; };
+		764ED1B321393C490076C265 /* jieqiTime.plist in Resources */ = {isa = PBXBuildFile; fileRef = 764ED1B221393C490076C265 /* jieqiTime.plist */; };
+		764ED1B521393D100076C265 /* KDJieqiTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764ED1B421393D100076C265 /* KDJieqiTimeView.swift */; };
+		764ED1B921393F5A0076C265 /* KDTImeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764ED1B721393F5A0076C265 /* KDTImeCell.swift */; };
+		764ED1BA21393F5A0076C265 /* KDTImeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 764ED1B821393F5A0076C265 /* KDTImeCell.xib */; };
+		764ED1BC21393F880076C265 /* KDJieqiTimeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 764ED1BB21393F880076C265 /* KDJieqiTimeView.xib */; };
 		7692BDC221339419007213AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDC121339419007213AE /* AppDelegate.swift */; };
 		7692BDD921339582007213AE /* SMGlobalConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDD821339582007213AE /* SMGlobalConfig.swift */; };
 		7692BDED213395E9007213AE /* FWSideMenuContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDEA213395E8007213AE /* FWSideMenuContainerViewController.swift */; };
@@ -152,6 +157,11 @@
 		764ED1AC213933C90076C265 /* start_ind@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "start_ind@2x.png"; sourceTree = "<group>"; };
 		764ED1AE213934BB0076C265 /* yanzi1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yanzi1.jpeg; sourceTree = "<group>"; };
 		764ED1AF213934BC0076C265 /* yanzi2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yanzi2.jpeg; sourceTree = "<group>"; };
+		764ED1B221393C490076C265 /* jieqiTime.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = jieqiTime.plist; sourceTree = "<group>"; };
+		764ED1B421393D100076C265 /* KDJieqiTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDJieqiTimeView.swift; sourceTree = "<group>"; };
+		764ED1B721393F5A0076C265 /* KDTImeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDTImeCell.swift; sourceTree = "<group>"; };
+		764ED1B821393F5A0076C265 /* KDTImeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KDTImeCell.xib; sourceTree = "<group>"; };
+		764ED1BB21393F880076C265 /* KDJieqiTimeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KDJieqiTimeView.xib; sourceTree = "<group>"; };
 		7692BDBE21339419007213AE /* KidsNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KidsNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7692BDC121339419007213AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7692BDCD2133941C007213AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -313,9 +323,12 @@
 		76439E9F2133D56C00F1C454 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				764ED1B621393DEB0076C265 /* Cell */,
 				76A231272138E72C00A3695A /* DDDateCal.swift */,
 				76439E9D2133D56300F1C454 /* KDAppHomeView.swift */,
 				76439EA02133D57C00F1C454 /* KDAppHomeView.xib */,
+				764ED1B421393D100076C265 /* KDJieqiTimeView.swift */,
+				764ED1BB21393F880076C265 /* KDJieqiTimeView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -357,6 +370,15 @@
 				76439EA32133E24500F1C454 /* KDDuShuVC.swift */,
 			);
 			path = List;
+			sourceTree = "<group>";
+		};
+		764ED1B621393DEB0076C265 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				764ED1B721393F5A0076C265 /* KDTImeCell.swift */,
+				764ED1B821393F5A0076C265 /* KDTImeCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		7692BDB521339419007213AE = {
@@ -438,6 +460,7 @@
 				7692BDD821339582007213AE /* SMGlobalConfig.swift */,
 				7692BE1C2133A5CF007213AE /* KDBridgeHeader.h */,
 				76A230D4213670BC00A3695A /* jieqiinfo.plist */,
+				764ED1B221393C490076C265 /* jieqiTime.plist */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -790,6 +813,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76A231042136932C00A3695A /* shijie_html_4.html in Resources */,
+				764ED1BA21393F5A0076C265 /* KDTImeCell.xib in Resources */,
 				76A2308C213550F900A3695A /* ele_sunnyBirdInvertedImage3.png in Resources */,
 				76A231032136932C00A3695A /* shijie_html_24.html in Resources */,
 				76A230B9213550F900A3695A /* ele_sunnyBirdInvertedImage8.png in Resources */,
@@ -843,10 +867,12 @@
 				76A2309D213550F900A3695A /* ele_sunnyNightYellowLight.png in Resources */,
 				76A230AB213550F900A3695A /* ele_rainLine1.png in Resources */,
 				76A23093213550F900A3695A /* ele_sunnyNightWave2.png in Resources */,
+				764ED1BC21393F880076C265 /* KDJieqiTimeView.xib in Resources */,
 				76A231002136932C00A3695A /* shijie_html_2.html in Resources */,
 				76A23098213550F900A3695A /* ele_sunnyBirdInvertedImage7.png in Resources */,
 				76A231082136932C00A3695A /* shijie_html_20.html in Resources */,
 				76A231022136932C00A3695A /* shijie_html_23.html in Resources */,
+				764ED1B321393C490076C265 /* jieqiTime.plist in Resources */,
 				76A230A1213550F900A3695A /* ele_sunnyNightMeteor1.png in Resources */,
 				76A230FE2136932C00A3695A /* shijie_html_17.html in Resources */,
 				76A230FF2136932C00A3695A /* shijie_html_18.html in Resources */,
@@ -965,6 +991,7 @@
 				7692BDEF213395E9007213AE /* UIViewController+FWSideMenuExtension.swift in Sources */,
 				7692BDED213395E9007213AE /* FWSideMenuContainerViewController.swift in Sources */,
 				7692BDF721339660007213AE /* KDAppHomeVC.swift in Sources */,
+				764ED1B521393D100076C265 /* KDJieqiTimeView.swift in Sources */,
 				7692BE1221339947007213AE /* KNBaseVC.swift in Sources */,
 				76A231252138CE2A00A3695A /* KDQijieHomeVC.swift in Sources */,
 				7692BE0D21339883007213AE /* SideMenuViewController.swift in Sources */,
@@ -986,6 +1013,7 @@
 				7692BDC221339419007213AE /* AppDelegate.swift in Sources */,
 				76A230BC213550F900A3695A /* WHWeatherView.m in Sources */,
 				76A360932135395500A6A738 /* EEImageBroweView.swift in Sources */,
+				764ED1B921393F5A0076C265 /* KDTImeCell.swift in Sources */,
 				76A230CF21366C9500A3695A /* SMBaseMappable.swift in Sources */,
 				7692BE10213398A1007213AE /* SubViewController.swift in Sources */,
 				76A3608D213522DC00A6A738 /* LGVoiceRecorder.m in Sources */,
