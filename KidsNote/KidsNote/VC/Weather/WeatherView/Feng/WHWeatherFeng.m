@@ -18,22 +18,19 @@
     return self;
 }
 
--(void)configureView
-{
+-(void)configureView {
     for (NSInteger i = 0; i < 30; i++) {
         NSString *imageName = [NSString stringWithFormat:@"ele_rainLine%ld",(i % 3 + 1)];
         UIImageView *snowView =  [[UIImageView alloc] initWithImage:[UIImage imageNamed:imageName]];
         snowView.tag = 1000+i;
         
-//        snowView.frame = CGRectMake( arc4random() % 300 * widthPix , arc4random() % 400, arc4random()%7+3, arc4random()%7+3);
         snowView.frame = CGRectMake(0 , arc4random() % 400 + 100, arc4random()%60+50, arc4random()%30+20);
         [self addSubview:snowView];
         [snowView.layer addAnimation:[self fengAnimationWithDuration:5+arc4random()%15] forKey:nil];
-
     }
 
     
-    for (int i = 0; i < 11; ++i) {
+    for (int i = 0; i < 2; ++i) {
         UIImage *cloudImage;
 
         cloudImage = [UIImage imageNamed:[NSString stringWithFormat:@"ele_white_cloud_%d.png",i]];

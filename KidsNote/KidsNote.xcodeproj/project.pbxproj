@@ -126,6 +126,8 @@
 		76A2311121378F1C00A3695A /* FFMemoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A2311021378F1B00A3695A /* FFMemoryManager.swift */; };
 		76A23113213795A800A3695A /* SMNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A23112213795A800A3695A /* SMNetworkManager.swift */; };
 		76A231172137EEA700A3695A /* WHWeatherFeng.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A231162137EEA700A3695A /* WHWeatherFeng.m */; };
+		76A231252138CE2A00A3695A /* KDQijieHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A231232138CE2A00A3695A /* KDQijieHomeVC.swift */; };
+		76A231262138CE2A00A3695A /* KDQijieHomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76A231242138CE2A00A3695A /* KDQijieHomeVC.xib */; };
 		76A3608B213522DC00A6A738 /* PIVoiceRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A36083213522DA00A6A738 /* PIVoiceRecordView.m */; };
 		76A3608C213522DC00A6A738 /* LGAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A36084213522DA00A6A738 /* LGAudioPlayer.m */; };
 		76A3608D213522DC00A6A738 /* LGVoiceRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A36085213522DB00A6A738 /* LGVoiceRecorder.m */; };
@@ -267,6 +269,8 @@
 		76A23112213795A800A3695A /* SMNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMNetworkManager.swift; sourceTree = "<group>"; };
 		76A231152137EEA700A3695A /* WHWeatherFeng.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHWeatherFeng.h; sourceTree = "<group>"; };
 		76A231162137EEA700A3695A /* WHWeatherFeng.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHWeatherFeng.m; sourceTree = "<group>"; };
+		76A231232138CE2A00A3695A /* KDQijieHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDQijieHomeVC.swift; sourceTree = "<group>"; };
+		76A231242138CE2A00A3695A /* KDQijieHomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KDQijieHomeVC.xib; sourceTree = "<group>"; };
 		76A36083213522DA00A6A738 /* PIVoiceRecordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIVoiceRecordView.m; sourceTree = "<group>"; };
 		76A36084213522DA00A6A738 /* LGAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGAudioPlayer.m; sourceTree = "<group>"; };
 		76A36085213522DB00A6A738 /* LGVoiceRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGVoiceRecorder.m; sourceTree = "<group>"; };
@@ -630,6 +634,8 @@
 			children = (
 				76A230C9213669AD00A3695A /* Cell */,
 				76A230C321365DA800A3695A /* KDJieQiListVC.swift */,
+				76A231232138CE2A00A3695A /* KDQijieHomeVC.swift */,
+				76A231242138CE2A00A3695A /* KDQijieHomeVC.xib */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -858,6 +864,7 @@
 				76A230FB2136932C00A3695A /* shijie_html_12.html in Resources */,
 				76A230B6213550F900A3695A /* ele_white_cloud_12.png in Resources */,
 				76A23091213550F900A3695A /* ele_sunnySun.png in Resources */,
+				76A231262138CE2A00A3695A /* KDQijieHomeVC.xib in Resources */,
 				76A230AE213550F900A3695A /* ele_white_cloud_5.png in Resources */,
 				76A231072136932C00A3695A /* shijie_html_22.html in Resources */,
 				76A2310C2136932C00A3695A /* shijie_html_9.html in Resources */,
@@ -963,6 +970,7 @@
 				7692BDED213395E9007213AE /* FWSideMenuContainerViewController.swift in Sources */,
 				7692BDF721339660007213AE /* KDAppHomeVC.swift in Sources */,
 				7692BE1221339947007213AE /* KNBaseVC.swift in Sources */,
+				76A231252138CE2A00A3695A /* KDQijieHomeVC.swift in Sources */,
 				7692BE0D21339883007213AE /* SideMenuViewController.swift in Sources */,
 				76439EAC2133E80000F1C454 /* KDDuShuDetailVC.swift in Sources */,
 				76A23085213550F900A3695A /* WHWeatherSunView.m in Sources */,

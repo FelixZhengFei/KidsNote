@@ -62,7 +62,7 @@ class KDAppHomeVC: KNBaseVC {
     
     /**24时节*/
     fileprivate func shijieButtonClecked() {
-        self.navigationController?.pushViewController(KDJieQiListVC(), animated: true)
+        self.navigationController?.pushViewController(KDQijieHomeVC(), animated: true)
     }
 }
 
