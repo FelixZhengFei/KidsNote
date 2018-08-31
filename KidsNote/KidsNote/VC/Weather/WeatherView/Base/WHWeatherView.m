@@ -42,7 +42,6 @@
     
     
     WHWeatherType weatherType = [self getWeatherType:codeDay];
-    UIImage *backImage = [self getBackgourImage:codeDay];
     
     if (weatherType == WHWeatherTypeSun ) {
         
@@ -100,9 +99,7 @@
                          if (self.willDisplayView) {
                              [self.willDisplayView startAnimation];
                          }
-                         if (backImage) {
-                             self.weatherBackImageView.image = backImage;
-                         }
+    
                          if (self.displayView) {
                              [self.displayView stopAnimation];
                          }
@@ -158,38 +155,6 @@
     } else{
         return WHWeatherTypeOther;
     }
-}
-
-- (UIImage *)getBackgourImage:(NSInteger)codeDay {
-    UIImage *backImage = [UIImage imageNamed:@"rain_bg"];
-//    if (codeDay >= 0 && codeDay < 4) { //晴天
-//        backImage = [self getGradientImage:UIColorFromRGB(0,191,255) and:UIColorFromRGB(240,255,255)];
-//        
-//    } else if (codeDay >= 4 && codeDay < 10) { //多云
-//        backImage = [self getGradientImage:UIColorFromRGB(0,191,255) and:UIColorFromRGB(173,216,230)];
-//        
-//    } else if (codeDay >= 10 && codeDay < 20) { //雨
-//        if (codeDay == 11 || codeDay == 12 || codeDay == 16 || codeDay == 17 || codeDay == 18) { //雷
-//            backImage = [self getGradientImage:UIColorFromRGB(135,206,235) and:UIColorFromRGB(190,200,210)];
-//        } else {
-//            //雨
-//            backImage = [self getGradientImage:UIColorFromRGB(73, 115, 146) and:UIColorFromRGB(240,255,255)];
-//        }
-//        
-//    } else if (codeDay >= 20 && codeDay < 26) { //雪
-//        backImage = [UIImage imageNamed:@"snow2"];
-//        
-//    } else if (codeDay >= 26 && codeDay < 30)  { //沙尘暴
-//        
-//    } else if (codeDay >= 30 && codeDay < 32)  { //雾霾
-//        
-//    } else if (codeDay >= 32 && codeDay < 37)  { //风
-//        backImage = [self getGradientImage:UIColorFromRGB(30,144,255) and:UIColorFromRGB(245,245,245)];
-//        
-//    } else {
-//    }
-    
-    return backImage;
 }
 
 #pragma mark -

@@ -29,7 +29,7 @@ class KDJieQiDetailVC: KNBaseVC {
         let type = currentModel.type ?? "1"
         if let path = Bundle.main.path(forResource: "shijie_html_\(type).html", ofType: nil) {
             let urlStr = URL(fileURLWithPath: path)
-            let webView = WKWebView(frame: CGRect(x: 0, y: 0, width: MSC_WIDTH, height:MSC_HEIGHT -  MNavBar_H))
+            let webView = WKWebView(frame: CGRect(x: 0, y: 0, width: MSC_WIDTH, height:MSC_HEIGHT))
             webView.load(URLRequest(url:urlStr))
             webView.scrollView.showsVerticalScrollIndicator = false
             self.view.addSubview(webView)

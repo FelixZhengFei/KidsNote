@@ -24,13 +24,10 @@ class FWNavigationController: UINavigationController {
         let textAttrs = [NSAttributedStringKey.foregroundColor: UIColor.black, NSAttributedStringKey.font: UIFont.systemFont(ofSize: navTitleFont)]
         navigationBar.titleTextAttributes = textAttrs
         
-        navigationBar.setBackgroundImage(AppDelegate.resizableImage(imageName: "header_bg_message", edgeInsets: UIEdgeInsetsMake(0, 0, 0, 0)), for: .default)
         navigationBar.isTranslucent = false
-        
         self.extendedLayoutIncludesOpaqueBars = false
         let edgeOptions: UIRectEdge = [.left, .bottom, .right, .top] //注意位移多选枚举的使用
         self.edgesForExtendedLayout = edgeOptions
-        
     }
     
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
@@ -44,16 +41,12 @@ class FWNavigationController: UINavigationController {
             button.setTitleColor(.darkGray, for: .normal)
             button.setTitleColor(.red, for: .highlighted)
             button.sizeToFit()
-            //            button.contentEdgeInsets = UIEdgeInsetsMake(0, -10, 0, 0)
             button.contentHorizontalAlignment = .left
             viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: button)
-            
             button.frame = CGRect(x: 0, y: 0, width: (button.currentImage?.size.width)!+15, height: (button.currentImage?.size.height)!+5)
             viewController.navigationItem.leftBarButtonItem?.customView?.frame = button.frame
-            
             viewController.hidesBottomBarWhenPushed = true
             
-            // 设置状态栏
             UIApplication.shared.statusBarStyle = .default
         }
         
@@ -65,7 +58,6 @@ extension FWNavigationController {
     
     @objc func backAction() {
         self.popViewController(animated: true)
-        
         if self.vcBackActionBlock != nil {
             vcBackActionBlock!()
         }

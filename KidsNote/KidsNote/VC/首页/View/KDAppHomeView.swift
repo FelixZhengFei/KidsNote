@@ -15,26 +15,15 @@ class KDAppHomeView: UIView,FFLoadXibProtocol {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var wenduLabel: UILabel!
     
-    var dusShuBlcock:(() -> Void)?
     var shijieBlcock:(() -> Void)? //24时节
 
     override func awakeFromNib() {
         
     }
-    
-    @IBAction func duShuButtonClicked(_ sender: Any) {
-        dusShuBlcock!()
-    }
-    @IBAction func shijieButtonClicked(_ sender: Any) {
+    @IBAction func detailButtonClicked(_ sender: Any) {
+        FFPrint("detailButtonClicked")
         shijieBlcock!()
-
     }
     
-//    override init(frame: CGRect) {
-//        super.init(frame: frame)
-//    }
-//    
-//    required init?(coder aDecoder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
+ 
 }
