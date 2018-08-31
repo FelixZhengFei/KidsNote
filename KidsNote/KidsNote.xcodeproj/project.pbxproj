@@ -16,6 +16,10 @@
 		76439EAD2133E80000F1C454 /* KDDuShuDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76439EAB2133E80000F1C454 /* KDDuShuDetailVC.xib */; };
 		76439EB12133EDE600F1C454 /* SMWebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76439EB02133EDE600F1C454 /* SMWebVC.swift */; };
 		76439EB32133EE9100F1C454 /* SMWrongAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76439EB22133EE9100F1C454 /* SMWrongAlert.swift */; };
+		764ED1AB213933780076C265 /* Launch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 764ED1AA213933780076C265 /* Launch.xib */; };
+		764ED1AD213933C90076C265 /* start_ind@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 764ED1AC213933C90076C265 /* start_ind@2x.png */; };
+		764ED1B0213934BC0076C265 /* yanzi1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 764ED1AE213934BB0076C265 /* yanzi1.jpeg */; };
+		764ED1B1213934BC0076C265 /* yanzi2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 764ED1AF213934BC0076C265 /* yanzi2.jpeg */; };
 		7692BDC221339419007213AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDC121339419007213AE /* AppDelegate.swift */; };
 		7692BDD921339582007213AE /* SMGlobalConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDD821339582007213AE /* SMGlobalConfig.swift */; };
 		7692BDED213395E9007213AE /* FWSideMenuContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDEA213395E8007213AE /* FWSideMenuContainerViewController.swift */; };
@@ -125,7 +129,6 @@
 		76A231262138CE2A00A3695A /* KDQijieHomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76A231242138CE2A00A3695A /* KDQijieHomeVC.xib */; };
 		76A231282138E72C00A3695A /* DDDateCal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A231272138E72C00A3695A /* DDDateCal.swift */; };
 		76A2312A2139165700A3695A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76A231292139165700A3695A /* Assets.xcassets */; };
-		76A2312C2139216A00A3695A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76A2312B2139216A00A3695A /* LaunchScreen.xib */; };
 		76A3608B213522DC00A6A738 /* PIVoiceRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A36083213522DA00A6A738 /* PIVoiceRecordView.m */; };
 		76A3608C213522DC00A6A738 /* LGAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A36084213522DA00A6A738 /* LGAudioPlayer.m */; };
 		76A3608D213522DC00A6A738 /* LGVoiceRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A36085213522DB00A6A738 /* LGVoiceRecorder.m */; };
@@ -145,6 +148,10 @@
 		76439EAB2133E80000F1C454 /* KDDuShuDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KDDuShuDetailVC.xib; sourceTree = "<group>"; };
 		76439EB02133EDE600F1C454 /* SMWebVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMWebVC.swift; sourceTree = "<group>"; };
 		76439EB22133EE9100F1C454 /* SMWrongAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMWrongAlert.swift; sourceTree = "<group>"; };
+		764ED1AA213933780076C265 /* Launch.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Launch.xib; sourceTree = "<group>"; };
+		764ED1AC213933C90076C265 /* start_ind@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "start_ind@2x.png"; sourceTree = "<group>"; };
+		764ED1AE213934BB0076C265 /* yanzi1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yanzi1.jpeg; sourceTree = "<group>"; };
+		764ED1AF213934BC0076C265 /* yanzi2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yanzi2.jpeg; sourceTree = "<group>"; };
 		7692BDBE21339419007213AE /* KidsNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KidsNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7692BDC121339419007213AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7692BDCD2133941C007213AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -266,7 +273,6 @@
 		76A231242138CE2A00A3695A /* KDQijieHomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KDQijieHomeVC.xib; sourceTree = "<group>"; };
 		76A231272138E72C00A3695A /* DDDateCal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDDateCal.swift; sourceTree = "<group>"; };
 		76A231292139165700A3695A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		76A2312B2139216A00A3695A /* LaunchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		76A36083213522DA00A6A738 /* PIVoiceRecordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIVoiceRecordView.m; sourceTree = "<group>"; };
 		76A36084213522DA00A6A738 /* LGAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGAudioPlayer.m; sourceTree = "<group>"; };
 		76A36085213522DB00A6A738 /* LGVoiceRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGVoiceRecorder.m; sourceTree = "<group>"; };
@@ -380,8 +386,11 @@
 				7692BDD42133951E007213AE /* VC */,
 				7692BDD321339513007213AE /* Tools */,
 				76A231292139165700A3695A /* Assets.xcassets */,
-				76A2312B2139216A00A3695A /* LaunchScreen.xib */,
 				7692BDCD2133941C007213AE /* Info.plist */,
+				764ED1AC213933C90076C265 /* start_ind@2x.png */,
+				764ED1AE213934BB0076C265 /* yanzi1.jpeg */,
+				764ED1AF213934BC0076C265 /* yanzi2.jpeg */,
+				764ED1AA213933780076C265 /* Launch.xib */,
 			);
 			path = KidsNote;
 			sourceTree = "<group>";
@@ -785,6 +794,7 @@
 				76A231032136932C00A3695A /* shijie_html_24.html in Resources */,
 				76A230B9213550F900A3695A /* ele_sunnyBirdInvertedImage8.png in Resources */,
 				76A231012136932C00A3695A /* shijie_html_6.html in Resources */,
+				764ED1AD213933C90076C265 /* start_ind@2x.png in Resources */,
 				76439EA92133E2C100F1C454 /* KDDuSHuCell.xib in Resources */,
 				76A2308E213550F900A3695A /* ele_sunnyNightWave1.png in Resources */,
 				76A231052136932C00A3695A /* shijie_html_3.html in Resources */,
@@ -802,6 +812,7 @@
 				76A230A3213550F900A3695A /* ele_night_rain_cloud.png in Resources */,
 				76A230F82136932C00A3695A /* shijie_html_7.html in Resources */,
 				76A23090213550F900A3695A /* ele_sunnyBirdInvertedImage1.png in Resources */,
+				764ED1AB213933780076C265 /* Launch.xib in Resources */,
 				76A23097213550F900A3695A /* ele_sunnyBird3.png in Resources */,
 				76A230A2213550F900A3695A /* ele_sunnyNightStar1.png in Resources */,
 				76A2308D213550F900A3695A /* ele_sunnyBird7.png in Resources */,
@@ -811,6 +822,7 @@
 				76A23099213550F900A3695A /* ele_sunnyBirdInvertedImage6.png in Resources */,
 				76A230A4213550F900A3695A /* ele_sunnyNightMeteor2.png in Resources */,
 				7692BE0821339883007213AE /* SideMenuBottomView.xib in Resources */,
+				764ED1B0213934BC0076C265 /* yanzi1.jpeg in Resources */,
 				76A2309F213550F900A3695A /* ele_night_back_sky.png in Resources */,
 				76A230A6213550F900A3695A /* ele_sunnyCloud1.png in Resources */,
 				76439EA12133D57C00F1C454 /* KDAppHomeView.xib in Resources */,
@@ -823,6 +835,7 @@
 				76A23092213550F900A3695A /* ele_sunnyBird4.png in Resources */,
 				76A230AF213550F900A3695A /* ele_white_cloud_4.png in Resources */,
 				76A230A8213550F900A3695A /* ele_sunnyNightFirefly.png in Resources */,
+				764ED1B1213934BC0076C265 /* yanzi2.jpeg in Resources */,
 				76A230F72136932C00A3695A /* shijie_html_21.html in Resources */,
 				76A230B2213550F900A3695A /* ele_white_cloud_3.png in Resources */,
 				76A230AC213550F900A3695A /* ele_white_cloud_6.png in Resources */,
@@ -832,7 +845,6 @@
 				76A23093213550F900A3695A /* ele_sunnyNightWave2.png in Resources */,
 				76A231002136932C00A3695A /* shijie_html_2.html in Resources */,
 				76A23098213550F900A3695A /* ele_sunnyBirdInvertedImage7.png in Resources */,
-				76A2312C2139216A00A3695A /* LaunchScreen.xib in Resources */,
 				76A231082136932C00A3695A /* shijie_html_20.html in Resources */,
 				76A231022136932C00A3695A /* shijie_html_23.html in Resources */,
 				76A230A1213550F900A3695A /* ele_sunnyNightMeteor1.png in Resources */,

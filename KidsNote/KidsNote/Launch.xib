@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="start_ind.png" translatesAutoresizingMaskIntoConstraints="NO" id="8xo-Iw-xRY">
+                    <rect key="frame" x="147.5" y="536" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="5vR-UL-fVh"/>
+                        <constraint firstAttribute="height" constant="80" id="zAr-0y-U6b"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24 节气" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogb-fR-QBl">
+                    <rect key="frame" x="158" y="626" width="59.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yanzi1.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Tcm-kA-Cyh">
+                    <rect key="frame" x="60" y="136" width="100" height="74"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="74" id="4OF-RA-rjY"/>
+                        <constraint firstAttribute="width" constant="100" id="KyS-kD-ody"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yanzi2.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="rLv-za-FCH">
+                    <rect key="frame" x="230" y="274" width="100" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="KZz-u2-EFI"/>
+                        <constraint firstAttribute="height" constant="70" id="Yi0-0x-4ao"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ogb-fR-QBl" secondAttribute="bottom" constant="20" id="1cU-Oh-Yug"/>
+                <constraint firstItem="rLv-za-FCH" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="254" id="7Mc-wW-e2v"/>
+                <constraint firstItem="Tcm-kA-Cyh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="60" id="7ja-qF-cmK"/>
+                <constraint firstItem="8xo-Iw-xRY" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Ddd-aK-mNg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="rLv-za-FCH" secondAttribute="trailing" constant="45" id="HtJ-E8-8AA"/>
+                <constraint firstItem="ogb-fR-QBl" firstAttribute="top" secondItem="8xo-Iw-xRY" secondAttribute="bottom" constant="10" id="Q1q-dZ-GYg"/>
+                <constraint firstItem="Tcm-kA-Cyh" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="116" id="THT-9x-hIf"/>
+                <constraint firstItem="ogb-fR-QBl" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="gjh-gS-dN8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="84.5" y="107.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="start_ind.png" width="100" height="100"/>
+        <image name="yanzi1.jpeg" width="200" height="144"/>
+        <image name="yanzi2.jpeg" width="200" height="141"/>
+    </resources>
+</document>

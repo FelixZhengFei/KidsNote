@@ -91,7 +91,7 @@ extension KDAppHomeVC {
     fileprivate func configWeatherView(_ codeDayString:String) {
         let codeDay = Int32(codeDayString) ?? 0
         self.weatherView.frame = CGRect(x: 0, y: 0, width: MSC_WIDTH, height: MSC_HEIGHT)
-        self.weatherView.showWeatherAnimation(withType: 1)
+        self.weatherView.showWeatherAnimation(withType: codeDay)
         self.view.insertSubview(self.weatherView, at: 0)
 
     }
