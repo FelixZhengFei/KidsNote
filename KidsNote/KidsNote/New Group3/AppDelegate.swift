@@ -17,10 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        let menuContrainer = FWSideMenuContainerViewController.container(centerViewController: FWNavigationController(rootViewController: KDAppHomeVC()), leftMenuViewController: SideMenuViewController(), rightMenuViewController:nil)
-        menuContrainer.leftMenuWidth = kMenuWidth
-        
-        self.window?.rootViewController = menuContrainer
+        self.window?.rootViewController = FWNavigationController(rootViewController: KDAppHomeVC())
         FFLocationManager.shared.start { (placemark) in
         }
         self.window?.makeKeyAndVisible()
@@ -45,33 +42,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
-extension AppDelegate {
-    
-    class func resizableImage(imageName: String, edgeInsets: UIEdgeInsets) -> UIImage? {
-        
-        let image = UIImage(named: imageName)
-        if image == nil {
-            return nil
-        }
-        let imageW = image!.size.width
-        let imageH = image!.size.height
-        
-        return image?.resizableImage(withCapInsets: UIEdgeInsetsMake(imageH * edgeInsets.top, imageW * edgeInsets.left, imageH * edgeInsets.bottom, imageW * edgeInsets.right), resizingMode: .stretch)
-    }
-    
-    /// 将颜色转换为图片
-    ///
-    /// - Parameter color: 颜色
-    /// - Returns: UIImage
-    class func getImageWithColor(color: UIColor) -> UIImage {
-        
-        let rect = CGRect(x: 0, y: 0, width: 1, height: 1)
-        UIGraphicsBeginImageContext(rect.size)
-        let context = UIGraphicsGetCurrentContext()
-        context!.setFillColor(color.cgColor)
-        context!.fill(rect)
-        let image = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        return image!
-    }
-}

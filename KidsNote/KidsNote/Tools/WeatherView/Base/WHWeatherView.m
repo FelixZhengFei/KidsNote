@@ -91,7 +91,6 @@
     }
     
     
-    
     [UIView animateWithDuration:1
                           delay:0.0
                         options:UIViewAnimationOptionCurveEaseInOut

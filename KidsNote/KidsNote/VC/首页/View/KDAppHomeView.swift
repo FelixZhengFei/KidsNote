@@ -15,15 +15,24 @@ class KDAppHomeView: UIView,FFLoadXibProtocol {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var wenduLabel: UILabel!
     
+    var timeBlcock:(() -> Void)? //24时节
     var shijieBlcock:(() -> Void)? //24时节
+    var aboutUsBlcock:(() -> Void)? //24时节
 
     override func awakeFromNib() {
         
     }
+    
+    @IBAction func timeButtonClicked(_ sender: Any) {
+        timeBlcock!()
+    }
+    
     @IBAction func detailButtonClicked(_ sender: Any) {
-        FFPrint("detailButtonClicked")
         shijieBlcock!()
     }
     
- 
+    @IBAction func aboutUserButtonclicekd(_ sender: Any) {
+        aboutUsBlcock!()
+    }
+    
 }

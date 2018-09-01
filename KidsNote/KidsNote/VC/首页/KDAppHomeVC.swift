@@ -15,50 +15,56 @@ class KDAppHomeVC: KNBaseVC {
     fileprivate lazy var timeBaseView = KDJieqiTimeView.ff_LoadXib()
     fileprivate lazy var  weatherView = WHWeatherView()
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.menuContainerViewController.sideMenuPanMode = .defaults
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.white
         self.title = "24节气"
         configViews()
         getCityWeathcer()
-        let newInfo = DDDateCal.currentDateInfo()
-        let chinsesDateInfo = DDDateCal.transfromDateTomChinseDate(inputDate: (newInfo.year,newInfo.month,1));
-
-        homeView.timeLabel.text = "\(newInfo.year)年\(newInfo.month)月  \(chinsesDateInfo?.year ?? "未知")年\(chinsesDateInfo?.month ?? "未知")";
+        getCurrentTime()
     }
     
     fileprivate func configViews() {
         homeView.frame = CGRect(x: 0, y: 0, width: MSC_WIDTH, height: MSC_HEIGHT)
+        self.view.backgroundColor = self.view.getBlueGradientColor()
         self.view.addSubview(homeView)
         weak var weakSelf = self
         homeView.shijieBlcock = {
             weakSelf?.shijieButtonClecked()
         }
-        let buttonItem: UIBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu"), style: .plain, target: self, action: #selector(leftBtnAction))
-        buttonItem.imageInsets = UIEdgeInsetsMake(0, -6, 0, 0)
-        self.navigationItem.leftBarButtonItem = buttonItem
-        
-
-    }
-    
-    @objc func leftBtnAction() {
-        self.menuContainerViewController.toggleLeftSideMenu(completeBolck: nil)
-    }
-
-    /**24时节*/
-    fileprivate func shijieButtonClecked() {
-        timeBaseView.frame = CGRect(x: 0, y: 0, width: MSC_WIDTH, height: MSC_HEIGHT)
-        self.view.addSubview(timeBaseView)
-//        self.navigationController?.pushViewController(KDQijieHomeVC(), animated: true)
+        homeView.timeBlcock = {
+            weakSelf?.showTimeView()
+        }
+        homeView.aboutUsBlcock = {
+            weakSelf?.showAboutUsview()
+        }
     }
 }
 
 extension KDAppHomeVC {
+    
+    /**24时节*/
+    fileprivate func shijieButtonClecked() {
+        self.navigationController?.pushViewController(KDQijieHomeVC(), animated: true)
+    }
+    
+    /**时间列表*/
+    fileprivate func showTimeView() {
+        timeBaseView.frame = CGRect(x: 0, y: 0, width: MSC_WIDTH, height: MSC_HEIGHT)
+        self.view.addSubview(timeBaseView)
+    }
+    
+    /**关于*/
+    fileprivate func showAboutUsview() {
+        self.navigationController?.pushViewController(KDAboutUsVC(), animated: true)
+    }
+    
+    /**当前时间*/
+    fileprivate func getCurrentTime() {
+        let newInfo = DDDateCal.currentDateInfo()
+        let chinsesDateInfo = DDDateCal.transfromDateTomChinseDate(inputDate: (newInfo.year,newInfo.month,1));
+        
+        homeView.timeLabel.text = "\(newInfo.year)年\(newInfo.month)月  \(chinsesDateInfo?.year ?? "未知")年\(chinsesDateInfo?.month ?? "未知")";
+    }
     
     /**获取天气*/
     fileprivate func getCityWeathcer() {
@@ -84,7 +90,6 @@ extension KDAppHomeVC {
             let high = dic["high"] as? String,
             let low = dic["low"] as? String{
             homeView.cityLabel.text =  FFMemoryManager.userCity
-//            homeView.timeLabel.text =  date
             homeView.wenduLabel.text = "\(text_day)  温度：\(low)°C ~ \(high)°C"
             configWeatherView(code_day)
         }
@@ -96,6 +101,6 @@ extension KDAppHomeVC {
         self.weatherView.frame = CGRect(x: 0, y: 0, width: MSC_WIDTH, height: MSC_HEIGHT)
         self.weatherView.showWeatherAnimation(withType: codeDay)
         self.view.insertSubview(self.weatherView, at: 0)
-
+        
     }
 }
