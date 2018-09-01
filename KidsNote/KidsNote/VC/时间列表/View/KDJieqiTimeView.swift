@@ -12,11 +12,13 @@ import BYToolModule
 class KDJieqiTimeView: UIView,FFLoadXibProtocol {
     fileprivate var dataSourceArray = [KDShiJieTimeModel]()
 
+    @IBOutlet weak var top_Y_coord: NSLayoutConstraint!
     @IBOutlet weak var middleView: UIView!
     
     @IBOutlet weak var tableview: UITableView!
     
     override func awakeFromNib() {
+        top_Y_coord.constant = MNavBar_H + 10
         configViews()
         getData()
     }
@@ -29,10 +31,6 @@ class KDJieqiTimeView: UIView,FFLoadXibProtocol {
             self.tableview.reloadData()
         }
     }
-    
-    @IBAction func closeButtonCLicked(_ sender: Any) {
-        self.removeFromSuperview()
-    }
 }
 
 
@@ -42,7 +40,6 @@ extension KDJieqiTimeView:UITableViewDelegate, UITableViewDataSource {
         self.tableview.register(UINib(nibName: "KDTImeCell", bundle: nil), forCellReuseIdentifier: "KDTImeCell")
         self.tableview.delegate = self
         self.tableview.dataSource = self
-        middleView.viewAddLayerCorner(cornerRadius: 10, SMLINE_COLOR)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

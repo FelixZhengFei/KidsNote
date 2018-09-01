@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -17,51 +16,32 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P4i-Le-9Go">
-                    <rect key="frame" x="37.5" y="133.5" width="300" height="400"/>
+                    <rect key="frame" x="0.0" y="100" width="375" height="567"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRP-cU-crj">
-                            <rect key="frame" x="260" y="0.0" width="40" height="40"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="40" id="Mpe-Lr-TJu"/>
-                                <constraint firstAttribute="height" constant="40" id="lDk-BC-gCF"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                            <state key="normal" title="x">
-                                <color key="titleColor" red="1" green="0.61568627450000002" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
-                            </state>
-                            <connections>
-                                <action selector="closeButtonCLicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="qt7-FH-bmB"/>
-                            </connections>
-                        </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018年 节气时间" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ry-ee-yDC">
-                            <rect key="frame" x="-0.5" y="9.5" width="300" height="50"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="50" id="9tL-AK-8dS"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V2m-M6-M2K">
-                            <rect key="frame" x="0.0" y="60" width="300" height="50"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="名称" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJD-0c-fJC">
-                                    <rect key="frame" x="0.0" y="0.0" width="60" height="49"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名称" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJD-0c-fJC">
+                                    <rect key="frame" x="0.0" y="0.0" width="125" height="50"/>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                     <color key="textColor" red="0.26274509800000001" green="0.26274509800000001" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="阳历时间" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWX-yQ-jcb">
-                                    <rect key="frame" x="60" y="0.0" width="120" height="49"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="阴历时间" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jgd-Pd-kvf">
+                                    <rect key="frame" x="250" y="0.0" width="125" height="50"/>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                     <color key="textColor" red="0.26274509800000001" green="0.26274509800000001" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="阴历时间" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jgd-Pd-kvf">
-                                    <rect key="frame" x="180" y="0.0" width="120" height="49"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t47-EA-jgW">
+                                    <rect key="frame" x="0.0" y="49" width="375" height="1"/>
+                                    <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="0.89303691279999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="Bjf-gX-AvF"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="阳历时间" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWX-yQ-jcb">
+                                    <rect key="frame" x="125" y="0.0" width="125" height="50"/>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                     <color key="textColor" red="0.26274509800000001" green="0.26274509800000001" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
@@ -69,42 +49,52 @@
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
+                                <constraint firstItem="t47-EA-jgW" firstAttribute="leading" secondItem="V2m-M6-M2K" secondAttribute="leading" id="1OQ-nM-YBB"/>
+                                <constraint firstAttribute="bottom" secondItem="cWX-yQ-jcb" secondAttribute="bottom" id="2bb-gX-mOL"/>
+                                <constraint firstAttribute="bottom" secondItem="t47-EA-jgW" secondAttribute="bottom" id="5g6-JY-98x"/>
+                                <constraint firstAttribute="trailing" secondItem="Jgd-Pd-kvf" secondAttribute="trailing" id="7dx-AU-fSw"/>
+                                <constraint firstItem="HJD-0c-fJC" firstAttribute="width" secondItem="cWX-yQ-jcb" secondAttribute="width" id="8ku-3b-W8A"/>
+                                <constraint firstItem="HJD-0c-fJC" firstAttribute="width" secondItem="Jgd-Pd-kvf" secondAttribute="width" id="FSA-xI-6uj"/>
+                                <constraint firstAttribute="bottom" secondItem="Jgd-Pd-kvf" secondAttribute="bottom" id="PDh-yx-Agh"/>
                                 <constraint firstAttribute="height" constant="50" id="XeT-e3-9dJ"/>
+                                <constraint firstItem="Jgd-Pd-kvf" firstAttribute="top" secondItem="V2m-M6-M2K" secondAttribute="top" id="nGd-qg-Vg5"/>
+                                <constraint firstItem="HJD-0c-fJC" firstAttribute="leading" secondItem="V2m-M6-M2K" secondAttribute="leading" id="o70-P2-O3h"/>
+                                <constraint firstItem="HJD-0c-fJC" firstAttribute="top" secondItem="V2m-M6-M2K" secondAttribute="top" id="okT-Ej-cXY"/>
+                                <constraint firstItem="cWX-yQ-jcb" firstAttribute="leading" secondItem="HJD-0c-fJC" secondAttribute="trailing" id="s6g-Ea-5qC"/>
+                                <constraint firstAttribute="trailing" secondItem="t47-EA-jgW" secondAttribute="trailing" id="uJi-cz-YS1"/>
+                                <constraint firstAttribute="bottom" secondItem="HJD-0c-fJC" secondAttribute="bottom" id="uml-T3-8MA"/>
+                                <constraint firstItem="Jgd-Pd-kvf" firstAttribute="leading" secondItem="cWX-yQ-jcb" secondAttribute="trailing" id="xP0-rg-ohM"/>
+                                <constraint firstItem="cWX-yQ-jcb" firstAttribute="top" secondItem="V2m-M6-M2K" secondAttribute="top" id="yVq-1r-xa6"/>
                             </constraints>
                         </view>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Sdx-Fb-Zwt">
-                            <rect key="frame" x="0.0" y="110" width="300" height="290"/>
+                            <rect key="frame" x="0.0" y="50" width="375" height="517"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </tableView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="Sdx-Fb-Zwt" firstAttribute="top" secondItem="V2m-M6-M2K" secondAttribute="bottom" id="7e1-ER-f7v"/>
+                        <constraint firstItem="V2m-M6-M2K" firstAttribute="top" secondItem="P4i-Le-9Go" secondAttribute="top" id="Azf-kI-8pn"/>
                         <constraint firstItem="Sdx-Fb-Zwt" firstAttribute="leading" secondItem="P4i-Le-9Go" secondAttribute="leading" id="ERa-vP-pyt"/>
-                        <constraint firstAttribute="height" constant="400" id="ETX-5H-iut"/>
-                        <constraint firstItem="vRP-cU-crj" firstAttribute="top" secondItem="P4i-Le-9Go" secondAttribute="top" id="H5J-pj-eOh"/>
                         <constraint firstAttribute="bottom" secondItem="Sdx-Fb-Zwt" secondAttribute="bottom" id="KEN-Rf-ALx"/>
                         <constraint firstItem="V2m-M6-M2K" firstAttribute="leading" secondItem="P4i-Le-9Go" secondAttribute="leading" id="TXH-iQ-0NL"/>
                         <constraint firstAttribute="trailing" secondItem="V2m-M6-M2K" secondAttribute="trailing" id="VbI-0V-kz0"/>
                         <constraint firstAttribute="trailing" secondItem="Sdx-Fb-Zwt" secondAttribute="trailing" id="Vzu-MU-Wxz"/>
-                        <constraint firstAttribute="trailing" secondItem="vRP-cU-crj" secondAttribute="trailing" id="Zpc-Hf-DMO"/>
-                        <constraint firstAttribute="trailing" secondItem="0Ry-ee-yDC" secondAttribute="trailing" id="dTL-dE-yys"/>
-                        <constraint firstItem="0Ry-ee-yDC" firstAttribute="top" secondItem="P4i-Le-9Go" secondAttribute="top" constant="10" id="fLl-MH-uU6"/>
-                        <constraint firstItem="V2m-M6-M2K" firstAttribute="top" secondItem="0Ry-ee-yDC" secondAttribute="bottom" constant="0.5" id="hnY-JF-BZo"/>
-                        <constraint firstItem="0Ry-ee-yDC" firstAttribute="leading" secondItem="P4i-Le-9Go" secondAttribute="leading" id="ieT-zp-Zdo"/>
-                        <constraint firstAttribute="width" constant="300" id="tkk-Kv-FhV"/>
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.28337353187919462" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="P4i-Le-9Go" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="QsT-lb-RGT"/>
-                <constraint firstItem="P4i-Le-9Go" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="nku-5U-blo"/>
+                <constraint firstAttribute="bottom" secondItem="P4i-Le-9Go" secondAttribute="bottom" id="7Pc-zO-gVi"/>
+                <constraint firstItem="P4i-Le-9Go" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="MpW-XN-AS1"/>
+                <constraint firstAttribute="trailing" secondItem="P4i-Le-9Go" secondAttribute="trailing" id="Yl4-1s-oxc"/>
+                <constraint firstItem="P4i-Le-9Go" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="100" id="jks-nW-KKU"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="middleView" destination="P4i-Le-9Go" id="lIq-2r-eF9"/>
                 <outlet property="tableview" destination="Sdx-Fb-Zwt" id="cuF-uk-c60"/>
+                <outlet property="top_Y_coord" destination="jks-nW-KKU" id="eRM-jG-0uq"/>
             </connections>
             <point key="canvasLocation" x="24.5" y="51.5"/>
         </view>
