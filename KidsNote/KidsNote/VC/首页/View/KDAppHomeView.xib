@@ -25,17 +25,17 @@
                                     <rect key="frame" x="0.0" y="34" width="375" height="70"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="杭州" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXB-Ks-wm4">
-                                            <rect key="frame" x="15" y="0.0" width="37" height="44"/>
+                                            <rect key="frame" x="15" y="0.0" width="33" height="44"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="44" id="jXL-9g-lbR"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="温度 29～34" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8H-BH-psk">
-                                            <rect key="frame" x="15" y="44" width="71" height="15"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <rect key="frame" x="15" y="44" width="65" height="13.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -93,7 +93,7 @@
                     </constraints>
                 </scrollView>
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yBc-bg-aLv">
-                    <rect key="frame" x="315" y="462" width="60" height="50"/>
+                    <rect key="frame" x="315" y="527" width="60" height="50"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="time_bg" translatesAutoresizingMaskIntoConstraints="NO" id="B2U-1T-KBb">
                             <rect key="frame" x="17.5" y="0.0" width="25" height="25"/>
@@ -126,7 +126,7 @@
                     </constraints>
                 </view>
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hg9-cH-GSB">
-                    <rect key="frame" x="315" y="532" width="60" height="50"/>
+                    <rect key="frame" x="315" y="457" width="60" height="50"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detail_icon" translatesAutoresizingMaskIntoConstraints="NO" id="s7v-Yd-2sV">
                             <rect key="frame" x="17.5" y="0.0" width="25" height="25"/>
@@ -159,7 +159,7 @@
                     </constraints>
                 </view>
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zB0-Ih-7LD">
-                    <rect key="frame" x="315" y="602" width="60" height="50"/>
+                    <rect key="frame" x="315" y="597" width="60" height="50"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aboutus" translatesAutoresizingMaskIntoConstraints="NO" id="yCb-sG-a8e">
                             <rect key="frame" x="17.5" y="0.0" width="25" height="25"/>
@@ -194,16 +194,16 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="hg9-cH-GSB" firstAttribute="top" secondItem="yBc-bg-aLv" secondAttribute="bottom" constant="20" id="2jR-cI-sfp"/>
                 <constraint firstItem="ZDS-Nv-xZI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6pC-Te-WHv"/>
-                <constraint firstItem="zB0-Ih-7LD" firstAttribute="top" secondItem="hg9-cH-GSB" secondAttribute="bottom" constant="20" id="8Z7-ex-elM"/>
-                <constraint firstAttribute="bottom" secondItem="zB0-Ih-7LD" secondAttribute="bottom" constant="15" id="FIY-hL-Pt2"/>
+                <constraint firstAttribute="bottom" secondItem="zB0-Ih-7LD" secondAttribute="bottom" constant="20" id="FIY-hL-Pt2"/>
                 <constraint firstAttribute="trailing" secondItem="ZDS-Nv-xZI" secondAttribute="trailing" id="Mdm-TZ-vx0"/>
                 <constraint firstItem="ZDS-Nv-xZI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="TmJ-D2-FdP"/>
                 <constraint firstAttribute="trailing" secondItem="hg9-cH-GSB" secondAttribute="trailing" id="UIE-rh-Usp"/>
+                <constraint firstItem="zB0-Ih-7LD" firstAttribute="top" secondItem="yBc-bg-aLv" secondAttribute="bottom" constant="20" id="Vv1-vJ-Uvd"/>
                 <constraint firstAttribute="bottom" secondItem="ZDS-Nv-xZI" secondAttribute="bottom" id="buY-8J-7Qy"/>
                 <constraint firstAttribute="trailing" secondItem="zB0-Ih-7LD" secondAttribute="trailing" id="hFi-mY-BO6"/>
                 <constraint firstAttribute="trailing" secondItem="yBc-bg-aLv" secondAttribute="trailing" id="owA-Hg-lSL"/>
+                <constraint firstItem="yBc-bg-aLv" firstAttribute="top" secondItem="hg9-cH-GSB" secondAttribute="bottom" constant="20" id="tOK-yt-dEI"/>
             </constraints>
             <connections>
                 <outlet property="cityLabel" destination="PXB-Ks-wm4" id="Dwc-WX-Mdw"/>

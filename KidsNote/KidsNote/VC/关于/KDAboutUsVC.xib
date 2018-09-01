@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KDAboutUsVC" customModule="KidsNote" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="start_ind" translatesAutoresizingMaskIntoConstraints="NO" id="Ina-lJ-gLa">
+                    <rect key="frame" x="157.5" y="120" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="RBe-0n-QgS"/>
+                        <constraint firstAttribute="width" constant="60" id="v0A-WA-4qw"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JwR-cP-hs1">
+                    <rect key="frame" x="30" y="224.5" width="315" height="134"/>
+                    <string key="text">      农历二十四节气是中国古代订立的一种用来指导农事的补充历法，是古代中国劳动人民长期经验的积累和智慧的结晶。
+
+      二十四节气即：立春、 雨水、惊蛰、春分、清明、谷雨、立夏、小满、芒种、夏至、小暑、大暑，立秋、处暑、白露、秋分、寒露、霜降，立冬、小雪、大雪、冬至、小寒和大寒</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="v1.0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RsL-cX-qJe">
+                    <rect key="frame" x="166" y="185" width="42" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.2627450980392157" green="0.2627450980392157" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ina-lJ-gLa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="14k-uF-uvC"/>
+                <constraint firstItem="RsL-cX-qJe" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3dn-g4-iOK"/>
+                <constraint firstItem="RsL-cX-qJe" firstAttribute="top" secondItem="Ina-lJ-gLa" secondAttribute="bottom" constant="5" id="3oe-6f-JQd"/>
+                <constraint firstItem="JwR-cP-hs1" firstAttribute="top" secondItem="RsL-cX-qJe" secondAttribute="bottom" constant="20" id="K34-2r-ucf"/>
+                <constraint firstItem="JwR-cP-hs1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Pst-TA-1p2"/>
+                <constraint firstItem="Ina-lJ-gLa" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="W1R-pa-0EX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JwR-cP-hs1" secondAttribute="trailing" constant="30" id="ct0-3H-ndK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="31.5" y="102.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="start_ind" width="16" height="16"/>
+    </resources>
+</document>

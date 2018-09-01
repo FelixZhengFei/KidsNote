@@ -20,11 +20,12 @@
 		764ED1B921393F5A0076C265 /* KDTImeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764ED1B721393F5A0076C265 /* KDTImeCell.swift */; };
 		764ED1BA21393F5A0076C265 /* KDTImeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 764ED1B821393F5A0076C265 /* KDTImeCell.xib */; };
 		764ED1BC21393F880076C265 /* KDJieqiTimeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 764ED1BB21393F880076C265 /* KDJieqiTimeView.xib */; };
-		764ED1C0213A28580076C265 /* KDAboutUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764ED1BF213A28580076C265 /* KDAboutUsVC.swift */; };
 		764ED1C2213A29940076C265 /* KDTimeShowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764ED1C1213A29940076C265 /* KDTimeShowVC.swift */; };
 		764ED1C7213A2AD10076C265 /* LUNavgationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764ED1C4213A2AD00076C265 /* LUNavgationVC.swift */; };
 		764ED1C8213A2AD10076C265 /* LUNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764ED1C5213A2AD10076C265 /* LUNavBarView.swift */; };
 		764ED1C9213A2AD10076C265 /* LUBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764ED1C6213A2AD10076C265 /* LUBaseVC.swift */; };
+		764ED1CC213A39520076C265 /* KDAboutUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764ED1CA213A39520076C265 /* KDAboutUsVC.swift */; };
+		764ED1CD213A39520076C265 /* KDAboutUsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 764ED1CB213A39520076C265 /* KDAboutUsVC.xib */; };
 		7692BDC221339419007213AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDC121339419007213AE /* AppDelegate.swift */; };
 		7692BDD921339582007213AE /* SMGlobalConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDD821339582007213AE /* SMGlobalConfig.swift */; };
 		7692BDF721339660007213AE /* KDAppHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDF621339660007213AE /* KDAppHomeVC.swift */; };
@@ -138,11 +139,12 @@
 		764ED1B721393F5A0076C265 /* KDTImeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDTImeCell.swift; sourceTree = "<group>"; };
 		764ED1B821393F5A0076C265 /* KDTImeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KDTImeCell.xib; sourceTree = "<group>"; };
 		764ED1BB21393F880076C265 /* KDJieqiTimeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KDJieqiTimeView.xib; sourceTree = "<group>"; };
-		764ED1BF213A28580076C265 /* KDAboutUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDAboutUsVC.swift; sourceTree = "<group>"; };
 		764ED1C1213A29940076C265 /* KDTimeShowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDTimeShowVC.swift; sourceTree = "<group>"; };
 		764ED1C4213A2AD00076C265 /* LUNavgationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LUNavgationVC.swift; sourceTree = "<group>"; };
 		764ED1C5213A2AD10076C265 /* LUNavBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LUNavBarView.swift; sourceTree = "<group>"; };
 		764ED1C6213A2AD10076C265 /* LUBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LUBaseVC.swift; sourceTree = "<group>"; };
+		764ED1CA213A39520076C265 /* KDAboutUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDAboutUsVC.swift; sourceTree = "<group>"; };
+		764ED1CB213A39520076C265 /* KDAboutUsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KDAboutUsVC.xib; sourceTree = "<group>"; };
 		7692BDBE21339419007213AE /* KidsNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KidsNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7692BDC121339419007213AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7692BDCD2133941C007213AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -307,7 +309,8 @@
 		764ED1BE213A28260076C265 /* 关于 */ = {
 			isa = PBXGroup;
 			children = (
-				764ED1BF213A28580076C265 /* KDAboutUsVC.swift */,
+				764ED1CA213A39520076C265 /* KDAboutUsVC.swift */,
+				764ED1CB213A39520076C265 /* KDAboutUsVC.xib */,
 			);
 			path = "关于";
 			sourceTree = "<group>";
@@ -730,6 +733,7 @@
 				76A23090213550F900A3695A /* ele_sunnyBirdInvertedImage1.png in Resources */,
 				764ED1AB213933780076C265 /* Launch.xib in Resources */,
 				76A23097213550F900A3695A /* ele_sunnyBird3.png in Resources */,
+				764ED1CD213A39520076C265 /* KDAboutUsVC.xib in Resources */,
 				76A230A2213550F900A3695A /* ele_sunnyNightStar1.png in Resources */,
 				76A2308D213550F900A3695A /* ele_sunnyBird7.png in Resources */,
 				76A230B4213550F900A3695A /* ele_white_cloud_9.png in Resources */,
@@ -882,7 +886,6 @@
 				76A231252138CE2A00A3695A /* KDQijieHomeVC.swift in Sources */,
 				76A231282138E72C00A3695A /* DDDateCal.swift in Sources */,
 				76A23085213550F900A3695A /* WHWeatherSunView.m in Sources */,
-				764ED1C0213A28580076C265 /* KDAboutUsVC.swift in Sources */,
 				76A2311121378F1C00A3695A /* FFMemoryManager.swift in Sources */,
 				76A230D82136747800A3695A /* KDJieQiDetailVC.swift in Sources */,
 				764ED1C9213A2AD10076C265 /* LUBaseVC.swift in Sources */,
@@ -898,6 +901,7 @@
 				76A2310F21378EC100A3695A /* FFLocationManager.swift in Sources */,
 				7692BDD921339582007213AE /* SMGlobalConfig.swift in Sources */,
 				76A23089213550F900A3695A /* WHWeatherBaseView.m in Sources */,
+				764ED1CC213A39520076C265 /* KDAboutUsVC.swift in Sources */,
 				76A231172137EEA700A3695A /* WHWeatherFeng.m in Sources */,
 				76439EB12133EDE600F1C454 /* SMWebVC.swift in Sources */,
 				76A23086213550F900A3695A /* WHWeatherClound.m in Sources */,

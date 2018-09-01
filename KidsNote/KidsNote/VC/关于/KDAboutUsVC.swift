@@ -13,7 +13,6 @@ class KDAboutUsVC: LUBaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "关于"
-        self.view.backgroundColor = UIColor.white
         // Do any additional setup after loading the view.
     }
 

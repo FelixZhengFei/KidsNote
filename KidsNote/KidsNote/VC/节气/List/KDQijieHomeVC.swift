@@ -11,9 +11,11 @@ import UIKit
 class KDQijieHomeVC: LUBaseVC {
     fileprivate var dataSourceArray = [KDShiJieModel]()
 
+    @IBOutlet weak var top_Y_Coord: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "24节气"
+        top_Y_Coord.constant = start_Y + 10
         getData()
     }
 
