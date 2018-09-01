@@ -17,6 +17,7 @@ class KDAppHomeVC: LUBaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "24节气"
+        self.navigationHeaderView.backgroundColor = UIColor.clear
         self.hideBackButton()
         configViews()
         getCityWeathcer()
@@ -62,7 +63,7 @@ extension KDAppHomeVC {
         let newInfo = DDDateCal.currentDateInfo()
         let chinsesDateInfo = DDDateCal.transfromDateTomChinseDate(inputDate: (newInfo.year,newInfo.month,1));
         
-        homeView.timeLabel.text = "\(newInfo.year)年\(newInfo.month)月  \(chinsesDateInfo?.year ?? "未知")年\(chinsesDateInfo?.month ?? "未知")";
+        homeView.timeLabel.text = "\(newInfo.year)年\(newInfo.month)月\(newInfo.day)日 | \(chinsesDateInfo?.year ?? "未知")年\(chinsesDateInfo?.month ?? "未知")";
     }
     
     /**获取天气*/

@@ -15,7 +15,6 @@ class LUBaseVC: UIViewController {
     /**导航栏*/
     lazy var navigationHeaderView: LUNavBarView = { ()->LUNavBarView in
         let navview = LUNavBarView(frame: CGRect(x: 0, y: 0, width: MSC_WIDTH, height: 64))
-        navview.backgroundColor = UIColor.white
         return navview
     }();
 
@@ -47,11 +46,6 @@ class LUBaseVC: UIViewController {
         self.navigationHeaderView.leftButton.isHidden = true
     }
     
-    /**隐藏导航线条*/
-    public func hideLine() {
-        self.navigationHeaderView.line.isHidden = true
-    }
-
     /**返回按键*/
     @objc
     public func leftButtonClicked() {

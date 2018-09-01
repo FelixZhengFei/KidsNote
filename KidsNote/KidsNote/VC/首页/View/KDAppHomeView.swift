@@ -10,6 +10,7 @@ import UIKit
 import BYToolModule
 
 class KDAppHomeView: UIView,FFLoadXibProtocol {
+    @IBOutlet weak var top_Y_coord: NSLayoutConstraint!
     
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
@@ -20,7 +21,7 @@ class KDAppHomeView: UIView,FFLoadXibProtocol {
     var aboutUsBlcock:(() -> Void)? //24时节
 
     override func awakeFromNib() {
-        
+        top_Y_coord.constant = MNavBar_H
     }
     
     @IBAction func timeButtonClicked(_ sender: Any) {

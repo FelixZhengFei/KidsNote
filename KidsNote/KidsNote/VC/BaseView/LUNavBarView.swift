@@ -11,7 +11,6 @@ class LUNavBarView: UIView {
     public var titleLabel:UILabel!
     
     public var leftButton:UIButton!
-    public var line:UIView!
     public var title: String? {
         get {
             return self.titleLabel.text
@@ -35,19 +34,16 @@ class LUNavBarView: UIView {
         self.backgroundColor = UIColor.white
         setupTitleLabel()
         setupLeftButton()
-        self.line = UIView(frame: CGRect(x: 0, y: MNavBar_H - 0.5, width: MSC_WIDTH, height: 0.5));
-        self.line.backgroundColor = UIColor.clear
-        self.addSubview(line)
     }
     
     /**title Label*/
     fileprivate func setupTitleLabel() {
         titleLabel = UILabel()
         titleLabel.textAlignment = .center
-        titleLabel.textColor = UIColor.ff_HexColor(0x2ad5e4)
+        titleLabel.textColor = UIColor.ff_HexColor(0x333333)
         titleLabel.backgroundColor = UIColor.clear
         if #available(iOS 8.2, *) {
-            titleLabel.font = UIFont.systemFont(ofSize: 17, weight: .medium)
+            titleLabel.font = UIFont.systemFont(ofSize: 18, weight: .bold)
         } else {
             titleLabel.font = UIFont.systemFont(ofSize: 17)
         }
@@ -59,8 +55,8 @@ class LUNavBarView: UIView {
     /**返回按键*/
     fileprivate func setupLeftButton() {
         leftButton = UIButton(type: .custom)
-        leftButton.setImage(UIImage(named: "ico_menu_back"), for: UIControlState(rawValue: 0))
-        leftButton.setImage(UIImage(named: "ico_menu_back"), for: .highlighted)
+        leftButton.setImage(UIImage(named: "com_arrow_vc_back"), for: UIControlState(rawValue: 0))
+        leftButton.setImage(UIImage(named: "com_arrow_vc_back"), for: .highlighted)
         leftButton.sizeToFit()
         leftButton.backgroundColor = UIColor.clear
         self.addSubview(leftButton)
