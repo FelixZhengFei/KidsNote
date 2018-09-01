@@ -10,14 +10,14 @@ import Foundation
 import UIKit
 import Alamofire
 
-class KDAppHomeVC: KNBaseVC {
+class KDAppHomeVC: LUBaseVC {
     fileprivate lazy var homeView = KDAppHomeView.ff_LoadXib()
-    fileprivate lazy var timeBaseView = KDJieqiTimeView.ff_LoadXib()
     fileprivate lazy var  weatherView = WHWeatherView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "24节气"
+        self.hideBackButton()
         configViews()
         getCityWeathcer()
         getCurrentTime()
@@ -49,8 +49,7 @@ extension KDAppHomeVC {
     
     /**时间列表*/
     fileprivate func showTimeView() {
-        timeBaseView.frame = CGRect(x: 0, y: 0, width: MSC_WIDTH, height: MSC_HEIGHT)
-        self.view.addSubview(timeBaseView)
+        self.navigationController?.pushViewController(KDTimeShowVC(), animated: true)
     }
     
     /**关于*/

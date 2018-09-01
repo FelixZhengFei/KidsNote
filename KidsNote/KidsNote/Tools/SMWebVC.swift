@@ -12,7 +12,7 @@ import WebKit
 let k_title:String = "title"
 let k_ProssView:String = "estimatedProgress"
 
-class SMWebVC : KNBaseVC,WKNavigationDelegate,WKUIDelegate,WKScriptMessageHandler {
+class SMWebVC : LUBaseVC,WKNavigationDelegate,WKUIDelegate,WKScriptMessageHandler {
     
     fileprivate var smWebView:WKWebView?
     fileprivate var lineProgressView:UIProgressView?

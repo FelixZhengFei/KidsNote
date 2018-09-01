@@ -8,7 +8,7 @@
 
 import UIKit
 
-class KDQijieHomeVC: KNBaseVC {
+class KDQijieHomeVC: LUBaseVC {
     fileprivate var dataSourceArray = [KDShiJieModel]()
 
     override func viewDidLoad() {

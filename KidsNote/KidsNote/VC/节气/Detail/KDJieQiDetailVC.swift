@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class KDJieQiDetailVC: KNBaseVC {
+class KDJieQiDetailVC: LUBaseVC {
     
     @IBOutlet weak var bgImageView: UIImageView!
     public var currentModel:KDShiJieModel!

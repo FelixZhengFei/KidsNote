@@ -1,5 +1,5 @@
 //
-//  KDAboutUsVC.swift
+//  KDTimeShowVC.swift
 //  KidsNote
 //
 //  Created by 郑强飞 on 2018/9/1.
@@ -8,12 +8,14 @@
 
 import UIKit
 
-class KDAboutUsVC: LUBaseVC {
+class KDTimeShowVC: LUBaseVC {
+    fileprivate lazy var timeBaseView = KDJieqiTimeView.ff_LoadXib()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "关于"
         self.view.backgroundColor = UIColor.white
+        timeBaseView.frame = CGRect(x: 0, y: 0, width: MSC_WIDTH, height: MSC_HEIGHT)
+        self.view.addSubview(timeBaseView)
         // Do any additional setup after loading the view.
     }
 
@@ -22,15 +24,4 @@ class KDAboutUsVC: LUBaseVC {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -21,11 +21,13 @@
 		764ED1BA21393F5A0076C265 /* KDTImeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 764ED1B821393F5A0076C265 /* KDTImeCell.xib */; };
 		764ED1BC21393F880076C265 /* KDJieqiTimeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 764ED1BB21393F880076C265 /* KDJieqiTimeView.xib */; };
 		764ED1C0213A28580076C265 /* KDAboutUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764ED1BF213A28580076C265 /* KDAboutUsVC.swift */; };
+		764ED1C2213A29940076C265 /* KDTimeShowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764ED1C1213A29940076C265 /* KDTimeShowVC.swift */; };
+		764ED1C7213A2AD10076C265 /* LUNavgationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764ED1C4213A2AD00076C265 /* LUNavgationVC.swift */; };
+		764ED1C8213A2AD10076C265 /* LUNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764ED1C5213A2AD10076C265 /* LUNavBarView.swift */; };
+		764ED1C9213A2AD10076C265 /* LUBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764ED1C6213A2AD10076C265 /* LUBaseVC.swift */; };
 		7692BDC221339419007213AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDC121339419007213AE /* AppDelegate.swift */; };
 		7692BDD921339582007213AE /* SMGlobalConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDD821339582007213AE /* SMGlobalConfig.swift */; };
-		7692BDF42133960D007213AE /* FWNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDF12133960C007213AE /* FWNavigationController.swift */; };
 		7692BDF721339660007213AE /* KDAppHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BDF621339660007213AE /* KDAppHomeVC.swift */; };
-		7692BE1221339947007213AE /* KNBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7692BE1121339947007213AE /* KNBaseVC.swift */; };
 		76A23085213550F900A3695A /* WHWeatherSunView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A23040213550F800A3695A /* WHWeatherSunView.m */; };
 		76A23086213550F900A3695A /* WHWeatherClound.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A23043213550F800A3695A /* WHWeatherClound.m */; };
 		76A23087213550F900A3695A /* WHWeatherRainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A23047213550F800A3695A /* WHWeatherRainView.m */; };
@@ -137,13 +139,15 @@
 		764ED1B821393F5A0076C265 /* KDTImeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KDTImeCell.xib; sourceTree = "<group>"; };
 		764ED1BB21393F880076C265 /* KDJieqiTimeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KDJieqiTimeView.xib; sourceTree = "<group>"; };
 		764ED1BF213A28580076C265 /* KDAboutUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDAboutUsVC.swift; sourceTree = "<group>"; };
+		764ED1C1213A29940076C265 /* KDTimeShowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDTimeShowVC.swift; sourceTree = "<group>"; };
+		764ED1C4213A2AD00076C265 /* LUNavgationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LUNavgationVC.swift; sourceTree = "<group>"; };
+		764ED1C5213A2AD10076C265 /* LUNavBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LUNavBarView.swift; sourceTree = "<group>"; };
+		764ED1C6213A2AD10076C265 /* LUBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LUBaseVC.swift; sourceTree = "<group>"; };
 		7692BDBE21339419007213AE /* KidsNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KidsNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7692BDC121339419007213AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7692BDCD2133941C007213AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7692BDD821339582007213AE /* SMGlobalConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMGlobalConfig.swift; sourceTree = "<group>"; };
-		7692BDF12133960C007213AE /* FWNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FWNavigationController.swift; sourceTree = "<group>"; };
 		7692BDF621339660007213AE /* KDAppHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDAppHomeVC.swift; sourceTree = "<group>"; };
-		7692BE1121339947007213AE /* KNBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KNBaseVC.swift; sourceTree = "<group>"; };
 		7692BE1C2133A5CF007213AE /* KDBridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KDBridgeHeader.h; sourceTree = "<group>"; };
 		76A2303D213550F800A3695A /* WHWeatherHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHWeatherHeader.h; sourceTree = "<group>"; };
 		76A23040213550F800A3695A /* WHWeatherSunView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHWeatherSunView.m; sourceTree = "<group>"; };
@@ -276,12 +280,8 @@
 		76439E9F2133D56C00F1C454 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				764ED1B621393DEB0076C265 /* Cell */,
-				76A231272138E72C00A3695A /* DDDateCal.swift */,
 				76439E9D2133D56300F1C454 /* KDAppHomeView.swift */,
 				76439EA02133D57C00F1C454 /* KDAppHomeView.xib */,
-				764ED1B421393D100076C265 /* KDJieqiTimeView.swift */,
-				764ED1BB21393F880076C265 /* KDJieqiTimeView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -298,6 +298,8 @@
 		764ED1BD213A281B0076C265 /* 时间列表 */ = {
 			isa = PBXGroup;
 			children = (
+				764ED1C3213A29AF0076C265 /* View */,
+				764ED1C1213A29940076C265 /* KDTimeShowVC.swift */,
 			);
 			path = "时间列表";
 			sourceTree = "<group>";
@@ -308,6 +310,16 @@
 				764ED1BF213A28580076C265 /* KDAboutUsVC.swift */,
 			);
 			path = "关于";
+			sourceTree = "<group>";
+		};
+		764ED1C3213A29AF0076C265 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				764ED1B621393DEB0076C265 /* Cell */,
+				764ED1B421393D100076C265 /* KDJieqiTimeView.swift */,
+				764ED1BB21393F880076C265 /* KDJieqiTimeView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		7692BDB521339419007213AE = {
@@ -353,6 +365,7 @@
 				76A230DD2136883C00A3695A /* Html */,
 				76439EB22133EE9100F1C454 /* SMWrongAlert.swift */,
 				76439EB02133EDE600F1C454 /* SMWebVC.swift */,
+				76A231272138E72C00A3695A /* DDDateCal.swift */,
 				76A2310E21378EC100A3695A /* FFLocationManager.swift */,
 				76A2311021378F1B00A3695A /* FFMemoryManager.swift */,
 				76A23112213795A800A3695A /* SMNetworkManager.swift */,
@@ -404,8 +417,9 @@
 		7692BDDA213395A3007213AE /* BaseView */ = {
 			isa = PBXGroup;
 			children = (
-				7692BE1121339947007213AE /* KNBaseVC.swift */,
-				7692BDF12133960C007213AE /* FWNavigationController.swift */,
+				764ED1C6213A2AD10076C265 /* LUBaseVC.swift */,
+				764ED1C5213A2AD10076C265 /* LUNavBarView.swift */,
+				764ED1C4213A2AD00076C265 /* LUNavgationVC.swift */,
 			);
 			path = BaseView;
 			sourceTree = "<group>";
@@ -858,19 +872,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7692BDF42133960D007213AE /* FWNavigationController.swift in Sources */,
+				764ED1C2213A29940076C265 /* KDTimeShowVC.swift in Sources */,
 				76439E9E2133D56300F1C454 /* KDAppHomeView.swift in Sources */,
+				764ED1C7213A2AD10076C265 /* LUNavgationVC.swift in Sources */,
 				76A23087213550F900A3695A /* WHWeatherRainView.m in Sources */,
 				76439EB32133EE9100F1C454 /* SMWrongAlert.swift in Sources */,
 				7692BDF721339660007213AE /* KDAppHomeVC.swift in Sources */,
 				764ED1B521393D100076C265 /* KDJieqiTimeView.swift in Sources */,
-				7692BE1221339947007213AE /* KNBaseVC.swift in Sources */,
 				76A231252138CE2A00A3695A /* KDQijieHomeVC.swift in Sources */,
 				76A231282138E72C00A3695A /* DDDateCal.swift in Sources */,
 				76A23085213550F900A3695A /* WHWeatherSunView.m in Sources */,
 				764ED1C0213A28580076C265 /* KDAboutUsVC.swift in Sources */,
 				76A2311121378F1C00A3695A /* FFMemoryManager.swift in Sources */,
 				76A230D82136747800A3695A /* KDJieQiDetailVC.swift in Sources */,
+				764ED1C9213A2AD10076C265 /* LUBaseVC.swift in Sources */,
 				76A23088213550F900A3695A /* WHWeatherLightingView.m in Sources */,
 				76A230D121366C9C00A3695A /* KDShiJieModel.swift in Sources */,
 				76A23113213795A800A3695A /* SMNetworkManager.swift in Sources */,
@@ -879,6 +894,7 @@
 				764ED1B921393F5A0076C265 /* KDTImeCell.swift in Sources */,
 				76A230CF21366C9500A3695A /* SMBaseMappable.swift in Sources */,
 				76A230BB213550F900A3695A /* WHWeatherSnowView.m in Sources */,
+				764ED1C8213A2AD10076C265 /* LUNavBarView.swift in Sources */,
 				76A2310F21378EC100A3695A /* FFLocationManager.swift in Sources */,
 				7692BDD921339582007213AE /* SMGlobalConfig.swift in Sources */,
 				76A23089213550F900A3695A /* WHWeatherBaseView.m in Sources */,
