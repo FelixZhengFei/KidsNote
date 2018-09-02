@@ -122,6 +122,8 @@
 		76A231262138CE2A00A3695A /* KDQijieHomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76A231242138CE2A00A3695A /* KDQijieHomeVC.xib */; };
 		76A231282138E72C00A3695A /* DDDateCal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A231272138E72C00A3695A /* DDDateCal.swift */; };
 		76A2312A2139165700A3695A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76A231292139165700A3695A /* Assets.xcassets */; };
+		76E9ED83213BCFFD00344523 /* WHGradientHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9ED82213BCFFD00344523 /* WHGradientHelper.m */; };
+		76E9ED85213BD49700344523 /* UILabel+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E9ED84213BD49700344523 /* UILabel+Helper.swift */; };
 		A684C5E42402FC1985840EA7 /* Pods_KidsNote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8331680565913DFA7118B8E0 /* Pods_KidsNote.framework */; };
 /* End PBXBuildFile section */
 
@@ -253,6 +255,9 @@
 		76A231242138CE2A00A3695A /* KDQijieHomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KDQijieHomeVC.xib; sourceTree = "<group>"; };
 		76A231272138E72C00A3695A /* DDDateCal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDDateCal.swift; sourceTree = "<group>"; };
 		76A231292139165700A3695A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		76E9ED81213BCFFD00344523 /* WHGradientHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHGradientHelper.h; sourceTree = "<group>"; };
+		76E9ED82213BCFFD00344523 /* WHGradientHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHGradientHelper.m; sourceTree = "<group>"; };
+		76E9ED84213BD49700344523 /* UILabel+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UILabel+Helper.swift"; path = "KidsNote/New Group3/UILabel+Helper.swift"; sourceTree = SOURCE_ROOT; };
 		8331680565913DFA7118B8E0 /* Pods_KidsNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KidsNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD718234B3A4A8A70F2D5D6E /* Pods-KidsNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KidsNote.release.xcconfig"; path = "Pods/Target Support Files/Pods-KidsNote/Pods-KidsNote.release.xcconfig"; sourceTree = "<group>"; };
 		FCBDC78A6D9C024D7FCCCA7E /* Pods-KidsNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KidsNote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KidsNote/Pods-KidsNote.debug.xcconfig"; sourceTree = "<group>"; };
@@ -369,9 +374,12 @@
 				76439EB22133EE9100F1C454 /* SMWrongAlert.swift */,
 				76439EB02133EDE600F1C454 /* SMWebVC.swift */,
 				76A231272138E72C00A3695A /* DDDateCal.swift */,
+				76E9ED81213BCFFD00344523 /* WHGradientHelper.h */,
+				76E9ED82213BCFFD00344523 /* WHGradientHelper.m */,
 				76A2310E21378EC100A3695A /* FFLocationManager.swift */,
 				76A2311021378F1B00A3695A /* FFMemoryManager.swift */,
 				76A23112213795A800A3695A /* SMNetworkManager.swift */,
+				76E9ED84213BD49700344523 /* UILabel+Helper.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -876,6 +884,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76E9ED83213BCFFD00344523 /* WHGradientHelper.m in Sources */,
 				764ED1C2213A29940076C265 /* KDTimeShowVC.swift in Sources */,
 				76439E9E2133D56300F1C454 /* KDAppHomeView.swift in Sources */,
 				764ED1C7213A2AD10076C265 /* LUNavgationVC.swift in Sources */,
@@ -901,6 +910,7 @@
 				76A2310F21378EC100A3695A /* FFLocationManager.swift in Sources */,
 				7692BDD921339582007213AE /* SMGlobalConfig.swift in Sources */,
 				76A23089213550F900A3695A /* WHWeatherBaseView.m in Sources */,
+				76E9ED85213BD49700344523 /* UILabel+Helper.swift in Sources */,
 				764ED1CC213A39520076C265 /* KDAboutUsVC.swift in Sources */,
 				76A231172137EEA700A3695A /* WHWeatherFeng.m in Sources */,
 				76439EB12133EDE600F1C454 /* SMWebVC.swift in Sources */,

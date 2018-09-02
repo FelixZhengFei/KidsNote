@@ -15,7 +15,7 @@ class KDTimeShowVC: LUBaseVC {
         super.viewDidLoad()
         title = "2018"
         self.view.backgroundColor = UIColor.ff_HexColor(0xF3F4F5)
-        timeBaseView.frame = CGRect(x: 0, y: 0, width: MSC_WIDTH, height: MSC_HEIGHT)
+        timeBaseView.frame = CGRect(x: 0, y: MNavBar_H, width: MSC_WIDTH, height: MSC_HEIGHT - MNavBar_H)
         self.view.addSubview(timeBaseView)
     }
 

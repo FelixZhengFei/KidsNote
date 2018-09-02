@@ -9,4 +9,5 @@
 #import <ReactiveCocoa/RACEXTScope.h>
 #import "WHWeatherView.h"
 #import "WHWeatherHeader.h"
+#import "WHGradientHelper.h"
 

@@ -18,7 +18,7 @@ class KDJieqiTimeView: UIView,FFLoadXibProtocol {
     @IBOutlet weak var tableview: UITableView!
     
     override func awakeFromNib() {
-        top_Y_coord.constant = MNavBar_H + 10
+        top_Y_coord.constant = 10
         configViews()
         getData()
     }
