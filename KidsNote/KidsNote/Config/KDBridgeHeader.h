@@ -7,8 +7,8 @@
 //
 
 #import <ReactiveCocoa/RACEXTScope.h>
-#import "WHWeatherView.h"
-#import "WHWeatherHeader.h"
-#import "WHGradientHelper.h"
-#import "YCMenuView.h"
+#import "KDWeatherView.h"
+#import "KDWeatherHeader.h"
+#import "KDGradientHelper.h"
+#import "KDMenuView.h"
 

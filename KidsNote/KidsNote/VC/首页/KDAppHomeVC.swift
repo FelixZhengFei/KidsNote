@@ -10,9 +10,9 @@ import Foundation
 import UIKit
 import Alamofire
 
-class KDAppHomeVC: LUBaseVC {
+class KDAppHomeVC: KDBaseVC {
     fileprivate lazy var homeView = KDAppHomeView.ff_LoadXib()
-    fileprivate lazy var  weatherView = WHWeatherView()
+    fileprivate lazy var  weatherView = KDWeatherView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +25,7 @@ class KDAppHomeVC: LUBaseVC {
     }
     
     fileprivate func configViews() {
-        homeView.frame = CGRect(x: 0, y: 0, width: MSC_WIDTH, height: MSC_HEIGHT)
+        homeView.frame = CGRect(x: 0, y: 0, width: kScreen_WIDTH, height: kScreen_HEIGHT)
         self.view.backgroundColor = self.view.getBlueGradientColor()
         self.view.addSubview(homeView)
         weak var weakSelf = self
@@ -60,8 +60,8 @@ extension KDAppHomeVC {
     
     /**当前时间*/
     fileprivate func getCurrentTime() {
-        let newInfo = DDDateCal.currentDateInfo()
-        let chinsesDateInfo = DDDateCal.transfromDateTomChinseDate(inputDate: (newInfo.year,newInfo.month,1));
+        let newInfo = KDDatePlugin.currentDateInfo()
+        let chinsesDateInfo = KDDatePlugin.transfromDateTomChinseDate(inputDate: (newInfo.year,newInfo.month,1));
         
         homeView.timeLabel.text = "\(newInfo.year)年\(newInfo.month)月\(newInfo.day)日 | \(chinsesDateInfo?.year ?? "未知")年\(chinsesDateInfo?.month ?? "未知")";
     }
@@ -69,7 +69,7 @@ extension KDAppHomeVC {
     /**获取天气*/
     fileprivate func getCityWeathcer() {
         weak var weakSelf = self
-        let citySting = FFMemoryManager.userCity ?? "hangzhou"
+        let citySting = DKMemoryManager.userCity ?? "hangzhou"
         
         var urlString = "https://api.thinkpage.cn/v3/weather/daily.json?key=osoydf7ademn8ybv&location=\(citySting)&language=zh-Hans&start=0&days=1"
         urlString = urlString.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!
@@ -89,7 +89,7 @@ extension KDAppHomeVC {
             let text_day = dic["text_day"] as? String,
             let high = dic["high"] as? String,
             let low = dic["low"] as? String{
-            homeView.cityLabel.text =  FFMemoryManager.userCity
+            homeView.cityLabel.text =  DKMemoryManager.userCity
             homeView.wenduLabel.text = "\(text_day)  温度：\(low)°C ~ \(high)°C"
             configWeatherView(code_day)
         }
@@ -98,7 +98,7 @@ extension KDAppHomeVC {
     /**配置天气*/
     fileprivate func configWeatherView(_ codeDayString:String) {
         let codeDay = Int32(codeDayString) ?? 0
-        self.weatherView.frame = CGRect(x: 0, y: 0, width: MSC_WIDTH, height: MSC_HEIGHT)
+        self.weatherView.frame = CGRect(x: 0, y: 0, width: kScreen_WIDTH, height: kScreen_HEIGHT)
         self.weatherView.showWeatherAnimation(withType: codeDay)
         self.view.insertSubview(self.weatherView, at: 0)
         

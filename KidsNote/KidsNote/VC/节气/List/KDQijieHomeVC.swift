@@ -8,7 +8,7 @@
 
 import UIKit
 
-class KDQijieHomeVC: LUBaseVC {
+class KDQijieHomeVC: KDBaseVC {
     fileprivate var dataSourceArray = [KDShiJieModel]()
 
     @IBOutlet weak var top_Y_Coord: NSLayoutConstraint!

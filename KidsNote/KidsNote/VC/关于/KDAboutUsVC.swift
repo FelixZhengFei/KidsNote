@@ -8,7 +8,7 @@
 
 import UIKit
 
-class KDAboutUsVC: LUBaseVC {
+class KDAboutUsVC: KDBaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()

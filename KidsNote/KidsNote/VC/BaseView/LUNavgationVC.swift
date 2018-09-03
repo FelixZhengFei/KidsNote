@@ -1,15 +1,15 @@
 //
-//  LUNavgationVC.swift
-//  LineUp
+//  KDNavgationVC.swift
+//  KidsNote
 //
 //  Created by 郑强飞 on 2018/06/28.
-//  Copyright © 2018年 LineUp. All rights reserved.
+//  Copyright © 2018年 KidsNote. All rights reserved.
 //
 
 import UIKit
 /** 基类导航控制器
  */
-class LUNavgationVC: UINavigationController, UIGestureRecognizerDelegate {
+class KDNavgationVC: UINavigationController, UIGestureRecognizerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()

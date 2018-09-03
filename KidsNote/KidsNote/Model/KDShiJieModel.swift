@@ -8,7 +8,7 @@
 
 import UIKit
 
-class KDShiJieModel: SMBaseMappable {
+class KDShiJieModel: KDBaseMappable {
     var title:String?
     var type:String?
     var imageName:String? //背景图片
@@ -16,7 +16,7 @@ class KDShiJieModel: SMBaseMappable {
     var startTime:String? //时间
 }
 
-class KDShiJieTimeModel: SMBaseMappable {
+class KDShiJieTimeModel: KDBaseMappable {
     
     var yangTimeString:String?
     var title:String?
