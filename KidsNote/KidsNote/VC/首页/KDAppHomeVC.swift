@@ -20,8 +20,11 @@ class KDAppHomeVC: KDBaseVC {
         self.navigationHeaderView.backgroundColor = UIColor.clear
         self.hideBackButton()
         configViews()
-        getCityWeathcer()
         getCurrentTime()
+        weak var weakSelf = self
+        DKLocationManager.shared.start {
+            weakSelf?.getCityWeathcer()
+        }
     }
     
     fileprivate func configViews() {
@@ -102,5 +105,8 @@ extension KDAppHomeVC {
         self.weatherView.showWeatherAnimation(withType: codeDay)
         self.view.insertSubview(self.weatherView, at: 0)
         
+        if (codeDay >= 10 && codeDay < 20) {
+            self.navigationHeaderView.titleLabel.textColor = UIColor.white
+        }
     }
 }

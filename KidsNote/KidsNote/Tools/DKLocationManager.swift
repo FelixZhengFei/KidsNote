@@ -14,7 +14,7 @@ import CoreLocation
 public class DKLocationManager: NSObject, CLLocationManagerDelegate {
     
     private let locationManager: CLLocationManager = CLLocationManager()
-    private var placemark: ((CLPlacemark) -> Void)? = nil
+    private var completed: (() -> Void)? = nil
     var currLocation:CLLocation = CLLocation()
     
     // MARK: - 单例
@@ -32,8 +32,8 @@ public class DKLocationManager: NSObject, CLLocationManagerDelegate {
     }
     
     // MARK: - 开始定位
-    public func start(placemark: @escaping (CLPlacemark) -> Void) {
-        DKLocationManager.shared.placemark = placemark
+    public func start(_ complete: @escaping () -> Void) {
+        completed = complete
         DKLocationManager.shared.locationManager.desiredAccuracy = kCLLocationAccuracyBest
         DKLocationManager.shared.locationManager.distanceFilter = 100
         let status  = CLLocationManager.authorizationStatus()
@@ -60,6 +60,7 @@ public class DKLocationManager: NSObject, CLLocationManagerDelegate {
     
     ///将经纬度转换为城市名
     private func LonLatToCity() {
+        weak var weakSelf = self
         let geocoder: CLGeocoder = CLGeocoder()
         geocoder.reverseGeocodeLocation(currLocation) { (placemark, error) -> Void in
             if(error == nil) {
@@ -80,17 +81,9 @@ public class DKLocationManager: NSObject, CLLocationManagerDelegate {
                 let streetString: String = (mark.addressDictionary! as NSDictionary).value(forKey: "Name") as! String
                 //完整的位置
 //                let formattedAddressLines: NSString = ((mark.addressDictionary! as NSDictionary).value(forKey: "FormattedAddressLines") as AnyObject).firstObject as! NSString
-                
-//                FFPrint("国家===\(country)")
-//                FFPrint("省===\(proviceString)")
-//                FFPrint("城市===\(cityString)")
-//                FFPrint("区===\(areaString)")
-//                FFPrint("街道===\(streetString)")
-//                FFPrint("完整位置===\(formattedAddressLines)")
-                
                 DKMemoryManager.setUserCoordinate(longitude: self.currLocation.coordinate.longitude, latitude: self.currLocation.coordinate.latitude)
                 DKMemoryManager.setUserAddress(provice: proviceString, city: cityString, area: areaString, street: streetString)
-
+                weakSelf?.completed!()
             } else {
             }
         }

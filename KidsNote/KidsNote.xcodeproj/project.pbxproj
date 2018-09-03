@@ -21,7 +21,7 @@
 		764ED1BA21393F5A0076C265 /* KDTImeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 764ED1B821393F5A0076C265 /* KDTImeCell.xib */; };
 		764ED1BC21393F880076C265 /* KDJieqiTimeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 764ED1BB21393F880076C265 /* KDJieqiTimeView.xib */; };
 		764ED1C2213A29940076C265 /* KDTimeShowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764ED1C1213A29940076C265 /* KDTimeShowVC.swift */; };
-		764ED1C7213A2AD10076C265 /* LUNavgationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764ED1C4213A2AD00076C265 /* LUNavgationVC.swift */; };
+		764ED1C7213A2AD10076C265 /* KDNavgationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764ED1C4213A2AD00076C265 /* KDNavgationVC.swift */; };
 		764ED1C8213A2AD10076C265 /* KDNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764ED1C5213A2AD10076C265 /* KDNavBarView.swift */; };
 		764ED1C9213A2AD10076C265 /* KDBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764ED1C6213A2AD10076C265 /* KDBaseVC.swift */; };
 		764ED1CC213A39520076C265 /* KDAboutUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764ED1CA213A39520076C265 /* KDAboutUsVC.swift */; };
@@ -141,7 +141,7 @@
 		764ED1B821393F5A0076C265 /* KDTImeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KDTImeCell.xib; sourceTree = "<group>"; };
 		764ED1BB21393F880076C265 /* KDJieqiTimeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KDJieqiTimeView.xib; sourceTree = "<group>"; };
 		764ED1C1213A29940076C265 /* KDTimeShowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDTimeShowVC.swift; sourceTree = "<group>"; };
-		764ED1C4213A2AD00076C265 /* LUNavgationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LUNavgationVC.swift; sourceTree = "<group>"; };
+		764ED1C4213A2AD00076C265 /* KDNavgationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDNavgationVC.swift; sourceTree = "<group>"; };
 		764ED1C5213A2AD10076C265 /* KDNavBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDNavBarView.swift; sourceTree = "<group>"; };
 		764ED1C6213A2AD10076C265 /* KDBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDBaseVC.swift; sourceTree = "<group>"; };
 		764ED1CA213A39520076C265 /* KDAboutUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDAboutUsVC.swift; sourceTree = "<group>"; };
@@ -432,7 +432,7 @@
 			children = (
 				764ED1C6213A2AD10076C265 /* KDBaseVC.swift */,
 				764ED1C5213A2AD10076C265 /* KDNavBarView.swift */,
-				764ED1C4213A2AD00076C265 /* LUNavgationVC.swift */,
+				764ED1C4213A2AD00076C265 /* KDNavgationVC.swift */,
 			);
 			path = BaseView;
 			sourceTree = "<group>";
@@ -867,7 +867,7 @@
 				76E9ED83213BCFFD00344523 /* KDGradientHelper.m in Sources */,
 				764ED1C2213A29940076C265 /* KDTimeShowVC.swift in Sources */,
 				76439E9E2133D56300F1C454 /* KDAppHomeView.swift in Sources */,
-				764ED1C7213A2AD10076C265 /* LUNavgationVC.swift in Sources */,
+				764ED1C7213A2AD10076C265 /* KDNavgationVC.swift in Sources */,
 				76A23087213550F900A3695A /* KDWeatherRainView.m in Sources */,
 				76439EB32133EE9100F1C454 /* KDWrongAlert.swift in Sources */,
 				7692BDF721339660007213AE /* KDAppHomeVC.swift in Sources */,
@@ -1025,7 +1025,10 @@
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = KidsNote/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.changtu.jieqi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = KidsNote/Config/KDBridgeHeader.h;
@@ -1044,7 +1047,10 @@
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = KidsNote/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.changtu.jieqi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = KidsNote/Config/KDBridgeHeader.h;
