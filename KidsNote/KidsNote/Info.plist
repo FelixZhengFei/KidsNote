@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>24节气</string>
+	<string>U-24节气</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -17,9 +17,9 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.0.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>2.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -27,18 +27,12 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
-	<key>NSCameraUsageDescription</key>
-	<string>新浪分期需要您的同意才能访问您的相机</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>我们需要通过您的地理位置信息获取您的周边数据</string>
+	<string>为了获取您身边天气信息</string>
 	<key>NSLocationUsageDescription</key>
-	<string>App需要您的同意,才能访问位置</string>
+	<string>为了获取您身边天气信息</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>我们需要通过您的地理位置信息获取您的周边数据</string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>App需要您的同意,才能访问相册</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>App需要您的同意,才能访问相册</string>
+	<string>为了获取您身边天气信息</string>
 	<key>UILaunchStoryboardName</key>
 	<string>Launch</string>
 	<key>UIRequiredDeviceCapabilities</key>

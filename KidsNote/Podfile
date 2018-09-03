@@ -3,17 +3,11 @@
 
 target 'KidsNote' do
     
-pod 'MJRefresh'
 pod 'MBProgressHUD'
-pod 'SDAutoLayout'
 pod 'Alamofire'
 pod 'FFToolModule’
 pod 'BYToolModule’
-pod 'SDWebImage’
-pod 'Masonry', '~> 1.0.2'
-pod 'ReactiveCocoa','~>2.1.8'
 pod 'SwiftyUserDefaults'
-pod 'Alamofire'
 
     use_frameworks!
 

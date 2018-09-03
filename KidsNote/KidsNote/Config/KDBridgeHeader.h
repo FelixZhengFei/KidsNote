@@ -6,7 +6,6 @@
 //  Copyright © 2018年 郑强飞. All rights reserved.
 //
 
-#import <ReactiveCocoa/RACEXTScope.h>
 #import "KDWeatherView.h"
 #import "KDWeatherHeader.h"
 #import "KDGradientHelper.h"
