@@ -15,7 +15,7 @@
 		764ED1AD213933C90076C265 /* start_ind@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 764ED1AC213933C90076C265 /* start_ind@2x.png */; };
 		764ED1B0213934BC0076C265 /* yanzi1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 764ED1AE213934BB0076C265 /* yanzi1.jpeg */; };
 		764ED1B1213934BC0076C265 /* yanzi2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 764ED1AF213934BC0076C265 /* yanzi2.jpeg */; };
-		764ED1B321393C490076C265 /* jieqiTime.plist in Resources */ = {isa = PBXBuildFile; fileRef = 764ED1B221393C490076C265 /* jieqiTime.plist */; };
+		764ED1B321393C490076C265 /* jieqiTime2018.plist in Resources */ = {isa = PBXBuildFile; fileRef = 764ED1B221393C490076C265 /* jieqiTime2018.plist */; };
 		764ED1B521393D100076C265 /* KDJieqiTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764ED1B421393D100076C265 /* KDJieqiTimeView.swift */; };
 		764ED1B921393F5A0076C265 /* KDTImeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764ED1B721393F5A0076C265 /* KDTImeCell.swift */; };
 		764ED1BA21393F5A0076C265 /* KDTImeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 764ED1B821393F5A0076C265 /* KDTImeCell.xib */; };
@@ -116,7 +116,6 @@
 		76A2310D2136932C00A3695A /* shijie_html_19.html in Resources */ = {isa = PBXBuildFile; fileRef = 76A230F62136932C00A3695A /* shijie_html_19.html */; };
 		76A2310F21378EC100A3695A /* FFLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A2310E21378EC100A3695A /* FFLocationManager.swift */; };
 		76A2311121378F1C00A3695A /* FFMemoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A2311021378F1B00A3695A /* FFMemoryManager.swift */; };
-		76A23113213795A800A3695A /* SMNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A23112213795A800A3695A /* SMNetworkManager.swift */; };
 		76A231172137EEA700A3695A /* WHWeatherFeng.m in Sources */ = {isa = PBXBuildFile; fileRef = 76A231162137EEA700A3695A /* WHWeatherFeng.m */; };
 		76A231252138CE2A00A3695A /* KDQijieHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A231232138CE2A00A3695A /* KDQijieHomeVC.swift */; };
 		76A231262138CE2A00A3695A /* KDQijieHomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76A231242138CE2A00A3695A /* KDQijieHomeVC.xib */; };
@@ -124,6 +123,9 @@
 		76A2312A2139165700A3695A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76A231292139165700A3695A /* Assets.xcassets */; };
 		76E9ED83213BCFFD00344523 /* WHGradientHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9ED82213BCFFD00344523 /* WHGradientHelper.m */; };
 		76E9ED85213BD49700344523 /* UILabel+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E9ED84213BD49700344523 /* UILabel+Helper.swift */; };
+		76E9ED88213CC52C00344523 /* YCMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9ED86213CC52C00344523 /* YCMenuView.m */; };
+		76E9ED8B213CCEA900344523 /* jieqiTime2019.plist in Resources */ = {isa = PBXBuildFile; fileRef = 76E9ED89213CCEA800344523 /* jieqiTime2019.plist */; };
+		76E9ED8C213CCEA900344523 /* jieqiTime2020.plist in Resources */ = {isa = PBXBuildFile; fileRef = 76E9ED8A213CCEA900344523 /* jieqiTime2020.plist */; };
 		A684C5E42402FC1985840EA7 /* Pods_KidsNote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8331680565913DFA7118B8E0 /* Pods_KidsNote.framework */; };
 /* End PBXBuildFile section */
 
@@ -136,7 +138,7 @@
 		764ED1AC213933C90076C265 /* start_ind@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "start_ind@2x.png"; sourceTree = "<group>"; };
 		764ED1AE213934BB0076C265 /* yanzi1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yanzi1.jpeg; sourceTree = "<group>"; };
 		764ED1AF213934BC0076C265 /* yanzi2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yanzi2.jpeg; sourceTree = "<group>"; };
-		764ED1B221393C490076C265 /* jieqiTime.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = jieqiTime.plist; sourceTree = "<group>"; };
+		764ED1B221393C490076C265 /* jieqiTime2018.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = jieqiTime2018.plist; sourceTree = "<group>"; };
 		764ED1B421393D100076C265 /* KDJieqiTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDJieqiTimeView.swift; sourceTree = "<group>"; };
 		764ED1B721393F5A0076C265 /* KDTImeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDTImeCell.swift; sourceTree = "<group>"; };
 		764ED1B821393F5A0076C265 /* KDTImeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KDTImeCell.xib; sourceTree = "<group>"; };
@@ -248,7 +250,6 @@
 		76A230F62136932C00A3695A /* shijie_html_19.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = shijie_html_19.html; sourceTree = "<group>"; };
 		76A2310E21378EC100A3695A /* FFLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFLocationManager.swift; sourceTree = "<group>"; };
 		76A2311021378F1B00A3695A /* FFMemoryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFMemoryManager.swift; sourceTree = "<group>"; };
-		76A23112213795A800A3695A /* SMNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMNetworkManager.swift; sourceTree = "<group>"; };
 		76A231152137EEA700A3695A /* WHWeatherFeng.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHWeatherFeng.h; sourceTree = "<group>"; };
 		76A231162137EEA700A3695A /* WHWeatherFeng.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHWeatherFeng.m; sourceTree = "<group>"; };
 		76A231232138CE2A00A3695A /* KDQijieHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDQijieHomeVC.swift; sourceTree = "<group>"; };
@@ -258,6 +259,10 @@
 		76E9ED81213BCFFD00344523 /* WHGradientHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHGradientHelper.h; sourceTree = "<group>"; };
 		76E9ED82213BCFFD00344523 /* WHGradientHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHGradientHelper.m; sourceTree = "<group>"; };
 		76E9ED84213BD49700344523 /* UILabel+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UILabel+Helper.swift"; path = "KidsNote/New Group3/UILabel+Helper.swift"; sourceTree = SOURCE_ROOT; };
+		76E9ED86213CC52C00344523 /* YCMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCMenuView.m; sourceTree = "<group>"; };
+		76E9ED87213CC52C00344523 /* YCMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCMenuView.h; sourceTree = "<group>"; };
+		76E9ED89213CCEA800344523 /* jieqiTime2019.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = jieqiTime2019.plist; sourceTree = "<group>"; };
+		76E9ED8A213CCEA900344523 /* jieqiTime2020.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = jieqiTime2020.plist; sourceTree = "<group>"; };
 		8331680565913DFA7118B8E0 /* Pods_KidsNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KidsNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD718234B3A4A8A70F2D5D6E /* Pods-KidsNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KidsNote.release.xcconfig"; path = "Pods/Target Support Files/Pods-KidsNote/Pods-KidsNote.release.xcconfig"; sourceTree = "<group>"; };
 		FCBDC78A6D9C024D7FCCCA7E /* Pods-KidsNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KidsNote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KidsNote/Pods-KidsNote.debug.xcconfig"; sourceTree = "<group>"; };
@@ -326,6 +331,8 @@
 				764ED1B621393DEB0076C265 /* Cell */,
 				764ED1B421393D100076C265 /* KDJieqiTimeView.swift */,
 				764ED1BB21393F880076C265 /* KDJieqiTimeView.xib */,
+				76E9ED87213CC52C00344523 /* YCMenuView.h */,
+				76E9ED86213CC52C00344523 /* YCMenuView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -378,7 +385,6 @@
 				76E9ED82213BCFFD00344523 /* WHGradientHelper.m */,
 				76A2310E21378EC100A3695A /* FFLocationManager.swift */,
 				76A2311021378F1B00A3695A /* FFMemoryManager.swift */,
-				76A23112213795A800A3695A /* SMNetworkManager.swift */,
 				76E9ED84213BD49700344523 /* UILabel+Helper.swift */,
 			);
 			path = Tools;
@@ -411,7 +417,9 @@
 				7692BDD821339582007213AE /* SMGlobalConfig.swift */,
 				7692BE1C2133A5CF007213AE /* KDBridgeHeader.h */,
 				76A230D4213670BC00A3695A /* jieqiinfo.plist */,
-				764ED1B221393C490076C265 /* jieqiTime.plist */,
+				764ED1B221393C490076C265 /* jieqiTime2018.plist */,
+				76E9ED89213CCEA800344523 /* jieqiTime2019.plist */,
+				76E9ED8A213CCEA900344523 /* jieqiTime2020.plist */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -758,6 +766,7 @@
 				76A230AD213550F900A3695A /* ele_white_cloud_7.png in Resources */,
 				76A231092136932C00A3695A /* shijie_html_10.html in Resources */,
 				76A2310B2136932C00A3695A /* shijie_html_15.html in Resources */,
+				76E9ED8C213CCEA900344523 /* jieqiTime2020.plist in Resources */,
 				76A23092213550F900A3695A /* ele_sunnyBird4.png in Resources */,
 				76A230AF213550F900A3695A /* ele_white_cloud_4.png in Resources */,
 				76A230A8213550F900A3695A /* ele_sunnyNightFirefly.png in Resources */,
@@ -769,12 +778,13 @@
 				76A2309D213550F900A3695A /* ele_sunnyNightYellowLight.png in Resources */,
 				76A230AB213550F900A3695A /* ele_rainLine1.png in Resources */,
 				76A23093213550F900A3695A /* ele_sunnyNightWave2.png in Resources */,
+				76E9ED8B213CCEA900344523 /* jieqiTime2019.plist in Resources */,
 				764ED1BC21393F880076C265 /* KDJieqiTimeView.xib in Resources */,
 				76A231002136932C00A3695A /* shijie_html_2.html in Resources */,
 				76A23098213550F900A3695A /* ele_sunnyBirdInvertedImage7.png in Resources */,
 				76A231082136932C00A3695A /* shijie_html_20.html in Resources */,
 				76A231022136932C00A3695A /* shijie_html_23.html in Resources */,
-				764ED1B321393C490076C265 /* jieqiTime.plist in Resources */,
+				764ED1B321393C490076C265 /* jieqiTime2018.plist in Resources */,
 				76A230A1213550F900A3695A /* ele_sunnyNightMeteor1.png in Resources */,
 				76A230FE2136932C00A3695A /* shijie_html_17.html in Resources */,
 				76A230FF2136932C00A3695A /* shijie_html_18.html in Resources */,
@@ -900,7 +910,6 @@
 				764ED1C9213A2AD10076C265 /* LUBaseVC.swift in Sources */,
 				76A23088213550F900A3695A /* WHWeatherLightingView.m in Sources */,
 				76A230D121366C9C00A3695A /* KDShiJieModel.swift in Sources */,
-				76A23113213795A800A3695A /* SMNetworkManager.swift in Sources */,
 				7692BDC221339419007213AE /* AppDelegate.swift in Sources */,
 				76A230BC213550F900A3695A /* WHWeatherView.m in Sources */,
 				764ED1B921393F5A0076C265 /* KDTImeCell.swift in Sources */,
@@ -909,6 +918,7 @@
 				764ED1C8213A2AD10076C265 /* LUNavBarView.swift in Sources */,
 				76A2310F21378EC100A3695A /* FFLocationManager.swift in Sources */,
 				7692BDD921339582007213AE /* SMGlobalConfig.swift in Sources */,
+				76E9ED88213CC52C00344523 /* YCMenuView.m in Sources */,
 				76A23089213550F900A3695A /* WHWeatherBaseView.m in Sources */,
 				76E9ED85213BD49700344523 /* UILabel+Helper.swift in Sources */,
 				764ED1CC213A39520076C265 /* KDAboutUsVC.swift in Sources */,

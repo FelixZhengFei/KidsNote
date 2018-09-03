@@ -11,7 +11,7 @@ import BYToolModule
 
 class KDJieqiTimeView: UIView,FFLoadXibProtocol {
     fileprivate var dataSourceArray = [KDShiJieTimeModel]()
-
+    
     @IBOutlet weak var top_Y_coord: NSLayoutConstraint!
     @IBOutlet weak var middleView: UIView!
     
@@ -20,15 +20,30 @@ class KDJieqiTimeView: UIView,FFLoadXibProtocol {
     override func awakeFromNib() {
         top_Y_coord.constant = 10
         configViews()
-        getData()
     }
     
-    fileprivate func getData() {
-        if let path = Bundle.main.path(forResource: "jieqiTime.plist", ofType: nil),
-            let data = NSArray(contentsOfFile: path),
-            let itemDatas = try? KDShiJieTimeModel.mapArrayFromJson(data as AnyObject, KDShiJieTimeModel.self) {
-            dataSourceArray = itemDatas
-            self.tableview.reloadData()
+    public func updateDataWithIndex(_ selectIndex:Int) {
+        if selectIndex  == 0 {
+            if let path = Bundle.main.path(forResource: "jieqiTime2018.plist", ofType: nil),
+                let data = NSArray(contentsOfFile: path),
+                let itemDatas = try? KDShiJieTimeModel.mapArrayFromJson(data as AnyObject, KDShiJieTimeModel.self) {
+                dataSourceArray = itemDatas
+                self.tableview.reloadData()
+            }
+        } else if selectIndex == 1{
+            if let path = Bundle.main.path(forResource: "jieqiTime2019.plist", ofType: nil),
+                let data = NSArray(contentsOfFile: path),
+                let itemDatas = try? KDShiJieTimeModel.mapArrayFromJson(data as AnyObject, KDShiJieTimeModel.self) {
+                dataSourceArray = itemDatas
+                self.tableview.reloadData()
+            }
+        } else if selectIndex == 2{
+            if let path = Bundle.main.path(forResource: "jieqiTime2020.plist", ofType: nil),
+                let data = NSArray(contentsOfFile: path),
+                let itemDatas = try? KDShiJieTimeModel.mapArrayFromJson(data as AnyObject, KDShiJieTimeModel.self) {
+                dataSourceArray = itemDatas
+                self.tableview.reloadData()
+            }
         }
     }
 }
@@ -55,5 +70,5 @@ extension KDJieqiTimeView:UITableViewDelegate, UITableViewDataSource {
         cell.updateCellWhitModel(dataSourceArray[indexPath.row])
         return cell
     }
-
+    
 }

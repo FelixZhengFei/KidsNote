@@ -39,30 +39,34 @@ class KDAppHomeView: UIView,FFLoadXibProtocol {
     }
     
     fileprivate func configLalebs() {
+        var fontSize:CGFloat = 18
+        if MSC_HEIGHT < 540 {
+            fontSize = 14
+        }
         var start_y:CGFloat = (MSC_HEIGHT - 380 - MNavBar_H) / 2
         let label1 = UILabel(frame: CGRect(x: MSC_WIDTH / 2 + 45, y: start_y, width: 30, height: 400))
-        label1.font = UIFont.systemFont(ofSize: 18)
+        label1.font = UIFont.systemFont(ofSize: fontSize)
         label1.backgroundColor = UIColor.clear
         self.addSubview(label1)
         WHGradientHelper.addGradientChromatoAnimation(forLableText: baseView, lable: label1, start: 0)
         label1.verticalText = "春雨惊春清谷天，夏满芒夏暑相连。"
         start_y += 60
         let label2 = UILabel(frame: CGRect(x: MSC_WIDTH / 2 + 5, y: start_y, width: 30, height: 400))
-        label2.font = UIFont.systemFont(ofSize: 18)
+        label2.font = UIFont.systemFont(ofSize: fontSize)
         label2.backgroundColor = UIColor.clear
         WHGradientHelper.addGradientChromatoAnimation(forLableText: baseView, lable: label2, start: 1)
         label2.verticalText = "秋处露秋寒霜降，冬雪雪冬小大寒。"
         start_y = (MSC_HEIGHT - 380 - MNavBar_H) / 2
 
         let label3 = UILabel(frame: CGRect(x: MSC_WIDTH / 2 - 40, y: start_y, width: 30, height: 400))
-        label3.font = UIFont.systemFont(ofSize: 18)
+        label3.font = UIFont.systemFont(ofSize: fontSize)
         label3.backgroundColor = UIColor.clear
         WHGradientHelper.addGradientChromatoAnimation(forLableText: baseView, lable: label3, start: 2)
         label3.verticalText = "每月两节不变更，最多相差一两天。"
         start_y += 60
 
         let label4 = UILabel(frame: CGRect(x: MSC_WIDTH / 2 - 80, y: start_y, width: 30, height: 400))
-        label4.font = UIFont.systemFont(ofSize: 18)
+        label4.font = UIFont.systemFont(ofSize: fontSize)
         label4.backgroundColor = UIColor.clear
         WHGradientHelper.addGradientChromatoAnimation(forLableText: baseView, lable: label4, start: 3)
         label4.verticalText = "上半年逢六廿一，下半年逢八廿三。"

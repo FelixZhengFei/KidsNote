@@ -47,12 +47,12 @@
                             </constraints>
                         </view>
                         <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12月11日 星期日" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Fh-vZ-b1E">
-                            <rect key="frame" x="10" y="195" width="15" height="178.5"/>
+                            <rect key="frame" x="10" y="271.5" width="15" height="106"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="15" id="qDB-dQ-Z0B"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="17"/>
+                            <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="13"/>
                             <color key="textColor" red="0.7449776785714286" green="0.34048150510204084" blue="0.0" alpha="0.89303691275167785" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -63,7 +63,7 @@
                         <constraint firstAttribute="trailing" secondItem="MUZ-Kw-x6g" secondAttribute="trailing" id="N9b-Uy-B7I"/>
                         <constraint firstItem="MUZ-Kw-x6g" firstAttribute="top" secondItem="ngg-UF-naw" secondAttribute="top" constant="34" id="OLL-zp-tbv"/>
                         <constraint firstItem="MUZ-Kw-x6g" firstAttribute="leading" secondItem="ngg-UF-naw" secondAttribute="leading" id="bU9-xU-FfF"/>
-                        <constraint firstItem="4Fh-vZ-b1E" firstAttribute="centerY" secondItem="ngg-UF-naw" secondAttribute="centerY" constant="-50" id="hCN-b7-30V"/>
+                        <constraint firstItem="4Fh-vZ-b1E" firstAttribute="centerY" secondItem="ngg-UF-naw" secondAttribute="centerY" constant="-10" id="hCN-b7-30V"/>
                     </constraints>
                 </view>
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yBc-bg-aLv">
